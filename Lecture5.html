@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Lecture 5: Conservation of energy and momentum &#8212; Mechanics</title>
+    <title>Conservation of energy and momentum &#8212; Mechanics</title>
   
   
   
@@ -64,7 +64,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Applications" href="Lecture6.html" />
-    <link rel="prev" title="Lecture 4: Compound Systems" href="Lecture4.html" />
+    <link rel="prev" title="Compound Systems" href="Lecture4.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -172,30 +172,16 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="Mechanics.html">
-                    PHY11006 Mechanics
+                    MPS111 Mechanics
                 </a>
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Lecture1.html">1 Where do forces come from?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lecture2.html">Lecture 2: Newton’s Second Law</a></li>
-
-
-
-
-
-
-
-<li class="toctree-l1"><a class="reference internal" href="Lecture3.html">Lecture 3: Vectors</a></li>
-
-<li class="toctree-l1"><a class="reference internal" href="Lecture4.html">Lecture 4: Compound Systems</a></li>
-
-
-
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Lecture 5: Conservation of energy and momentum</a></li>
-
-
-
+<li class="toctree-l1"><a class="reference internal" href="Lecture2.html">2 Newtons second law</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture3.html">3 Vectors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture4.html">4 Motion in 2D and 3D</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">5 Energy and momentum</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lecture6.html">6 Applications I</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lecture7.html">7 Circular motion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lecture8.html">8 Angular momentum</a></li>
@@ -387,7 +373,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Lecture 5: Conservation of energy and momentum</h1>
+    <h1>Conservation of energy and momentum</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -397,16 +383,14 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Lecture 5: Conservation of energy and momentum</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-of-energy">Conservation of energy</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#momentum-conservation">Momentum conservation</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#collisions">Collisions</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-elastic-collision-in-2d">Example: Elastic collision in 2D</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#centre-of-mass-frame">Centre-of-mass frame</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-of-energy">Conservation of energy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#momentum-conservation">Momentum conservation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#collisions">Collisions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-elastic-collision-in-2d">Example: Elastic collision in 2D</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#centre-of-mass-frame">Centre-of-mass frame</a></li>
 </ul>
 </li>
 </ul>
-
             </nav>
         </div>
     </div>
@@ -455,11 +439,10 @@ document.write(`
 <span class="math notranslate nohighlight">\(\newcommand{\problems}[1]{\noindent{\color{LightSlateGrey}{\textbf{\textsf{Weekly problems:}}} #1}}\)</span></p>
 <p><span class="math notranslate nohighlight">\(\newcommand{\af}[1]{[A\&amp;F: #1]}\)</span>
 <span class="math notranslate nohighlight">\(\newcommand{\basis}[1]{\hat{\text{e}}_{#1}}\)</span></p>
-<section id="lecture-5-conservation-of-energy-and-momentum">
-<h1>Lecture 5: Conservation of energy and momentum<a class="headerlink" href="#lecture-5-conservation-of-energy-and-momentum" title="Link to this heading">#</a></h1>
-</section>
+<section class="tex2jax_ignore mathjax_ignore" id="conservation-of-energy-and-momentum">
+<h1>Conservation of energy and momentum<a class="headerlink" href="#conservation-of-energy-and-momentum" title="Link to this heading">#</a></h1>
 <section id="conservation-of-energy">
-<h1>Conservation of energy<a class="headerlink" href="#conservation-of-energy" title="Link to this heading">#</a></h1>
+<h2>Conservation of energy<a class="headerlink" href="#conservation-of-energy" title="Link to this heading">#</a></h2>
 <p>In the problem set of lecture 1 we saw that the work <span class="math notranslate nohighlight">\(W\)</span> done on an object by a conservative force <span class="math notranslate nohighlight">\(F\)</span> along a (one-dimensional) path is given by</p>
 <div class="math notranslate nohighlight">
 \[
@@ -510,10 +493,10 @@ document.write(`
  Q = mgh - \tfrac12 m v^2 \, .
 \]</div>
 <p>We will use this method when we discuss collisions. It will be critical to determine whether there is any heat generated in a collision, so you can tell whether you can use energy conservation for the particles that are colliding.</p>
-<hr class="docutils" />
 </section>
+<hr class="docutils" />
 <section id="momentum-conservation">
-<h1>Momentum conservation<a class="headerlink" href="#momentum-conservation" title="Link to this heading">#</a></h1>
+<h2>Momentum conservation<a class="headerlink" href="#momentum-conservation" title="Link to this heading">#</a></h2>
 <p>Another important law of physics is the conservation of momentum: for any system that does not experience a net external force, its momentum is conserved.</p>
 <p>For a single particle this is simply Newton’s second law:</p>
 <div class="math notranslate nohighlight">
@@ -575,10 +558,10 @@ Momentum conservation <span class="math notranslate nohighlight">\(\mathbf{p}_{\
    \mathbf{v}_{\rm w} = \frac{2m}{M} \mathbf{v} \, ,
 \]</div>
 <p>which is tiny when <span class="math notranslate nohighlight">\(M \gg m\)</span>.</p>
-<hr class="docutils" />
 </section>
+<hr class="docutils" />
 <section id="collisions">
-<h1>Collisions<a class="headerlink" href="#collisions" title="Link to this heading">#</a></h1>
+<h2>Collisions<a class="headerlink" href="#collisions" title="Link to this heading">#</a></h2>
 <p>The ball bouncing against a wall is a simple example of a collision problem. More generally, we distinguish between:</p>
 <ul class="simple">
 <li><p><strong>Elastic collisions</strong>: both energy and momentum conserved.</p></li>
@@ -595,7 +578,7 @@ Momentum conservation <span class="math notranslate nohighlight">\(\mathbf{p}_{\
 </ul>
 <hr class="docutils" />
 <section id="example-elastic-collision-in-2d">
-<h2>Example: Elastic collision in 2D<a class="headerlink" href="#example-elastic-collision-in-2d" title="Link to this heading">#</a></h2>
+<h3>Example: Elastic collision in 2D<a class="headerlink" href="#example-elastic-collision-in-2d" title="Link to this heading">#</a></h3>
 <p>Consider particle <span class="math notranslate nohighlight">\(m_1\)</span> with velocity <span class="math notranslate nohighlight">\(\mathbf{v}_1\)</span> colliding with particle <span class="math notranslate nohighlight">\(m_2\)</span> at rest at the origin.</p>
 <ul class="simple">
 <li><p>Before:</p></li>
@@ -667,7 +650,7 @@ Momentum conservation <span class="math notranslate nohighlight">\(\mathbf{p}_{\
 </section>
 <hr class="docutils" />
 <section id="centre-of-mass-frame">
-<h2>Centre-of-mass frame<a class="headerlink" href="#centre-of-mass-frame" title="Link to this heading">#</a></h2>
+<h3>Centre-of-mass frame<a class="headerlink" href="#centre-of-mass-frame" title="Link to this heading">#</a></h3>
 <p>Collisions are often easiest in the centre-of-mass (COM) frame.</p>
 <p>Here,</p>
 <div class="math notranslate nohighlight">
@@ -695,6 +678,7 @@ Momentum conservation <span class="math notranslate nohighlight">\(\mathbf{p}_{\
 <ul class="simple">
 <li><p>If the collision is elastic (<span class="math notranslate nohighlight">\(Q=0\)</span>) and <span class="math notranslate nohighlight">\(\mu=\mu'\)</span>, then <span class="math notranslate nohighlight">\(p_1 = p_1'\)</span>, i.e. momentum magnitude in COM is unchanged (though direction changes).</p></li>
 </ul>
+</section>
 </section>
 </section>
 
@@ -734,7 +718,7 @@ Momentum conservation <span class="math notranslate nohighlight">\(\mathbf{p}_{\
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Lecture 4: Compound Systems</p>
+        <p class="prev-next-title">Compound Systems</p>
       </div>
     </a>
     <a class="right-next"
@@ -762,16 +746,14 @@ Momentum conservation <span class="math notranslate nohighlight">\(\mathbf{p}_{\
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Lecture 5: Conservation of energy and momentum</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-of-energy">Conservation of energy</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#momentum-conservation">Momentum conservation</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#collisions">Collisions</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-elastic-collision-in-2d">Example: Elastic collision in 2D</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#centre-of-mass-frame">Centre-of-mass frame</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-of-energy">Conservation of energy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#momentum-conservation">Momentum conservation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#collisions">Collisions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-elastic-collision-in-2d">Example: Elastic collision in 2D</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#centre-of-mass-frame">Centre-of-mass frame</a></li>
 </ul>
 </li>
 </ul>
-
   </nav></div>
 
 </div></div>
@@ -785,7 +767,7 @@ Momentum conservation <span class="math notranslate nohighlight">\(\mathbf{p}_{\
   <div class="footer-item">
     
 <p class="component-author">
-By PK
+By Pieter Kok
 </p>
 
   </div>
@@ -795,7 +777,7 @@ By PK
 
   <p class="copyright">
     
-      © Copyright 2024.
+      © Copyright 2025.
       <br/>
     
   </p>

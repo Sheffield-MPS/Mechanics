@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Lecture 7: Polar coordinates and circular motion &#8212; Mechanics</title>
+    <title>Polar coordinates and circular motion &#8212; Mechanics</title>
   
   
   
@@ -63,8 +63,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'Lecture7';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Lecture 8: Angular momentum" href="Lecture8.html" />
-    <link rel="prev" title="Lecture 6: Applications" href="Lecture6.html" />
+    <link rel="next" title="Angular momentum" href="Lecture8.html" />
+    <link rel="prev" title="Applications" href="Lecture6.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -172,33 +172,18 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="Mechanics.html">
-                    PHY11006 Mechanics
+                    MPS111 Mechanics
                 </a>
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Lecture1.html">1 Where do forces come from?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lecture2.html">Lecture 2: Newton’s Second Law</a></li>
-
-
-
-
-
-
-
-<li class="toctree-l1"><a class="reference internal" href="Lecture3.html">Lecture 3: Vectors</a></li>
-
-<li class="toctree-l1"><a class="reference internal" href="Lecture4.html">Lecture 4: Compound Systems</a></li>
-
-
-
-<li class="toctree-l1"><a class="reference internal" href="Lecture5.html">Lecture 5: Conservation of energy and momentum</a></li>
-
-
-
+<li class="toctree-l1"><a class="reference internal" href="Lecture2.html">2 Newtons second law</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture3.html">3 Vectors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture4.html">4 Motion in 2D and 3D</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture5.html">5 Energy and momentum</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lecture6.html">6 Applications I</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Lecture 7: Polar coordinates and circular motion</a></li>
-
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">7 Circular motion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lecture8.html">8 Angular momentum</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lecture9.html">9 Rotating rigid bodies</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lecture10.html">10 Applications II</a></li>
@@ -388,7 +373,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Lecture 7: Polar coordinates and circular motion</h1>
+    <h1>Polar coordinates and circular motion</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -398,17 +383,13 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Lecture 7: Polar coordinates and circular motion</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#polar-coordinates">Polar coordinates</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#circular-motion-and-the-cross-product">Circular motion and the Cross Product</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#torque-described-as-a-vector">Torque described as a vector</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spherical-and-cylindrical-coordinates">Spherical and cylindrical coordinates</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#torque-described-as-a-vector">Torque described as a vector</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spherical-and-cylindrical-coordinates">Spherical and cylindrical coordinates</a></li>
 </ul>
-</li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -457,16 +438,16 @@ document.write(`
 <span class="math notranslate nohighlight">\(\newcommand{\problems}[1]{\noindent{\color{LightSlateGrey}{\textbf{\textsf{Weekly problems:}}} #1}}\)</span></p>
 <p><span class="math notranslate nohighlight">\(\newcommand{\af}[1]{[A\&amp;F: #1]}\)</span>
 <span class="math notranslate nohighlight">\(\newcommand{\basis}[1]{\hat{\text{e}}_{#1}}\)</span></p>
-<section id="lecture-7-polar-coordinates-and-circular-motion">
-<h1>Lecture 7: Polar coordinates and circular motion<a class="headerlink" href="#lecture-7-polar-coordinates-and-circular-motion" title="Link to this heading">#</a></h1>
+<section class="tex2jax_ignore mathjax_ignore" id="polar-coordinates-and-circular-motion">
+<h1>Polar coordinates and circular motion<a class="headerlink" href="#polar-coordinates-and-circular-motion" title="Link to this heading">#</a></h1>
 <section id="polar-coordinates">
 <h2>Polar coordinates<a class="headerlink" href="#polar-coordinates" title="Link to this heading">#</a></h2>
 <p>When an object moves in a circle in the <span class="math notranslate nohighlight">\(xy\)</span>-plane around the origin <span class="math notranslate nohighlight">\(O\)</span>, the <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> coordinates as a function of time are given by</p>
 <div class="math notranslate nohighlight" id="equation-fnju28">
 <span class="eqno">(34)<a class="headerlink" href="#equation-fnju28" title="Link to this equation">#</a></span>\[ x(t) = a \cos\omega t \qquad\text{and}\qquad y(t) = a \sin\omega t\, ,\]</div>
 <p>where in this case the object lies on the <span class="math notranslate nohighlight">\(x\)</span>-axis at time <span class="math notranslate nohighlight">\(t=0\)</span>, and the radius of the circle is <span class="math notranslate nohighlight">\(a\)</span>. The <em>angular</em> velocity of the particle is <span class="math notranslate nohighlight">\(\omega\)</span>, to which we will return in a moment. The <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> coordinates are components of a two-dimensional vector</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b0cf1a43-42ca-4f9f-8a53-bce89cdee1e5">
-<span class="eqno">(35)<a class="headerlink" href="#equation-b0cf1a43-42ca-4f9f-8a53-bce89cdee1e5" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-282d2ca8-792e-4d40-8323-7a08f83115e2">
+<span class="eqno">(35)<a class="headerlink" href="#equation-282d2ca8-792e-4d40-8323-7a08f83115e2" title="Permalink to this equation">#</a></span>\[\begin{align}
  \r(t) = \begin{pmatrix} x(t) \\ y(t) \end{pmatrix}\, ,
 \end{align}\]</div>
 <p>as we encountered before. While the Cartesian coordinates <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> (and <span class="math notranslate nohighlight">\(z\)</span> in three dimensions) are often very convenient, for circular motion there are other coordinates that are more convenient, namely <em>polar</em> coordinates <span class="math notranslate nohighlight">\(r\)</span> and <span class="math notranslate nohighlight">\(\theta\)</span>. Here <span class="math notranslate nohighlight">\(r\)</span> is the distance to the origin, and <span class="math notranslate nohighlight">\(\theta\)</span> is the angle between the <span class="math notranslate nohighlight">\(x\)</span>-axis and the line from the origin to the object’s position. The reason these polar coordinates are more convenient is that for the circular motion above the distance to the origin stays constant (<span class="math notranslate nohighlight">\(r=a\)</span>), so we should be able to reduce the two-coordinate problem (<span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span>) to a single-coordinate problem (<span class="math notranslate nohighlight">\(\theta\)</span> only).</p>
@@ -484,8 +465,8 @@ document.write(`
 <div class="math notranslate nohighlight" id="equation-mnjfdehiru9w">
 <span class="eqno">(37)<a class="headerlink" href="#equation-mnjfdehiru9w" title="Link to this equation">#</a></span>\[ r = \sqrt{x^2+y^2} \qquad\text{and}\qquad \theta = \arctan\left(\frac{y}{x}\right)\, .\]</div>
 <p>This means that <span class="math notranslate nohighlight">\(r\)</span> runs from zero to infinity (we take the positive square root), and <span class="math notranslate nohighlight">\(\theta\)</span> runs from zero to <span class="math notranslate nohighlight">\(2\pi\)</span> (This is another difference between equation <a class="reference internal" href="#equation-fnju28">(34)</a> and equation <a class="reference internal" href="#equation-nfru489weridgn">(36)</a>: the mapping between coordinate systems has to make sure the plane is covered exactly once by each coordinate system, whereas <span class="math notranslate nohighlight">\(\omega t\)</span> can take values much greater than <span class="math notranslate nohighlight">\(2\pi\)</span> as it describes the trajectory of a particle going around in circles indefinitely.):</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d1c2ee06-7ea4-4a21-bd6f-68358c07abdf">
-<span class="eqno">(38)<a class="headerlink" href="#equation-d1c2ee06-7ea4-4a21-bd6f-68358c07abdf" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-aa78f289-6b0f-417c-bba0-a589aea22f58">
+<span class="eqno">(38)<a class="headerlink" href="#equation-aa78f289-6b0f-417c-bba0-a589aea22f58" title="Permalink to this equation">#</a></span>\[\begin{align}
  r \in [0,\infty) \qquad\text{and}\qquad \theta \in [0,2\pi)\, .
 \end{align}\]</div>
 <p>We can write the motion of the object in equation <a class="reference internal" href="#equation-fnju28">(34)</a> in terms of polar coordinates as</p>
@@ -496,8 +477,8 @@ document.write(`
 <div class="math notranslate nohighlight" id="equation-kmlgjnerhitu2380eiwjof">
 <span class="eqno">(40)<a class="headerlink" href="#equation-kmlgjnerhitu2380eiwjof" title="Link to this equation">#</a></span>\[\begin{split} \r(t) = \begin{pmatrix} a\cos\omega t \\ a \sin\omega t \end{pmatrix} = a\cos\omega t \begin{pmatrix} 1 \\ 0 \end{pmatrix} + a\sin\omega t\begin{pmatrix} 0 \\ 1 \end{pmatrix} = a\cos\omega t\; \basis{x} + a\sin\omega t\; \basis{y}\, ,\end{split}\]</div>
 <p>where we introduced the basis vectors</p>
-<div class="amsmath math notranslate nohighlight" id="equation-0d551312-bf52-4a18-bb0f-5925cd5a9d9b">
-<span class="eqno">(41)<a class="headerlink" href="#equation-0d551312-bf52-4a18-bb0f-5925cd5a9d9b" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-31460f30-2215-4d8d-81ea-8b28196b79b3">
+<span class="eqno">(41)<a class="headerlink" href="#equation-31460f30-2215-4d8d-81ea-8b28196b79b3" title="Permalink to this equation">#</a></span>\[\begin{align}
  \basis{x}= \begin{pmatrix} 1 \\ 0 \end{pmatrix} \qquad\text{and}\qquad \basis{y} = \begin{pmatrix} 0 \\ 1 \end{pmatrix} \, .
 \end{align}\]</div>
 <p>Wherever we are in the <span class="math notranslate nohighlight">\(xy\)</span>-plane, the basis vector <span class="math notranslate nohighlight">\(\basis{x}\)</span> always points in the direction of the positive <span class="math notranslate nohighlight">\(x\)</span>-axis, and the basis vector <span class="math notranslate nohighlight">\(\basis{y}\)</span> always points in the direction of the positive <span class="math notranslate nohighlight">\(y\)</span>-axis. However, the basis vectors <span class="math notranslate nohighlight">\(\basis{r}\)</span> and <span class="math notranslate nohighlight">\(\basis{\theta}\)</span> point in different directions at different locations in the plane. The vector <span class="math notranslate nohighlight">\(\basis{r}\)</span> always points away from the origin, while <span class="math notranslate nohighlight">\(\basis{\theta}\)</span> is orthogonal to <span class="math notranslate nohighlight">\(\basis{r}\)</span> and lies tangential to the circle centred around the origin and intersecting the point <span class="math notranslate nohighlight">\((r,\theta)\)</span>. It points in the counter-clockwise direction.</p>
@@ -518,24 +499,24 @@ document.write(`
 <section id="circular-motion-and-the-cross-product">
 <h2>Circular motion and the Cross Product<a class="headerlink" href="#circular-motion-and-the-cross-product" title="Link to this heading">#</a></h2>
 <p>For uniform rotations in <em>three</em> dimensions, where the angular velocity <span class="math notranslate nohighlight">\(\omega\)</span> is constant, there is another convenient and often-used description of circular motion that involves the <em>cross product</em>. The cross product between two vectors <span class="math notranslate nohighlight">\(\a\)</span> and <span class="math notranslate nohighlight">\(\b\)</span> is written as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-97350406-757e-44c0-9c9f-9af012b27103">
-<span class="eqno">(44)<a class="headerlink" href="#equation-97350406-757e-44c0-9c9f-9af012b27103" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-9b574f6e-0791-47e8-8216-26743e3dce9a">
+<span class="eqno">(44)<a class="headerlink" href="#equation-9b574f6e-0791-47e8-8216-26743e3dce9a" title="Permalink to this equation">#</a></span>\[\begin{align}
  \a\times\b = (a_y b_z - a_z b_y) \basis{x} + (a_z b_x - a_x b_z) \basis{y} + (a_x b_y - a_y b_x) \hat{\z}\, .
 \end{align}\]</div>
 <p>This can be written as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c4c9c46f-5e4b-45dc-8438-37a3e3e50953">
-<span class="eqno">(45)<a class="headerlink" href="#equation-c4c9c46f-5e4b-45dc-8438-37a3e3e50953" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-78599f81-457b-4721-a075-eb4ba867a562">
+<span class="eqno">(45)<a class="headerlink" href="#equation-78599f81-457b-4721-a075-eb4ba867a562" title="Permalink to this equation">#</a></span>\[\begin{align}
  \a\times\b = ab\sin\theta \, \hat{e}_N\, ,
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(\theta\)</span> is the angle between <span class="math notranslate nohighlight">\(\a\)</span> and <span class="math notranslate nohighlight">\(\b\)</span>, and <span class="math notranslate nohighlight">\(\hat{e}_N\)</span> is the vector normal to the plane spanned by <span class="math notranslate nohighlight">\(\a\)</span> and <span class="math notranslate nohighlight">\(\b\)</span>. This plane has an orientation: if the fingers on your right hand point in the direction as you rotate the vector <span class="math notranslate nohighlight">\(\a\)</span> to vector <span class="math notranslate nohighlight">\(\b\)</span>, your thumb will point in the direction of <span class="math notranslate nohighlight">\(\hat{e}_N\)</span>.</p>
 <p>Define the angular velocity <span class="math notranslate nohighlight">\(\omega\)</span> as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5a440c3b-de2e-493f-8a41-60328409a610">
-<span class="eqno">(46)<a class="headerlink" href="#equation-5a440c3b-de2e-493f-8a41-60328409a610" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-15464d62-9f07-4435-ad9d-fc84bc3be8dd">
+<span class="eqno">(46)<a class="headerlink" href="#equation-15464d62-9f07-4435-ad9d-fc84bc3be8dd" title="Permalink to this equation">#</a></span>\[\begin{align}
  \omega = \frac{\d \theta}{\d t}\, ,
 \end{align}\]</div>
 <p>as before. The speed along a circle with radius <span class="math notranslate nohighlight">\(R\)</span> is then</p>
-<div class="amsmath math notranslate nohighlight" id="equation-6df7b5a7-fc92-4cfc-84aa-19d61fcf3e28">
-<span class="eqno">(47)<a class="headerlink" href="#equation-6df7b5a7-fc92-4cfc-84aa-19d61fcf3e28" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-a8a106c6-fcf3-4d19-8b77-ea778e8a9b2d">
+<span class="eqno">(47)<a class="headerlink" href="#equation-a8a106c6-fcf3-4d19-8b77-ea778e8a9b2d" title="Permalink to this equation">#</a></span>\[\begin{align}
  v = \omega R\, .
 \end{align}\]</div>
 <p>However, in three dimensions not all possible points lie in the <span class="math notranslate nohighlight">\(xy\)</span>-plane, and we want a relation between <span class="math notranslate nohighlight">\(\v\)</span>, <span class="math notranslate nohighlight">\(\r\)</span>, and <span class="math notranslate nohighlight">\(\omega\)</span>. To this end we orient <span class="math notranslate nohighlight">\(\omega\)</span> along the <span class="math notranslate nohighlight">\(z\)</span>-axis, so we can write <span class="math notranslate nohighlight">\(\vec{\omega} = \omega \hat{\z}\)</span>, and we pick a point <span class="math notranslate nohighlight">\(A\)</span> along a circle with radius <span class="math notranslate nohighlight">\(R\)</span> above the <span class="math notranslate nohighlight">\(xy\)</span>-plane. The position vector pointing to <span class="math notranslate nohighlight">\(A\)</span> is <span class="math notranslate nohighlight">\(\r\)</span>. This is shown in Fig. 11.</p>
@@ -546,23 +527,23 @@ document.write(`
 </figcaption>
 </figure>
 <p>From the figure, <span class="math notranslate nohighlight">\(R = r\sin\gamma\)</span>, with <span class="math notranslate nohighlight">\(\gamma\)</span> the angle between the vector <span class="math notranslate nohighlight">\(\hat{\z}\)</span> and <span class="math notranslate nohighlight">\(\r\)</span>. Hence, the linear speed around the circle is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b74fea75-60a6-4486-b9a4-24452e5ffdc0">
-<span class="eqno">(48)<a class="headerlink" href="#equation-b74fea75-60a6-4486-b9a4-24452e5ffdc0" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-2c3bea3e-6883-48e3-84af-ea49cc522565">
+<span class="eqno">(48)<a class="headerlink" href="#equation-2c3bea3e-6883-48e3-84af-ea49cc522565" title="Permalink to this equation">#</a></span>\[\begin{align}
  v = \omega r \sin\gamma\, .
 \end{align}\]</div>
 <p>However, this can be written as a cross product between <span class="math notranslate nohighlight">\(\vec{\omega}\)</span> and <span class="math notranslate nohighlight">\(\r\)</span>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-2fb37062-73fe-4671-b425-d95c0700a2c4">
-<span class="eqno">(49)<a class="headerlink" href="#equation-2fb37062-73fe-4671-b425-d95c0700a2c4" title="Permalink to this equation">#</a></span>\[\begin{align}%\label{eq:njbgtuehoi4wrnd}
+<div class="amsmath math notranslate nohighlight" id="equation-584fb5c4-47a4-490a-8043-7755154d798d">
+<span class="eqno">(49)<a class="headerlink" href="#equation-584fb5c4-47a4-490a-8043-7755154d798d" title="Permalink to this equation">#</a></span>\[\begin{align}%\label{eq:njbgtuehoi4wrnd}
  \v = \vec{\omega}\times\r\, .
 \end{align}\]</div>
 <p>This is true only for circular motion with constant <span class="math notranslate nohighlight">\(r\)</span> and <span class="math notranslate nohighlight">\(\gamma\)</span>. While this is neat and compact, it is not so clear yet why this is a nice form. However, it allows us to treat the time derivative <span class="math notranslate nohighlight">\(\d/\d t\)</span> in the case of constant circular motion as the cross product with the angular velocity: <span class="math notranslate nohighlight">\(\vec{\omega}\times\cdot\)</span>. We can find the acceleration from the time derivative of <span class="math notranslate nohighlight">\(\v\)</span>, and therefore for circular motion with constant <span class="math notranslate nohighlight">\(\omega\)</span> we obtain</p>
-<div class="amsmath math notranslate nohighlight" id="equation-2e5351db-ed3b-46e8-9e56-67e09efaec58">
-<span class="eqno">(50)<a class="headerlink" href="#equation-2e5351db-ed3b-46e8-9e56-67e09efaec58" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-eb2cc339-5449-4af8-a781-e7bb88eaeb29">
+<span class="eqno">(50)<a class="headerlink" href="#equation-eb2cc339-5449-4af8-a781-e7bb88eaeb29" title="Permalink to this equation">#</a></span>\[\begin{align}
  \a = \frac{\d\v}{\d t} = \frac{\d}{\d t} \vec{\omega}\times\r = \vec{\omega}\times \frac{\d\r}{\d t} = \vec{\omega}\times\v\, .
 \end{align}\]</div>
 <p>In its most useful form, we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e2ac0422-dd07-4123-861b-1f4c497e0925">
-<span class="eqno">(51)<a class="headerlink" href="#equation-e2ac0422-dd07-4123-861b-1f4c497e0925" title="Permalink to this equation">#</a></span>\[\begin{align}%\label{eq:nfvjrowu32wireh}
+<div class="amsmath math notranslate nohighlight" id="equation-6e1fab6b-bc65-4b73-b453-1b34f4255918">
+<span class="eqno">(51)<a class="headerlink" href="#equation-6e1fab6b-bc65-4b73-b453-1b34f4255918" title="Permalink to this equation">#</a></span>\[\begin{align}%\label{eq:nfvjrowu32wireh}
  \a = \vec{\omega}\times(\vec{\omega}\times\r)\, .
 \end{align}\]</div>
 <figure class="align-default" id="fig-tryuyujythrt">
@@ -572,9 +553,8 @@ document.write(`
 </figcaption>
 </figure>
 </section>
-</section>
 <section id="torque-described-as-a-vector">
-<h1>Torque described as a vector<a class="headerlink" href="#torque-described-as-a-vector" title="Link to this heading">#</a></h1>
+<h2>Torque described as a vector<a class="headerlink" href="#torque-described-as-a-vector" title="Link to this heading">#</a></h2>
 <p>As we have seen, the momentum <span class="math notranslate nohighlight">\(\p\)</span> of a body with mass <span class="math notranslate nohighlight">\(m\)</span> is the amount of <em>linear</em> motion of the body. To change this amount of linear motion, we need to apply a force <span class="math notranslate nohighlight">\(\F = \d\p/\d t\)</span>. The situation changes somewhat when we consider <em>rotational</em> motion. We cannot merely apply a force to set a body in rotational motion, we need a <em>moment</em>, or <em>torque</em> <span class="math notranslate nohighlight">\(\bm{\tau}\)</span>. You are already familiar with torque: a lever or see-saw has two forces (e.g., gravity at the end of the see-saw and the normal force at the fulcrum), in opposite direction and with a distance <span class="math notranslate nohighlight">\(d\)</span> apart. You have been writing this as <span class="math notranslate nohighlight">\(\tau = Fd\)</span>. Now we will give this expression its proper vector form<a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>.</p>
 <figure class="align-default" id="id3">
 <a class="reference internal image-reference" href="_images/fulcrum.png"><img alt="_images/fulcrum.png" src="_images/fulcrum.png" style="width: 250px;" /></a>
@@ -592,11 +572,11 @@ document.write(`
 Let’s return to the example of the ladder leaning against a wall, as introduced in section 4. You were asked to draw the forces on the ladder. Referring back to the forces you drew, identify <em>two</em> torques on the ladder. Given static friction <span class="math notranslate nohighlight">\(\mu\)</span> with the floor only, calculate (i.e., find an expression for) the shallowest angle of the ladder with the floor for which the ladder is at rest. You will need to define all the relevant quantities (mass, etc.).</p>
 <hr class="docutils" />
 <section id="spherical-and-cylindrical-coordinates">
-<h2>Spherical and cylindrical coordinates<a class="headerlink" href="#spherical-and-cylindrical-coordinates" title="Link to this heading">#</a></h2>
+<h3>Spherical and cylindrical coordinates<a class="headerlink" href="#spherical-and-cylindrical-coordinates" title="Link to this heading">#</a></h3>
 <p>In three dimensions, there are two main sets of coordinates associated with rotational motion: cylindrical and spherical. Their names give you a clue when you want to use what. These coordinate systems will be discussed in detail in the rest of your degree, so here we only give their relation to the Cartesian coordinates.</p>
 <p>Cylindrical coordinates are very much like polar coordinates, but supplemented with a “Cartesian” third dimension, <span class="math notranslate nohighlight">\(z\)</span>. Instead of <span class="math notranslate nohighlight">\(r\)</span> as the distance to the origin, we typically use <span class="math notranslate nohighlight">\(\rho\)</span> and <span class="math notranslate nohighlight">\(\phi\)</span>. Do not confuse <span class="math notranslate nohighlight">\(\rho\)</span> with a density!</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a428e118-641e-4ed8-a912-2cddb1b757c5">
-<span class="eqno">(52)<a class="headerlink" href="#equation-a428e118-641e-4ed8-a912-2cddb1b757c5" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-63a36dd9-9fa4-4bb6-aa7a-67807349f61f">
+<span class="eqno">(52)<a class="headerlink" href="#equation-63a36dd9-9fa4-4bb6-aa7a-67807349f61f" title="Permalink to this equation">#</a></span>\[\begin{align}
  x &amp; = \rho \cos\phi \cr
  y &amp; = \rho \sin\phi \cr
  z &amp; = z\, .
@@ -609,8 +589,8 @@ Let’s return to the example of the ladder leaning against a wall, as introduce
 </figcaption>
 </figure>
 <p>Spherical coordinates are often the coordinates of choice when the potential depends only on <span class="math notranslate nohighlight">\(r\)</span>, the distance to the origin. They are defined by the relations</p>
-<div class="amsmath math notranslate nohighlight" id="equation-dea06a46-89e5-4741-8d6f-d5fc380826d3">
-<span class="eqno">(53)<a class="headerlink" href="#equation-dea06a46-89e5-4741-8d6f-d5fc380826d3" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-450c39b1-e585-4f38-aff3-7407182a7e1c">
+<span class="eqno">(53)<a class="headerlink" href="#equation-450c39b1-e585-4f38-aff3-7407182a7e1c" title="Permalink to this equation">#</a></span>\[\begin{align}
  x &amp; = r \cos\phi\sin\theta \cr
  y &amp; = r \sin\phi\sin\theta \cr
  z &amp; = r\cos\theta\, .
@@ -629,6 +609,7 @@ Let’s return to the example of the ladder leaning against a wall, as introduce
 <p>Not least because in this form <span class="math notranslate nohighlight">\(Fd\)</span> could be mistaken for work.</p>
 </aside>
 </aside>
+</section>
 </section>
 </section>
 
@@ -668,7 +649,7 @@ Let’s return to the example of the ladder leaning against a wall, as introduce
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Lecture 6: Applications</p>
+        <p class="prev-next-title">Applications</p>
       </div>
     </a>
     <a class="right-next"
@@ -676,7 +657,7 @@ Let’s return to the example of the ladder leaning against a wall, as introduce
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Lecture 8: Angular momentum</p>
+        <p class="prev-next-title">Angular momentum</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -696,17 +677,13 @@ Let’s return to the example of the ladder leaning against a wall, as introduce
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Lecture 7: Polar coordinates and circular motion</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#polar-coordinates">Polar coordinates</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#circular-motion-and-the-cross-product">Circular motion and the Cross Product</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#torque-described-as-a-vector">Torque described as a vector</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spherical-and-cylindrical-coordinates">Spherical and cylindrical coordinates</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#torque-described-as-a-vector">Torque described as a vector</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spherical-and-cylindrical-coordinates">Spherical and cylindrical coordinates</a></li>
 </ul>
-</li>
-</ul>
-
   </nav></div>
 
 </div></div>
@@ -720,7 +697,7 @@ Let’s return to the example of the ladder leaning against a wall, as introduce
   <div class="footer-item">
     
 <p class="component-author">
-By PK
+By Pieter Kok
 </p>
 
   </div>
@@ -730,7 +707,7 @@ By PK
 
   <p class="copyright">
     
-      © Copyright 2024.
+      © Copyright 2025.
       <br/>
     
   </p>

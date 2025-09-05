@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Lecture 4: Compound Systems &#8212; Mechanics</title>
+    <title>Compound Systems &#8212; Mechanics</title>
   
   
   
@@ -63,8 +63,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'Lecture4';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Lecture 5: Conservation of energy and momentum" href="Lecture5.html" />
-    <link rel="prev" title="Lecture 3: Vectors" href="Lecture3.html" />
+    <link rel="next" title="Conservation of energy and momentum" href="Lecture5.html" />
+    <link rel="prev" title="Vectors" href="Lecture3.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -172,26 +172,15 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="Mechanics.html">
-                    PHY11006 Mechanics
+                    MPS111 Mechanics
                 </a>
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Lecture1.html">1 Where do forces come from?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lecture2.html">Lecture 2: Newton’s Second Law</a></li>
-
-
-
-
-
-
-
-<li class="toctree-l1"><a class="reference internal" href="Lecture3.html">Lecture 3: Vectors</a></li>
-
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Lecture 4: Compound Systems</a></li>
-
-
-
+<li class="toctree-l1"><a class="reference internal" href="Lecture2.html">2 Newtons second law</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture3.html">3 Vectors</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">4 Motion in 2D and 3D</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lecture5.html">5 Energy and momentum</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lecture6.html">6 Applications I</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lecture7.html">7 Circular motion</a></li>
@@ -384,7 +373,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Lecture 4: Compound Systems</h1>
+    <h1>Compound Systems</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -394,12 +383,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Lecture 4: Compound Systems</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#newton-s-third-law">Newton’s third law</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#momentum">Momentum</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#centre-of-mass">Centre of mass</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#newton-s-third-law">Newton’s third law</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#momentum">Momentum</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#centre-of-mass">Centre of mass</a></li>
 </ul>
-
             </nav>
         </div>
     </div>
@@ -448,8 +435,8 @@ document.write(`
 <span class="math notranslate nohighlight">\(\newcommand{\problems}[1]{\noindent{\color{LightSlateGrey}{\textbf{\textsf{Weekly problems:}}} #1}}\)</span></p>
 <p><span class="math notranslate nohighlight">\(\newcommand{\af}[1]{[A\&amp;F: #1]}\)</span>
 <span class="math notranslate nohighlight">\(\newcommand{\basis}[1]{\hat{\text{e}}_{#1}}\)</span></p>
-<section id="lecture-4-compound-systems">
-<h1>Lecture 4: Compound Systems<a class="headerlink" href="#lecture-4-compound-systems" title="Link to this heading">#</a></h1>
+<section class="tex2jax_ignore mathjax_ignore" id="compound-systems">
+<h1>Compound Systems<a class="headerlink" href="#compound-systems" title="Link to this heading">#</a></h1>
 <p>Now that we have the necessary tools to describe motion in two and three dimensions, we can write Newton’s second law in vector form:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -458,9 +445,8 @@ document.write(`
 <p>The acceleration <span class="math notranslate nohighlight">\(\mathbf{a}\)</span> always points in the same direction as <span class="math notranslate nohighlight">\(\mathbf{F}\)</span>.<br />
 In this lecture we will introduce the forces between multiple bodies and the centre of mass. Then we will introduce the notion of momentum, and re-express Newton’s second law in terms of changes in momentum (Newton’s original formulation).</p>
 <hr class="docutils" />
-</section>
 <section id="newton-s-third-law">
-<h1>Newton’s third law<a class="headerlink" href="#newton-s-third-law" title="Link to this heading">#</a></h1>
+<h2>Newton’s third law<a class="headerlink" href="#newton-s-third-law" title="Link to this heading">#</a></h2>
 <p>In the example of the block on the ramp in the previous section, the two bodies exert a force on each other: the weight of the block is a force <em>on</em> the ramp, while the ramp exerts an equal and opposite force on the block, namely the normal force. This is a consequence of Newton’s third law that forces <em>always</em> appear in pairs that are equal and opposite, but acting on <em>different</em> objects. This last bit is important to remember, and often gets left out of the slogan <em>“for each action there is an equal and opposite reaction”</em>. What would happen if the reaction acts on the same body as the action?</p>
 <p><strong>Example:</strong> Sketch a ladder at rest, leaning against a wall (make it an abstract drawing, consisting of only three lines—use a ruler!). Draw the forces on the ladder, the wall, and the ground. Take care with the points of engagement where the forces act on the three bodies. If the wall is frictionless but the floor is not, what is the shallowest angle at which the ladder can rest?</p>
 <hr class="docutils" />
@@ -484,10 +470,10 @@ Similarly, the acceleration of the Sun <span class="math notranslate nohighlight
 \]</div>
 <p>where <span class="math notranslate nohighlight">\(m_{\odot}\)</span> is the mass of the Sun. Even though the forces are the same in magnitude, the acceleration of the Earth is much larger than that of the Sun due to the great difference in masses <span class="math notranslate nohighlight">\(m_{\rm E}\)</span> and <span class="math notranslate nohighlight">\(m_{\odot}\)</span>.</p>
 <p>Often we want to consider a system of <span class="math notranslate nohighlight">\(N\)</span> masses <span class="math notranslate nohighlight">\(m_1, m_2, \ldots, m_N\)</span>. This can be a galaxy of stars, the solar system, an atomic nucleus with orbiting electrons, or a formation of flying drones, to name a few examples. There may be forces between these objects. If there is a force <span class="math notranslate nohighlight">\(\mathbf{F}_{jk}\)</span> on mass <span class="math notranslate nohighlight">\(m_k\)</span> due to mass <span class="math notranslate nohighlight">\(m_j\)</span>, then there is also a force <span class="math notranslate nohighlight">\(\mathbf{F}_{kj} = -\mathbf{F}_{jk}\)</span> on mass <span class="math notranslate nohighlight">\(m_j\)</span> due to mass <span class="math notranslate nohighlight">\(m_k\)</span>, as required by Newton’s third law.</p>
-<hr class="docutils" />
 </section>
+<hr class="docutils" />
 <section id="momentum">
-<h1>Momentum<a class="headerlink" href="#momentum" title="Link to this heading">#</a></h1>
+<h2>Momentum<a class="headerlink" href="#momentum" title="Link to this heading">#</a></h2>
 <p>At this point we introduce the <em>momentum</em> <span class="math notranslate nohighlight">\(\mathbf{p}\)</span> of a body with mass <span class="math notranslate nohighlight">\(m\)</span> and velocity <span class="math notranslate nohighlight">\(\mathbf{v}\)</span> as</p>
 <div class="math notranslate nohighlight">
 \[
@@ -504,36 +490,36 @@ Similarly, the acceleration of the Sun <span class="math notranslate nohighlight
 <p>The momentum of the rocket at time <span class="math notranslate nohighlight">\(t\)</span> is <span class="math notranslate nohighlight">\(\mathbf{p}(t) = m \mathbf{v}(t)\)</span>, and a short time interval <span class="math notranslate nohighlight">\(dt\)</span> later, the momentum has become</p>
 <div class="math notranslate nohighlight">
 \[
-&gt;\mathbf{p}(t+dt) = (m - dm)(\mathbf{v}+d\mathbf{v}) + dm \, \mathbf{v}' \, ,
-&gt;\]</div>
+\mathbf{p}(t+dt) = (m - dm)(\mathbf{v}+d\mathbf{v}) + dm \, \mathbf{v}' \, ,
+\]</div>
 <p>where <span class="math notranslate nohighlight">\(dm\)</span> is the (positive) mass of hot gas expelled by the rocket.<br />
 The first term on the right-hand side is the new momentum of the rocket, while the second term, <span class="math notranslate nohighlight">\(dm \, \mathbf{v}'\)</span>, is the momentum of the expelled hot gas. Expanding:</p>
 <div class="math notranslate nohighlight">
 \[
-&gt;\mathbf{p}(t+dt) = m\mathbf{v} + m d\mathbf{v} - \mathbf{v} dm + dm \, \mathbf{v}' 
-&gt;= m\mathbf{v} + m d\mathbf{v} + \mathbf{v}_e dm \, ,
-&gt;\]</div>
+\mathbf{p}(t+dt) = m\mathbf{v} + m d\mathbf{v} - \mathbf{v} dm + dm \, \mathbf{v}' 
+= m\mathbf{v} + m d\mathbf{v} + \mathbf{v}_e dm \, ,
+\]</div>
 <p>where we dropped the product of infinitesimals <span class="math notranslate nohighlight">\(dm \, d\mathbf{v}\)</span>.</p>
 <p>The change in momentum is</p>
 <div class="math notranslate nohighlight">
 \[
-&gt;d\mathbf{p} = \mathbf{p}(t+dt) - \mathbf{p}(t) = m d\mathbf{v} + \mathbf{v}_e dm \, .
-&gt;\]</div>
+d\mathbf{p} = \mathbf{p}(t+dt) - \mathbf{p}(t) = m d\mathbf{v} + \mathbf{v}_e dm \, .
+\]</div>
 <p>Hence,</p>
 <div class="math notranslate nohighlight">
 \[
-&gt;\frac{d\mathbf{p}}{dt} = m \frac{d\mathbf{v}}{dt} + \mathbf{v}_e \frac{dm}{dt} \, .
-&gt;\]</div>
+\frac{d\mathbf{p}}{dt} = m \frac{d\mathbf{v}}{dt} + \mathbf{v}_e \frac{dm}{dt} \, .
+\]</div>
 <p>If there is an external force <span class="math notranslate nohighlight">\(\mathbf{F}\)</span> on the rocket, such as Earth’s gravity, then</p>
 <div class="math notranslate nohighlight">
 \[
-&gt;\mathbf{F} = \frac{d\mathbf{p}}{dt} = m \frac{d\mathbf{v}}{dt} + \mathbf{v}_e \frac{dm}{dt} \, .
-&gt;\]</div>
+\mathbf{F} = \frac{d\mathbf{p}}{dt} = m \frac{d\mathbf{v}}{dt} + \mathbf{v}_e \frac{dm}{dt} \, .
+\]</div>
 <p>If the rocket accelerates in free space without external forces, then</p>
 <div class="math notranslate nohighlight">
 \[
-&gt;\mathbf{F} = 0 \quad \longrightarrow \quad m \frac{d\mathbf{v}}{dt} + \mathbf{v}_e \frac{dm}{dt} = 0 \, ,
-&gt;\]</div>
+\mathbf{F} = 0 \quad \longrightarrow \quad m \frac{d\mathbf{v}}{dt} + \mathbf{v}_e \frac{dm}{dt} = 0 \, ,
+\]</div>
 <p>and the momentum imparted on the hot gas balances the momentum gained by the rocket and its remaining fuel.</p>
 <p>Let <span class="math notranslate nohighlight">\(\mathbf{F} = m \mathbf{g}\)</span>, the gravitational force close to the Earth’s surface. Our equation of motion becomes</p>
 <div class="math notranslate nohighlight">
@@ -560,10 +546,10 @@ v = v_0 + v_e \ln \frac{m}{m_0} - g t \, .
 <p>If <span class="math notranslate nohighlight">\(m\)</span> is the final mass and <span class="math notranslate nohighlight">\(t\)</span> is the burn time, then <span class="math notranslate nohighlight">\(v\)</span> is the final speed of the rocket.<br />
 We assumed that <span class="math notranslate nohighlight">\(g\)</span> does not change with altitude and ignored air resistance.</p>
 </div></blockquote>
-<hr class="docutils" />
 </section>
+<hr class="docutils" />
 <section id="centre-of-mass">
-<h1>Centre of mass<a class="headerlink" href="#centre-of-mass" title="Link to this heading">#</a></h1>
+<h2>Centre of mass<a class="headerlink" href="#centre-of-mass" title="Link to this heading">#</a></h2>
 <p>The centre of mass position <span class="math notranslate nohighlight">\(\mathbf{R}\)</span> of <span class="math notranslate nohighlight">\(N\)</span> particles is the mass-weighted average of their positions:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -592,6 +578,7 @@ This means the overall momentum <span class="math notranslate nohighlight">\(\ma
 \mathbf{F}_{\rm ext} = \frac{d\mathbf{P}}{dt} \, .
 \]</div>
 <p>This is Newton’s second law again. It means that we can solve the motion of complex bodies if we consider the position and momentum of the centre of mass. It is also why we can treat planets and stars as point objects.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -630,7 +617,7 @@ This means the overall momentum <span class="math notranslate nohighlight">\(\ma
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Lecture 3: Vectors</p>
+        <p class="prev-next-title">Vectors</p>
       </div>
     </a>
     <a class="right-next"
@@ -638,7 +625,7 @@ This means the overall momentum <span class="math notranslate nohighlight">\(\ma
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Lecture 5: Conservation of energy and momentum</p>
+        <p class="prev-next-title">Conservation of energy and momentum</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -658,12 +645,10 @@ This means the overall momentum <span class="math notranslate nohighlight">\(\ma
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Lecture 4: Compound Systems</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#newton-s-third-law">Newton’s third law</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#momentum">Momentum</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#centre-of-mass">Centre of mass</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#newton-s-third-law">Newton’s third law</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#momentum">Momentum</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#centre-of-mass">Centre of mass</a></li>
 </ul>
-
   </nav></div>
 
 </div></div>
@@ -677,7 +662,7 @@ This means the overall momentum <span class="math notranslate nohighlight">\(\ma
   <div class="footer-item">
     
 <p class="component-author">
-By PK
+By Pieter Kok
 </p>
 
   </div>
@@ -687,7 +672,7 @@ By PK
 
   <p class="copyright">
     
-      © Copyright 2024.
+      © Copyright 2025.
       <br/>
     
   </p>

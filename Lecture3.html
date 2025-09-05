@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Lecture 3: Vectors &#8212; Mechanics</title>
+    <title>Vectors &#8212; Mechanics</title>
   
   
   
@@ -63,8 +63,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'Lecture3';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Lecture 4: Compound Systems" href="Lecture4.html" />
-    <link rel="prev" title="Lecture 2: Newton’s Second Law" href="Lecture2.html" />
+    <link rel="next" title="Compound Systems" href="Lecture4.html" />
+    <link rel="prev" title="Newton’s Second Law" href="Lecture2.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -172,33 +172,18 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="Mechanics.html">
-                    PHY11006 Mechanics
+                    MPS111 Mechanics
                 </a>
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Lecture1.html">1 Where do forces come from?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lecture2.html">Lecture 2: Newton’s Second Law</a></li>
-
-
-
-
-
-
-
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Lecture 3: Vectors</a></li>
-
-<li class="toctree-l1"><a class="reference internal" href="Lecture4.html">Lecture 4: Compound Systems</a></li>
-
-
-
-<li class="toctree-l1"><a class="reference internal" href="Lecture5.html">Lecture 5: Conservation of energy and momentum</a></li>
-
-
-
+<li class="toctree-l1"><a class="reference internal" href="Lecture2.html">2 Newtons second law</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">3 Vectors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture4.html">4 Motion in 2D and 3D</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture5.html">5 Energy and momentum</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lecture6.html">6 Applications I</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lecture7.html">Lecture 7: Polar coordinates and circular motion</a></li>
-
+<li class="toctree-l1"><a class="reference internal" href="Lecture7.html">7 Circular motion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lecture8.html">8 Angular momentum</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lecture9.html">9 Rotating rigid bodies</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lecture10.html">10 Applications II</a></li>
@@ -388,7 +373,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Lecture 3: Vectors</h1>
+    <h1>Vectors</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -398,10 +383,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Lecture 3: Vectors</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#coordinate-systems">Coordinate systems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coordinate-systems">Coordinate systems</a></li>
 </ul>
-
             </nav>
         </div>
     </div>
@@ -450,11 +433,10 @@ document.write(`
 <span class="math notranslate nohighlight">\(\newcommand{\problems}[1]{\noindent{\color{LightSlateGrey}{\textbf{\textsf{Weekly problems:}}} #1}}\)</span></p>
 <p><span class="math notranslate nohighlight">\(\newcommand{\af}[1]{[A\&amp;F: #1]}\)</span>
 <span class="math notranslate nohighlight">\(\newcommand{\basis}[1]{\hat{\text{e}}_{#1}}\)</span></p>
-<section id="lecture-3-vectors">
-<h1>Lecture 3: Vectors<a class="headerlink" href="#lecture-3-vectors" title="Link to this heading">#</a></h1>
-</section>
+<section class="tex2jax_ignore mathjax_ignore" id="vectors">
+<h1>Vectors<a class="headerlink" href="#vectors" title="Link to this heading">#</a></h1>
 <section id="coordinate-systems">
-<h1>Coordinate systems<a class="headerlink" href="#coordinate-systems" title="Link to this heading">#</a></h1>
+<h2>Coordinate systems<a class="headerlink" href="#coordinate-systems" title="Link to this heading">#</a></h2>
 <p>When we want to describe the motion of objects (particles, blocks sliding down ramps, planets orbiting stars, etc.), we must use a coordinate system. The simplest coordinate system is a Cartesian system, where three fictitious axes, <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span>, and <span class="math notranslate nohighlight">\(z\)</span>, cross each other at right angles in a single point called the <em>origin</em> <span class="math notranslate nohighlight">\(O\)</span>:</p>
 <figure class="align-default" id="id3">
 <img alt="_images/coordinate-system.png" src="_images/coordinate-system.png" />
@@ -639,6 +621,7 @@ N = mg \cos\theta \, .
 </aside>
 </aside>
 </section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -676,7 +659,7 @@ N = mg \cos\theta \, .
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Lecture 2: Newton’s Second Law</p>
+        <p class="prev-next-title">Newton’s Second Law</p>
       </div>
     </a>
     <a class="right-next"
@@ -684,7 +667,7 @@ N = mg \cos\theta \, .
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Lecture 4: Compound Systems</p>
+        <p class="prev-next-title">Compound Systems</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -704,10 +687,8 @@ N = mg \cos\theta \, .
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Lecture 3: Vectors</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#coordinate-systems">Coordinate systems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coordinate-systems">Coordinate systems</a></li>
 </ul>
-
   </nav></div>
 
 </div></div>
@@ -721,7 +702,7 @@ N = mg \cos\theta \, .
   <div class="footer-item">
     
 <p class="component-author">
-By PK
+By Pieter Kok
 </p>
 
   </div>
@@ -731,7 +712,7 @@ By PK
 
   <p class="copyright">
     
-      © Copyright 2024.
+      © Copyright 2025.
       <br/>
     
   </p>

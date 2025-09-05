@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Lecture 9: Rotating rigid bodies &#8212; Mechanics</title>
+    <title>Rotating rigid bodies &#8212; Mechanics</title>
   
   
   
@@ -63,8 +63,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'Lecture9';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Lecture 10: Applications of angular momentum" href="Lecture10.html" />
-    <link rel="prev" title="Lecture 8: Angular momentum" href="Lecture8.html" />
+    <link rel="next" title="Applications of angular momentum" href="Lecture10.html" />
+    <link rel="prev" title="Angular momentum" href="Lecture8.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -172,33 +172,18 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="Mechanics.html">
-                    PHY11006 Mechanics
+                    MPS111 Mechanics
                 </a>
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Lecture1.html">1 Where do forces come from?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lecture2.html">Lecture 2: Newton’s Second Law</a></li>
-
-
-
-
-
-
-
-<li class="toctree-l1"><a class="reference internal" href="Lecture3.html">Lecture 3: Vectors</a></li>
-
-<li class="toctree-l1"><a class="reference internal" href="Lecture4.html">Lecture 4: Compound Systems</a></li>
-
-
-
-<li class="toctree-l1"><a class="reference internal" href="Lecture5.html">Lecture 5: Conservation of energy and momentum</a></li>
-
-
-
+<li class="toctree-l1"><a class="reference internal" href="Lecture2.html">2 Newtons second law</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture3.html">3 Vectors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture4.html">4 Motion in 2D and 3D</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture5.html">5 Energy and momentum</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lecture6.html">6 Applications I</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lecture7.html">Lecture 7: Polar coordinates and circular motion</a></li>
-
+<li class="toctree-l1"><a class="reference internal" href="Lecture7.html">7 Circular motion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lecture8.html">8 Angular momentum</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">9 Rotating rigid bodies</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lecture10.html">10 Applications II</a></li>
@@ -388,7 +373,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Lecture 9: Rotating rigid bodies</h1>
+    <h1>Rotating rigid bodies</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -449,38 +434,38 @@ document.write(`
 <span class="math notranslate nohighlight">\(\newcommand{\problems}[1]{\noindent{\color{LightSlateGrey}{\textbf{\textsf{Weekly problems:}}} #1}}\)</span></p>
 <p><span class="math notranslate nohighlight">\(\newcommand{\af}[1]{[A\&amp;F: #1]}\)</span>
 <span class="math notranslate nohighlight">\(\newcommand{\basis}[1]{\hat{\text{e}}_{#1}}\)</span></p>
-<section id="lecture-9-rotating-rigid-bodies">
-<h1>Lecture 9: Rotating rigid bodies<a class="headerlink" href="#lecture-9-rotating-rigid-bodies" title="Link to this heading">#</a></h1>
+<section class="tex2jax_ignore mathjax_ignore" id="rotating-rigid-bodies">
+<h1>Rotating rigid bodies<a class="headerlink" href="#rotating-rigid-bodies" title="Link to this heading">#</a></h1>
 <section id="rigid-bodies-and-the-moment-of-inertia">
 <h2>Rigid bodies and the moment of inertia<a class="headerlink" href="#rigid-bodies-and-the-moment-of-inertia" title="Link to this heading">#</a></h2>
 <p>A rigid body is a body that has some finite extended shape—so not a point particle, but a shape that does not deform under reasonable forces. When we want to describe the motion of such bodies, particularly rotations, their shape becomes important. As an example, consider a uniform solid cylinder with height <span class="math notranslate nohighlight">\(h\)</span>, radius <span class="math notranslate nohighlight">\(R\)</span>, and mass <span class="math notranslate nohighlight">\(M\)</span>. We can set it to rotate with angular velocity <span class="math notranslate nohighlight">\(\omega\)</span> around its symmetry axis, namely the axis through the centre perpendicular to the circular cross section. This requires a torque, and the rotating cylinder has some angular momentum <span class="math notranslate nohighlight">\(L\)</span> relative to the origin at the centre of mass that lies on the rotation axis. The direction of <span class="math notranslate nohighlight">\(L\)</span> is along the rotation axis.</p>
 <p>Next, consider a <em>hollow</em> cylinder with otherwise identical specs: height <span class="math notranslate nohighlight">\(h\)</span>, radius <span class="math notranslate nohighlight">\(R\)</span>, and mass <span class="math notranslate nohighlight">\(M\)</span>. Now all the mass is concentrated in the outside layer. For simplicity we assume that the end caps are also hollow, so the object is a tube or pipe. When we set this object spinning around the same axis with the same angular velocity <span class="math notranslate nohighlight">\(\omega\)</span>, does this object gain the same angular momentum as the solid cylinder? You may already intuit that the answer has to be `no’. The solid cylinder has some of its mass closer to the rotation axis, requiring a smaller <span class="math notranslate nohighlight">\(\r\)</span> in <span class="math notranslate nohighlight">\(\L=\r\times\p\)</span>, and a correspondingly lower tangential velocity <span class="math notranslate nohighlight">\(\v\)</span>. We need to find out how we can calculate this.</p>
 <p>We can think of a rigid body as a collection of small masses put together. Each of these masses <span class="math notranslate nohighlight">\(m_j\)</span> has its own angular momentum</p>
-<div class="amsmath math notranslate nohighlight" id="equation-99e8e988-ae19-4f90-a8a4-30f47377c800">
-<span class="eqno">(73)<a class="headerlink" href="#equation-99e8e988-ae19-4f90-a8a4-30f47377c800" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-dc7922a4-5ae7-4d77-9b07-7eaab1162e52">
+<span class="eqno">(73)<a class="headerlink" href="#equation-dc7922a4-5ae7-4d77-9b07-7eaab1162e52" title="Permalink to this equation">#</a></span>\[\begin{align}
  \L_j = m_j r_j^2 \vec{\omega}\, .
 \end{align}\]</div>
 <p>For simplicity, assume that <span class="math notranslate nohighlight">\( \vec{\omega}\)</span> is pointing in the <span class="math notranslate nohighlight">\(z\)</span>-direction. Then <span class="math notranslate nohighlight">\(L_j = m_j r_j^2 \omega\)</span>. Note that <span class="math notranslate nohighlight">\(\omega\)</span> does not depend on <span class="math notranslate nohighlight">\(j\)</span>; all elements move at the same angular velocity. This is what makes it a rigid body. When we put all the small masses together, the total angular momentum is the sum of all the individual angular momenta:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-87282f6f-5a1c-42d8-adcc-080947dd6f4f">
-<span class="eqno">(74)<a class="headerlink" href="#equation-87282f6f-5a1c-42d8-adcc-080947dd6f4f" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-3c8f2e4b-3e77-41d8-a6b3-91d0eae5b83d">
+<span class="eqno">(74)<a class="headerlink" href="#equation-3c8f2e4b-3e77-41d8-a6b3-91d0eae5b83d" title="Permalink to this equation">#</a></span>\[\begin{align}
  L = \sum_j L_j = \left(\sum_j m_j r_j^2\right) \omega \equiv I\omega\, .
 \end{align}\]</div>
 <p>Here we defined a new quantity, the <em>moment of inertia</em> <span class="math notranslate nohighlight">\(I\)</span> that captures the effect of the shape of the rotating object on the angular momentum.</p>
 <blockquote>
 <div><h4 class="rubric" id="example-1-the-figure-skater">Example 1: <em>The figure skater</em></h4>
 <p>You have likely seen the effect of a spinning ice skater who pulls in her arms to spin faster. We can easily explain this effect using the changing moment of inertia. In its most basic form, the angular momentum of the skater is conserved, since there are no torques acting on her. When she has her arms spread wide, the angular momentum is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-bbba6374-32f7-4e65-b20d-a5472f3bfd89">
-<span class="eqno">(75)<a class="headerlink" href="#equation-bbba6374-32f7-4e65-b20d-a5472f3bfd89" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-363753cb-71cf-46ea-b22d-de6f0d99cefc">
+<span class="eqno">(75)<a class="headerlink" href="#equation-363753cb-71cf-46ea-b22d-de6f0d99cefc" title="Permalink to this equation">#</a></span>\[\begin{align}
   L = I_{\rm wide} \omega_{\rm wide}\, ,
  \end{align}\]</div>
 <p>and when she has her arms tucked in close, her angular momentum is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e8a4736d-b470-4d8b-ac60-5d57723795f8">
-<span class="eqno">(76)<a class="headerlink" href="#equation-e8a4736d-b470-4d8b-ac60-5d57723795f8" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-f2bdba9e-9577-4f67-8bbf-45a269dd1708">
+<span class="eqno">(76)<a class="headerlink" href="#equation-f2bdba9e-9577-4f67-8bbf-45a269dd1708" title="Permalink to this equation">#</a></span>\[\begin{align}
   L = I_{\rm close} \omega_{\rm close}\, .
  \end{align}\]</div>
 <p>Conservation of angular momentum then determines that</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ec310d6b-f20a-4cbb-915a-81f45c193f85">
-<span class="eqno">(77)<a class="headerlink" href="#equation-ec310d6b-f20a-4cbb-915a-81f45c193f85" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-e3d7c61c-3f02-4bdd-9879-b9e12ab411f2">
+<span class="eqno">(77)<a class="headerlink" href="#equation-e3d7c61c-3f02-4bdd-9879-b9e12ab411f2" title="Permalink to this equation">#</a></span>\[\begin{align}
   I_{\rm wide} \omega_{\rm wide} = I_{\rm close} \omega_{\rm close} \qquad\text{or}\qquad \omega_{\rm close} = \frac{I_{\rm wide}}{I_{\rm close}} \omega_{\rm wide}\, .
  \end{align}\]</div>
 <p>When <span class="math notranslate nohighlight">\(I_{\rm wide} &gt; I_{\rm close}\)</span>, the angular velocity <span class="math notranslate nohighlight">\( \omega_{\rm close}\)</span> <em>increases</em>.</p>
@@ -490,26 +475,26 @@ document.write(`
 <section id="calculating-the-moment-of-inertia">
 <h2>Calculating the moment of inertia<a class="headerlink" href="#calculating-the-moment-of-inertia" title="Link to this heading">#</a></h2>
 <p>For a collection of particles with mass <span class="math notranslate nohighlight">\(m_j\)</span> that all rotate around the same axis with angular velocity <span class="math notranslate nohighlight">\(\omega\)</span>, the moment of inertia is immediately calculated by summing the masses times the distance-squared to the rotation axis:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9c2ff472-0668-41d9-a246-c14aaee1a29d">
-<span class="eqno">(78)<a class="headerlink" href="#equation-9c2ff472-0668-41d9-a246-c14aaee1a29d" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-f5b9c241-6f42-4082-a835-282da993bc9d">
+<span class="eqno">(78)<a class="headerlink" href="#equation-f5b9c241-6f42-4082-a835-282da993bc9d" title="Permalink to this equation">#</a></span>\[\begin{align}
  I = \sum_j m_j r_j^2\, .
 \end{align}\]</div>
 <p>Things become a bit more involved when we have a solid body like a disk, cylinder or sphere. Let’s assume that the density of the object at a position <span class="math notranslate nohighlight">\(\r\)</span> is given by <span class="math notranslate nohighlight">\(\rho(\r)\)</span>. Then a `small mass’ can be put in infinitesimal form as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-df058fe7-d833-47a0-bf87-5fd3ae3d6acf">
-<span class="eqno">(79)<a class="headerlink" href="#equation-df058fe7-d833-47a0-bf87-5fd3ae3d6acf" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-bf0898e2-5bf5-4e48-ba22-3ea846cbc4ed">
+<span class="eqno">(79)<a class="headerlink" href="#equation-bf0898e2-5bf5-4e48-ba22-3ea846cbc4ed" title="Permalink to this equation">#</a></span>\[\begin{align}
  \d m (\r) = \rho(\r) \d V\, ,
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(\d V\)</span> is an infinitesimal volume around the position <span class="math notranslate nohighlight">\(\r\)</span>. Summation now becomes integration (the summing of tiny bits!), and we can write for the moment of inertia:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d27bc12c-03c6-465f-b1c2-6133c30a68ae">
-<span class="eqno">(80)<a class="headerlink" href="#equation-d27bc12c-03c6-465f-b1c2-6133c30a68ae" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-b52f0ce6-9dd6-42a9-b7b6-d8069b4a64cd">
+<span class="eqno">(80)<a class="headerlink" href="#equation-b52f0ce6-9dd6-42a9-b7b6-d8069b4a64cd" title="Permalink to this equation">#</a></span>\[\begin{align}
  I = \int r^2\, \d m = \int \rho(\r)\, r^2\, \d V\, .
 \end{align}\]</div>
 <p>Note that we take <span class="math notranslate nohighlight">\(r\)</span> as the distance to the rotation axis, not the actual distance from <span class="math notranslate nohighlight">\(\d m\)</span> to the origin (so cylindrical coordinates would be convenient here), since <span class="math notranslate nohighlight">\(\L = \r\times\p\)</span> means that we need to take only the part of <span class="math notranslate nohighlight">\(\r\)</span> that is perpendicular to <span class="math notranslate nohighlight">\(\L\)</span>. And given that <span class="math notranslate nohighlight">\(\L\)</span> lies along the rotation axis, only the component perpendicular to the rotation axis contributes to <span class="math notranslate nohighlight">\(I\)</span>.</p>
 <blockquote>
 <div><h4 class="rubric" id="example-2-the-moment-of-inertia-for-a-ring">Example 2: <em>The moment of inertia for a ring</em></h4>
 <p>Consider a thin ring of radius <span class="math notranslate nohighlight">\(a\)</span> and uniform mass distribution, rotating around its symmetry axis. Since the mass is concentrated in a one-dimensional circle, we can write <span class="math notranslate nohighlight">\(\rho = M/2\pi a\)</span>. The sum over all masses then becomes the integral around the ring over an angle between 0 and <span class="math notranslate nohighlight">\(2\pi\)</span>, where all radii are equal to <span class="math notranslate nohighlight">\(a\)</span>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d5fa7a26-484c-419d-a59f-90389a5b6d42">
-<span class="eqno">(81)<a class="headerlink" href="#equation-d5fa7a26-484c-419d-a59f-90389a5b6d42" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-d06c980a-0e34-4c11-b3c9-31633a9e2a36">
+<span class="eqno">(81)<a class="headerlink" href="#equation-d06c980a-0e34-4c11-b3c9-31633a9e2a36" title="Permalink to this equation">#</a></span>\[\begin{align}
  I_{\rm ring} = \int_0^{2\pi} \rho a^2\, a\, \d \theta = \int_0^{2\pi} \frac{M a^2}{2\pi}\, \d \theta = Ma^2\, .
 \end{align}\]</div>
 <p>Note that the integral around the ring is equivalent to summing over infinitesimal lengths <span class="math notranslate nohighlight">\(a\d\theta\)</span>. Also, this is the same moment of inertia as for a point mass <span class="math notranslate nohighlight">\(M\)</span> a distance <span class="math notranslate nohighlight">\(a\)</span> from the rotation axis. Therefore, how the mass is distributed around the circle does not seem to matter. Can you prove this mathematically with a general mass distribution <span class="math notranslate nohighlight">\(\rho(\theta)\)</span>?</p>
@@ -517,8 +502,8 @@ document.write(`
 <blockquote>
 <div><h4 class="rubric" id="example-3-the-moment-of-inertia-for-a-disk">Example 3: <em>The moment of inertia for a disk</em></h4>
 <p>We can use the moment of inertia of a ring <span class="math notranslate nohighlight">\(I_{\rm ring} = Ma^2\)</span> to calculate the moment of inertia of a disk rotating around its symmetry axis. Remember that calculating the moment of inertia is like summing lots of small parts. We can think of the disk as a collection of thin rings that we need to sum. Each ring has an area <span class="math notranslate nohighlight">\(2\pi r \d r\)</span>, and the mass in this ring is the area times the mass density per area, <span class="math notranslate nohighlight">\(\sigma = M/\pi a^2\)</span>. Summing these rings together then amounts to the integral</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e645067b-02db-40e5-a7e7-0bc1dc74776d">
-<span class="eqno">(82)<a class="headerlink" href="#equation-e645067b-02db-40e5-a7e7-0bc1dc74776d" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-da895985-3e1e-48a7-be0d-918fdce1d362">
+<span class="eqno">(82)<a class="headerlink" href="#equation-da895985-3e1e-48a7-be0d-918fdce1d362" title="Permalink to this equation">#</a></span>\[\begin{align}
  I_{\rm disk} = \int_0^a r^2 \d m(r) = \int_0^a r^2 \frac{M}{\pi a^2} 2\pi r\, \d r = \frac{2M}{a^2} \int_0^a r^3\, \d r = \frac12 Ma^2\, .
 \end{align}\]</div>
 <p>From this you see that the moment of inertia of a ring is larger than the moment of inertia of a disk, if both have the same mass.</p>
@@ -526,13 +511,13 @@ document.write(`
 <blockquote>
 <div><h4 class="rubric" id="example-4-circling-bodies">Example 4: <em>Circling bodies</em></h4>
 <p>Consider two masses, a distance <span class="math notranslate nohighlight">\(d\)</span> apart, rotating around their centre of mass in circular orbits. This could for example be a planet of mass <span class="math notranslate nohighlight">\(m\)</span> orbiting a star of mass <span class="math notranslate nohighlight">\(M\)</span>, or a binary star system. We make no assumptions about which mass is bigger. The distances of <span class="math notranslate nohighlight">\(m\)</span> and <span class="math notranslate nohighlight">\(M\)</span> to the centre of mass are:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-45e45a16-81a9-4eab-924c-527b373899f6">
-<span class="eqno">(83)<a class="headerlink" href="#equation-45e45a16-81a9-4eab-924c-527b373899f6" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-e4325cc3-f1e7-4d17-8c49-d08653e2af06">
+<span class="eqno">(83)<a class="headerlink" href="#equation-e4325cc3-f1e7-4d17-8c49-d08653e2af06" title="Permalink to this equation">#</a></span>\[\begin{align}
   r_m = \frac{Md}{m+M} \qquad\text{and}\qquad r_M = \frac{md}{m+M} \, .
  \end{align}\]</div>
 <p>We consider only the magnitudes of <span class="math notranslate nohighlight">\(\r_m\)</span> and <span class="math notranslate nohighlight">\(\r_M\)</span> here. The moment of inertia for this system is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5da39136-a576-470b-be85-7ec0ebe29daf">
-<span class="eqno">(84)<a class="headerlink" href="#equation-5da39136-a576-470b-be85-7ec0ebe29daf" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-2c12c190-d699-4406-838e-034b54221be2">
+<span class="eqno">(84)<a class="headerlink" href="#equation-2c12c190-d699-4406-838e-034b54221be2" title="Permalink to this equation">#</a></span>\[\begin{align}
   I = m r_m^2 + M r_M^2 = \frac{m M^2 d^2}{(m+M)^2} + \frac{M m^2 d^2}{(m+M)^2} = \frac{mM d^2}{m+M} \equiv \mu d^2\, ,
  \end{align}\]</div>
 <p>where we again encountered the reduced mass <span class="math notranslate nohighlight">\(\mu\)</span> for two masses. It is like a single mass <span class="math notranslate nohighlight">\(\mu\)</span> rotating around a circle with radius <span class="math notranslate nohighlight">\(d\)</span>.</p>
@@ -576,7 +561,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Lecture 8: Angular momentum</p>
+        <p class="prev-next-title">Angular momentum</p>
       </div>
     </a>
     <a class="right-next"
@@ -584,7 +569,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Lecture 10: Applications of angular momentum</p>
+        <p class="prev-next-title">Applications of angular momentum</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -620,7 +605,7 @@ document.write(`
   <div class="footer-item">
     
 <p class="component-author">
-By PK
+By Pieter Kok
 </p>
 
   </div>
@@ -630,7 +615,7 @@ By PK
 
   <p class="copyright">
     
-      © Copyright 2024.
+      © Copyright 2025.
       <br/>
     
   </p>

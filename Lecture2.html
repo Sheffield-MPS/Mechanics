@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Lecture 2: Newton’s Second Law &#8212; Mechanics</title>
+    <title>Newton’s Second Law &#8212; Mechanics</title>
   
   
   
@@ -63,8 +63,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'Lecture2';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Lecture 3: Vectors" href="Lecture3.html" />
-    <link rel="prev" title="Lecture 1: Where do forces come from?" href="Lecture1.html" />
+    <link rel="next" title="Vectors" href="Lecture3.html" />
+    <link rel="prev" title="Where do forces come from?" href="Lecture1.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -172,33 +172,18 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="Mechanics.html">
-                    PHY11006 Mechanics
+                    MPS111 Mechanics
                 </a>
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Lecture1.html">1 Where do forces come from?</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Lecture 2: Newton’s Second Law</a></li>
-
-
-
-
-
-
-
-<li class="toctree-l1"><a class="reference internal" href="Lecture3.html">Lecture 3: Vectors</a></li>
-
-<li class="toctree-l1"><a class="reference internal" href="Lecture4.html">Lecture 4: Compound Systems</a></li>
-
-
-
-<li class="toctree-l1"><a class="reference internal" href="Lecture5.html">Lecture 5: Conservation of energy and momentum</a></li>
-
-
-
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">2 Newtons second law</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture3.html">3 Vectors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture4.html">4 Motion in 2D and 3D</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture5.html">5 Energy and momentum</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lecture6.html">6 Applications I</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lecture7.html">Lecture 7: Polar coordinates and circular motion</a></li>
-
+<li class="toctree-l1"><a class="reference internal" href="Lecture7.html">7 Circular motion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lecture8.html">8 Angular momentum</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lecture9.html">9 Rotating rigid bodies</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lecture10.html">10 Applications II</a></li>
@@ -388,7 +373,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Lecture 2: Newton’s Second Law</h1>
+    <h1>Newton’s Second Law</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -398,19 +383,17 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Lecture 2: Newton’s Second Law</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#position-velocity-and-acceleration-as-functions-of-time">Position, velocity and acceleration as functions of time</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#worked-example-position-and-acceleration-from-velocity">Worked Example: Position and acceleration from velocity</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#equation-of-motion-for-problems-in-one-dimension">Equation of motion for problems in one dimension</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#type-of-motion-1-inertial-motion">Type of motion 1: Inertial motion</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#type-of-motion-2-uniformly-accelerated-motion">Type of motion 2: Uniformly accelerated motion</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#position-velocity-and-acceleration-as-functions-of-time">Position, velocity and acceleration as functions of time</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#worked-example-position-and-acceleration-from-velocity">Worked Example: Position and acceleration from velocity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equation-of-motion-for-problems-in-one-dimension">Equation of motion for problems in one dimension</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#type-of-motion-1-inertial-motion">Type of motion 1: Inertial motion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#type-of-motion-2-uniformly-accelerated-motion">Type of motion 2: Uniformly accelerated motion</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#type-of-motion-3-simple-harmonic-motion">Type of motion 3: Simple harmonic motion</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#type-of-motion-4-motion-from-a-central-force">Type of motion 4: Motion from a central force</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#type-of-motion-3-simple-harmonic-motion">Type of motion 3: Simple harmonic motion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#type-of-motion-4-motion-from-a-central-force">Type of motion 4: Motion from a central force</a></li>
 </ul>
-
             </nav>
         </div>
     </div>
@@ -459,12 +442,11 @@ document.write(`
 <span class="math notranslate nohighlight">\(\newcommand{\problems}[1]{\noindent{\color{LightSlateGrey}{\textbf{\textsf{Weekly problems:}}} #1}}\)</span></p>
 <p><span class="math notranslate nohighlight">\(\newcommand{\af}[1]{[A\&amp;F: #1]}\)</span>
 <span class="math notranslate nohighlight">\(\newcommand{\basis}[1]{\hat{\text{\small{e}}}_{#1}}\)</span></p>
-<section id="lecture-2-newton-s-second-law">
-<h1>Lecture 2: Newton’s Second Law<a class="headerlink" href="#lecture-2-newton-s-second-law" title="Link to this heading">#</a></h1>
+<section class="tex2jax_ignore mathjax_ignore" id="newton-s-second-law">
+<h1>Newton’s Second Law<a class="headerlink" href="#newton-s-second-law" title="Link to this heading">#</a></h1>
 <p>Newton’s second law says that <span class="math notranslate nohighlight">\(F=ma\)</span>: the force <span class="math notranslate nohighlight">\(F\)</span> on a body with mass <span class="math notranslate nohighlight">\(m\)</span> causes an acceleration <span class="math notranslate nohighlight">\(a\)</span> of that body. We will explore how this law allows us to describe a range of different types of motion, but in order to do that systematically, we have to introduce the mathematical notions of position, velocity, and acceleration. Afterwards, we will link this force to the forces we discussed in the first lecture.</p>
-</section>
 <section id="position-velocity-and-acceleration-as-functions-of-time">
-<h1>Position, velocity and acceleration as functions of time<a class="headerlink" href="#position-velocity-and-acceleration-as-functions-of-time" title="Link to this heading">#</a></h1>
+<h2>Position, velocity and acceleration as functions of time<a class="headerlink" href="#position-velocity-and-acceleration-as-functions-of-time" title="Link to this heading">#</a></h2>
 <p>The position of a particle can change over time, and therefore we have to define the position as a <em>function</em> of time. We label the position function <span class="math notranslate nohighlight">\(x(t)\)</span>. Since we have only one function <span class="math notranslate nohighlight">\(x(t)\)</span>, this describes the position of the particle along a line, i.e., it is a one-dimensional description. This may or may not be enough for the problem you want to describe. We will return to this in the next lecture.</p>
 <p>The velocity of a particle (in one dimension) can be thought of as “how fast the position changes”. Hence, the velocity <span class="math notranslate nohighlight">\(v\)</span> is the rate of change over time of the position. Mathematically, it is the <em>time derivative</em> of the position:</p>
 <div class="math notranslate nohighlight">
@@ -509,7 +491,7 @@ v(t) = v (t_0) + \int_{t_0}^t a(t') \, d t'\, .
 -->
 </section>
 <section id="worked-example-position-and-acceleration-from-velocity">
-<h1>Worked Example: Position and acceleration from velocity<a class="headerlink" href="#worked-example-position-and-acceleration-from-velocity" title="Link to this heading">#</a></h1>
+<h2>Worked Example: Position and acceleration from velocity<a class="headerlink" href="#worked-example-position-and-acceleration-from-velocity" title="Link to this heading">#</a></h2>
 <p>Imagine a particle moves with velocity</p>
 <div class="math notranslate nohighlight">
 \[
@@ -541,20 +523,20 @@ a(t) &amp;= -6.5 \sin(1.3 t) = -25\,\text{m/s}^2
 \end{split}\]</div>
 <p>Note how the integration constant tells us where the particle starts at <span class="math notranslate nohighlight">\(t=0\)</span>.</p>
 <p>We will often stop shy of substituting actual numbers into our equations. In some sense the problem is “solved” when we have the equations of motion. To find any specific value, for example for comparison with an experiment, we can just substitute the given values into the equation of motion. You have already been well-trained in this aspect.</p>
-<hr class="docutils" />
 </section>
+<hr class="docutils" />
 <section id="equation-of-motion-for-problems-in-one-dimension">
-<h1>Equation of motion for problems in one dimension<a class="headerlink" href="#equation-of-motion-for-problems-in-one-dimension" title="Link to this heading">#</a></h1>
+<h2>Equation of motion for problems in one dimension<a class="headerlink" href="#equation-of-motion-for-problems-in-one-dimension" title="Link to this heading">#</a></h2>
 <p>We can now create the mathematical description of the motion of the particles in the examples from the previous lecture. Newton’s second law tells us that <span class="math notranslate nohighlight">\(F = ma\)</span>, and for conservative forces we established that the force is equal to the space derivative of a potential <span class="math notranslate nohighlight">\(V\)</span>. If we write the acceleration as the second time derivative of position, we have the general relation</p>
 <div class="math notranslate nohighlight">
 \[
 m \frac{d^2 x}{d t^2} = -\frac{d V}{d x}\, .
 \]</div>
 <p>This is a so-called <em>differential equation</em> in <span class="math notranslate nohighlight">\(x\)</span>, since it involves <span class="math notranslate nohighlight">\(x(t)\)</span> and its derivatives. Note that this is a higher-level description of physical processes than you are used to. <strong>You cannot substitute numbers into these differential equations.</strong> Instead, we use these equations to find functions, like the position <span class="math notranslate nohighlight">\(x(t)\)</span>, into which we can substitute our numbers. This higher level of abstraction allows us to cover a large family of problems with a single simple unified mathematical description. The downside is that <span class="math notranslate nohighlight">\(x\)</span> appears both as a function (left-hand side) and a variable (right-hand side), so we need new techniques to solve this equation. If this approach works, i.e., if the numbers we get match our experiments, then we have strong evidence that the conceptual framework of forces and potentials that led to this equation is correct, and we have a coherent theory that explains the natural world in terms of forces and potentials. We will look at a number of examples / applications of this equation in the remainder of this lecture.</p>
-<hr class="docutils" />
 </section>
+<hr class="docutils" />
 <section id="type-of-motion-1-inertial-motion">
-<h1>Type of motion 1: Inertial motion<a class="headerlink" href="#type-of-motion-1-inertial-motion" title="Link to this heading">#</a></h1>
+<h2>Type of motion 1: Inertial motion<a class="headerlink" href="#type-of-motion-1-inertial-motion" title="Link to this heading">#</a></h2>
 <p>Let’s start with the simplest case, when there is no force acting on the particle: <span class="math notranslate nohighlight">\(F=0\)</span>. Using Newton’s second law, we find that <span class="math notranslate nohighlight">\(F = ma = 0\)</span>, which means that the acceleration <span class="math notranslate nohighlight">\(a\)</span> is equal to zero (we are not considering massless particles in this course). Qualitatively, you know what it means for a particle to have zero acceleration: it has a constant velocity. However, in preparation for the more involved examples, we will see how we treat this mathematically. In order to find the velocity of a particle, we have to integrate the acceleration over time. From the earlier integral form we find:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -573,10 +555,10 @@ x(t) = x_0 + v_0 t\, .
 \]</div>
 <p>This is called <em>inertial motion</em>: in the absence of forces, a particle will move with a constant velocity. You recognise this as Newton’s first law of motion: “a uniformly moving body continues to move uniformly unless acted on by a force”.</p>
 <p>By integrating the acceleration twice we have <em>solved</em> the differential equation of motion for <span class="math notranslate nohighlight">\(V\)</span> equal to a constant (which leads to a zero force). Let’s solve the differential equation for a constant force next.</p>
-<hr class="docutils" />
 </section>
+<hr class="docutils" />
 <section id="type-of-motion-2-uniformly-accelerated-motion">
-<h1>Type of motion 2: Uniformly accelerated motion<a class="headerlink" href="#type-of-motion-2-uniformly-accelerated-motion" title="Link to this heading">#</a></h1>
+<h2>Type of motion 2: Uniformly accelerated motion<a class="headerlink" href="#type-of-motion-2-uniformly-accelerated-motion" title="Link to this heading">#</a></h2>
 <p>As soon as a force acts on our particle, it no longer moves uniformly, that is, with constant velocity. Let’s consider the next simplest case, where a constant force is acting on our particle: <span class="math notranslate nohighlight">\(F = k\)</span>, where <span class="math notranslate nohighlight">\(k\)</span> is a constant<a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>. Again, we use Newton’s second law to write <span class="math notranslate nohighlight">\(F = ma = k\)</span> and integrate twice to find the velocity and the position of the particle:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -604,7 +586,7 @@ v(t) = v_0 + a_0 t\, .
 \]</div>
 <p>Hence, the familiar equations for uniformly accelerated motion follow directly from Newton’s second law and a constant force. …</p>
 <section id="example-1">
-<h2>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h2>
+<h3>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h3>
 <p>We want to find the position as a function of time of an object with mass <span class="math notranslate nohighlight">\(m\)</span> sliding along a ramp without friction. The potential energy of the object along the ramp is <span class="math notranslate nohighlight">\(V=mgy\)</span>, with <span class="math notranslate nohighlight">\(g\)</span> the gravitational acceleration and <span class="math notranslate nohighlight">\(y\)</span> the vertical coordinate. The equation for a ramp sloping down towards the right is <span class="math notranslate nohighlight">\(y = -\tan\alpha\, x + h\)</span>, with <span class="math notranslate nohighlight">\(\alpha\)</span> the slope of the ramp. Since we want the horizontal position <span class="math notranslate nohighlight">\(x(t)\)</span>, we substitute the ramp equation into <span class="math notranslate nohighlight">\(V\)</span> to obtain</p>
 <div class="math notranslate nohighlight">
 \[
@@ -635,11 +617,11 @@ x(t_{\rm bottom}) = \frac{h}{\sin\alpha} = \tfrac12 g\sin\alpha\, t_{\rm bottom}
 t_{\rm bottom} = \sqrt{\frac{2h}{g\sin^2\alpha}}\, .
 \]</div>
 <p>You should check that this expression makes sense for various values of <span class="math notranslate nohighlight">\(\alpha\)</span>, especially <span class="math notranslate nohighlight">\(\alpha=90^\circ\)</span> and <span class="math notranslate nohighlight">\(\alpha=0^\circ\)</span>. Doing this check after every calculation helps you find errors that you may have made.</p>
+</section>
+</section>
 <hr class="docutils" />
-</section>
-</section>
 <section id="type-of-motion-3-simple-harmonic-motion">
-<h1>Type of motion 3: Simple harmonic motion<a class="headerlink" href="#type-of-motion-3-simple-harmonic-motion" title="Link to this heading">#</a></h1>
+<h2>Type of motion 3: Simple harmonic motion<a class="headerlink" href="#type-of-motion-3-simple-harmonic-motion" title="Link to this heading">#</a></h2>
 <p>Let’s see how this works when we have a quadratic potential <span class="math notranslate nohighlight">\(V=\tfrac12 k x^2\)</span>, for example a block with mass <span class="math notranslate nohighlight">\(m\)</span> on a spring with spring constant <span class="math notranslate nohighlight">\(k\)</span> and displacement from the equilibrium position <span class="math notranslate nohighlight">\(x\)</span>. The force on the block due to the spring is given by</p>
 <div class="math notranslate nohighlight">
 \[
@@ -662,10 +644,10 @@ ma = -kx\, .
 x(t) = A\sin(\omega t) + B \cos(\omega t)\, ,
 \]</div>
 <p>with <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span> constants determined by initial conditions. You will study these equations of motion in detail in the <em>Oscillations and Waves</em> part of this course.</p>
-<hr class="docutils" />
 </section>
+<hr class="docutils" />
 <section id="type-of-motion-4-motion-from-a-central-force">
-<h1>Type of motion 4: Motion from a central force<a class="headerlink" href="#type-of-motion-4-motion-from-a-central-force" title="Link to this heading">#</a></h1>
+<h2>Type of motion 4: Motion from a central force<a class="headerlink" href="#type-of-motion-4-motion-from-a-central-force" title="Link to this heading">#</a></h2>
 <p>As a final example of a potential energy that leads to equations of motion, consider the central potential energy <span class="math notranslate nohighlight">\(V(r) = -k/r\)</span>. One example is a body of mass <span class="math notranslate nohighlight">\(m\)</span> in the gravitational potential of another body of mass <span class="math notranslate nohighlight">\(M\)</span>, where <span class="math notranslate nohighlight">\(k = GMm\)</span> and <span class="math notranslate nohighlight">\(G\)</span> is the gravitational constant. Another example is the electric potential energy between two charges <span class="math notranslate nohighlight">\(q_1\)</span> and <span class="math notranslate nohighlight">\(q_2\)</span>, where <span class="math notranslate nohighlight">\(k= -q_1 q_2/4\pi\epsilon_0\)</span> with <span class="math notranslate nohighlight">\(\epsilon_0\)</span> the electric permittivity. We use the radial coordinate <span class="math notranslate nohighlight">\(r\)</span>. The force is:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -685,6 +667,7 @@ m \frac{d^2 r}{d t^2} = -\frac{k}{r^2}\, .
 <p>You may find it confusing that we are writing a constant force <span class="math notranslate nohighlight">\(F=k\)</span> rather than <span class="math notranslate nohighlight">\(F=ma\)</span>, as it may seem circular. The constant <span class="math notranslate nohighlight">\(k\)</span> comes from the derivative of a linear potential <span class="math notranslate nohighlight">\(V=-kx\)</span>. This <span class="math notranslate nohighlight">\(k\)</span> is not the same as the <span class="math notranslate nohighlight">\(k\)</span> in the spring constant; it’s just a generic constant. The form of the potential tells us what force acts, and Newton’s law then equates it with <span class="math notranslate nohighlight">\(ma\)</span>.</p>
 </aside>
 </aside>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -723,7 +706,7 @@ m \frac{d^2 r}{d t^2} = -\frac{k}{r^2}\, .
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Lecture 1: Where do forces come from?</p>
+        <p class="prev-next-title">Where do forces come from?</p>
       </div>
     </a>
     <a class="right-next"
@@ -731,7 +714,7 @@ m \frac{d^2 r}{d t^2} = -\frac{k}{r^2}\, .
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Lecture 3: Vectors</p>
+        <p class="prev-next-title">Vectors</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -751,19 +734,17 @@ m \frac{d^2 r}{d t^2} = -\frac{k}{r^2}\, .
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Lecture 2: Newton’s Second Law</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#position-velocity-and-acceleration-as-functions-of-time">Position, velocity and acceleration as functions of time</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#worked-example-position-and-acceleration-from-velocity">Worked Example: Position and acceleration from velocity</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#equation-of-motion-for-problems-in-one-dimension">Equation of motion for problems in one dimension</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#type-of-motion-1-inertial-motion">Type of motion 1: Inertial motion</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#type-of-motion-2-uniformly-accelerated-motion">Type of motion 2: Uniformly accelerated motion</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#position-velocity-and-acceleration-as-functions-of-time">Position, velocity and acceleration as functions of time</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#worked-example-position-and-acceleration-from-velocity">Worked Example: Position and acceleration from velocity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equation-of-motion-for-problems-in-one-dimension">Equation of motion for problems in one dimension</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#type-of-motion-1-inertial-motion">Type of motion 1: Inertial motion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#type-of-motion-2-uniformly-accelerated-motion">Type of motion 2: Uniformly accelerated motion</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#type-of-motion-3-simple-harmonic-motion">Type of motion 3: Simple harmonic motion</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#type-of-motion-4-motion-from-a-central-force">Type of motion 4: Motion from a central force</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#type-of-motion-3-simple-harmonic-motion">Type of motion 3: Simple harmonic motion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#type-of-motion-4-motion-from-a-central-force">Type of motion 4: Motion from a central force</a></li>
 </ul>
-
   </nav></div>
 
 </div></div>
@@ -777,7 +758,7 @@ m \frac{d^2 r}{d t^2} = -\frac{k}{r^2}\, .
   <div class="footer-item">
     
 <p class="component-author">
-By PK
+By Pieter Kok
 </p>
 
   </div>
@@ -787,7 +768,7 @@ By PK
 
   <p class="copyright">
     
-      © Copyright 2024.
+      © Copyright 2025.
       <br/>
     
   </p>

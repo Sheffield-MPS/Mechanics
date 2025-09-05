@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Lecture 10: Applications of angular momentum &#8212; Mechanics</title>
+    <title>Applications of angular momentum &#8212; Mechanics</title>
   
   
   
@@ -63,8 +63,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'Lecture10';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Lecture 11: Orbital mechanics" href="Lecture11.html" />
-    <link rel="prev" title="Lecture 9: Rotating rigid bodies" href="Lecture9.html" />
+    <link rel="next" title="Orbital mechanics" href="Lecture11.html" />
+    <link rel="prev" title="Rotating rigid bodies" href="Lecture9.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -172,33 +172,18 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="Mechanics.html">
-                    PHY11006 Mechanics
+                    MPS111 Mechanics
                 </a>
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Lecture1.html">1 Where do forces come from?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lecture2.html">Lecture 2: Newton’s Second Law</a></li>
-
-
-
-
-
-
-
-<li class="toctree-l1"><a class="reference internal" href="Lecture3.html">Lecture 3: Vectors</a></li>
-
-<li class="toctree-l1"><a class="reference internal" href="Lecture4.html">Lecture 4: Compound Systems</a></li>
-
-
-
-<li class="toctree-l1"><a class="reference internal" href="Lecture5.html">Lecture 5: Conservation of energy and momentum</a></li>
-
-
-
+<li class="toctree-l1"><a class="reference internal" href="Lecture2.html">2 Newtons second law</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture3.html">3 Vectors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture4.html">4 Motion in 2D and 3D</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture5.html">5 Energy and momentum</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lecture6.html">6 Applications I</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lecture7.html">Lecture 7: Polar coordinates and circular motion</a></li>
-
+<li class="toctree-l1"><a class="reference internal" href="Lecture7.html">7 Circular motion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lecture8.html">8 Angular momentum</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lecture9.html">9 Rotating rigid bodies</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">10 Applications II</a></li>
@@ -388,7 +373,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Lecture 10: Applications of angular momentum</h1>
+    <h1>Applications of angular momentum</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -449,36 +434,37 @@ document.write(`
 <span class="math notranslate nohighlight">\(\newcommand{\problems}[1]{\noindent{\color{LightSlateGrey}{\textbf{\textsf{Weekly problems:}}} #1}}\)</span></p>
 <p><span class="math notranslate nohighlight">\(\newcommand{\af}[1]{[A\&amp;F: #1]}\)</span>
 <span class="math notranslate nohighlight">\(\newcommand{\basis}[1]{\hat{\text{e}}_{#1}}\)</span></p>
-<section id="lecture-10-applications-of-angular-momentum">
-<h1>Lecture 10: Applications of angular momentum<a class="headerlink" href="#lecture-10-applications-of-angular-momentum" title="Link to this heading">#</a></h1>
+<section class="tex2jax_ignore mathjax_ignore" id="applications-of-angular-momentum">
+<h1>Applications of angular momentum<a class="headerlink" href="#applications-of-angular-momentum" title="Link to this heading">#</a></h1>
+<p>.</p>
 <section id="kinetic-energy-and-rolling-motion">
 <h2>Kinetic energy and rolling motion<a class="headerlink" href="#kinetic-energy-and-rolling-motion" title="Link to this heading">#</a></h2>
 <p>The kinetic energy <span class="math notranslate nohighlight">\(T\)</span> in a rotating rigid body of mass <span class="math notranslate nohighlight">\(M\)</span> and moment of inertia <span class="math notranslate nohighlight">\(I\)</span> can easily be determined by establishing the kinetic energy of its constituent parts:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-68eac681-fb4e-4e03-b87f-5e7e24178fd7">
-<span class="eqno">(85)<a class="headerlink" href="#equation-68eac681-fb4e-4e03-b87f-5e7e24178fd7" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-70dda65a-2a09-4180-92b1-bf9cc252efe6">
+<span class="eqno">(85)<a class="headerlink" href="#equation-70dda65a-2a09-4180-92b1-bf9cc252efe6" title="Permalink to this equation">#</a></span>\[\begin{align}
  T_{\rm rot} = \sum_j \frac12 m_j v_j^2 = \frac12 \left( \sum_j  m_j r_j^2 \right) \omega^2\ = \frac12 I \omega^2\, ,
 \end{align}\]</div>
 <p>where we again used that <span class="math notranslate nohighlight">\(\omega\)</span> is the same for all elements in a rigid body. This kinetic energy is purely due to the rotation around an axis. In addition, we can set the rigid body in linear motion, where the centre of mass has velocity <span class="math notranslate nohighlight">\(\v\)</span>. This leads to a translational kinetic energy</p>
-<div class="amsmath math notranslate nohighlight" id="equation-094cbc8e-d4ab-43d5-b52f-bd82bbf7cc77">
-<span class="eqno">(86)<a class="headerlink" href="#equation-094cbc8e-d4ab-43d5-b52f-bd82bbf7cc77" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-f029753e-27b6-45ff-b1d6-277adab04cfa">
+<span class="eqno">(86)<a class="headerlink" href="#equation-f029753e-27b6-45ff-b1d6-277adab04cfa" title="Permalink to this equation">#</a></span>\[\begin{align}
  T_{\rm trans} = \frac12 M v^2\, .
 \end{align}\]</div>
 <p>The total kinetic energy is the sum of these:</p>
 <div class="math notranslate nohighlight" id="equation-kvgdfjnkhtiuer5hf">
 <span class="eqno">(87)<a class="headerlink" href="#equation-kvgdfjnkhtiuer5hf" title="Link to this equation">#</a></span>\[ T = T_{\rm trans} + T_{\rm rot} = \frac12 M v^2 + \frac12 I\omega^2\, .\]</div>
 <p>This becomes important when we want to analyse rolling motion, for example when a cylinder rolls down a ramp. Previously, we considered frictionless sliding blocks that convert their potential energy entirely into kinetic energy: <span class="math notranslate nohighlight">\(mgh = \frac12 m v^2\)</span>, so the final velocity of the block is <span class="math notranslate nohighlight">\(v = \sqrt{2gh}\)</span>. However, now we can consider the effect of the energy going into the rotational motion of the cylinder. We assume the no-slipping condition, which says that the friction between the ramp and the cylinder is large enough so that the cylinder rolls and does not slide. This gives us a relation between the angular speed of the rotation and the translational speed:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c4bf9abf-9627-4343-adaf-fc58f50b5139">
-<span class="eqno">(88)<a class="headerlink" href="#equation-c4bf9abf-9627-4343-adaf-fc58f50b5139" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-f905de5a-3549-4362-acc2-1bbce8b1f424">
+<span class="eqno">(88)<a class="headerlink" href="#equation-f905de5a-3549-4362-acc2-1bbce8b1f424" title="Permalink to this equation">#</a></span>\[\begin{align}
  v = R\omega\, ,
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(R\)</span> is the radius of the cylinder. Substituting this into equation <a class="reference internal" href="#equation-kvgdfjnkhtiuer5hf">(87)</a> and equating <span class="math notranslate nohighlight">\(T=Mgh\)</span>, we obtain</p>
-<div class="amsmath math notranslate nohighlight" id="equation-bb3ba3a8-4394-4ff3-ae1f-db7fb2374cd2">
-<span class="eqno">(89)<a class="headerlink" href="#equation-bb3ba3a8-4394-4ff3-ae1f-db7fb2374cd2" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-879d6e6b-ef60-4229-b956-4847c1a00493">
+<span class="eqno">(89)<a class="headerlink" href="#equation-879d6e6b-ef60-4229-b956-4847c1a00493" title="Permalink to this equation">#</a></span>\[\begin{align}
  Mgh = \frac12 M v^2 + \frac12 \frac{I}{R^2} v^2 = \frac12 \left(M + \frac{I}{R^2} \right) v^2\, .
 \end{align}\]</div>
 <p>Solving for <span class="math notranslate nohighlight">\(v\)</span>, we find</p>
-<div class="amsmath math notranslate nohighlight" id="equation-0c0c19ca-8219-411d-a299-dd1a0fdb4ce2">
-<span class="eqno">(90)<a class="headerlink" href="#equation-0c0c19ca-8219-411d-a299-dd1a0fdb4ce2" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-a26c7c87-bf02-4c77-b983-890acdb3e705">
+<span class="eqno">(90)<a class="headerlink" href="#equation-a26c7c87-bf02-4c77-b983-890acdb3e705" title="Permalink to this equation">#</a></span>\[\begin{align}
  v = \sqrt{\frac{2Mgh}{M + I/R^2}}\, .
 \end{align}\]</div>
 <p>This is smaller than the sliding block case, and reduces to it when <span class="math notranslate nohighlight">\(I\to0\)</span>. Note that this is true for cylinders with any mass distribution, not just the uniformly solid cylinder and the open tube. We can even consider spherical objects or egg-shaped rigid bodies. As long as it can obey the no-slipping condition this formula holds. For example, you can do rolling experiments with raw and hard-boiled eggs. Would you expect a difference in the final centre of mass velocity?</p>
@@ -527,18 +513,18 @@ document.write(`
 <section id="scattering-problems">
 <h2>Scattering problems<a class="headerlink" href="#scattering-problems" title="Link to this heading">#</a></h2>
 <p>Let’s consider the role of angular momentum in the energy of a planet orbiting a star. The total energy for a planet with mass <span class="math notranslate nohighlight">\(m\)</span> in the gravitational potential of a star with mass <span class="math notranslate nohighlight">\(M\)</span> can be written as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c91d4ae1-6223-481f-81ad-c504be90495c">
-<span class="eqno">(91)<a class="headerlink" href="#equation-c91d4ae1-6223-481f-81ad-c504be90495c" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-a936e900-fa7b-42c2-8e6e-f09a3747f0b3">
+<span class="eqno">(91)<a class="headerlink" href="#equation-a936e900-fa7b-42c2-8e6e-f09a3747f0b3" title="Permalink to this equation">#</a></span>\[\begin{align}
  E = \frac12 m v^2 + V(r)\, .
 \end{align}\]</div>
 <p>We will keep <span class="math notranslate nohighlight">\(V(r)\)</span> for now to keep the notation simple and clear. We will also use polar coordinates, <span class="math notranslate nohighlight">\(r\)</span> and <span class="math notranslate nohighlight">\(\theta\)</span>, in which <span class="math notranslate nohighlight">\(v^2\)</span> becomes</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e7567eed-17d8-4303-a05f-3fe3f52f92c3">
-<span class="eqno">(92)<a class="headerlink" href="#equation-e7567eed-17d8-4303-a05f-3fe3f52f92c3" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-37420b5f-f79d-49d6-b1b8-785238974826">
+<span class="eqno">(92)<a class="headerlink" href="#equation-37420b5f-f79d-49d6-b1b8-785238974826" title="Permalink to this equation">#</a></span>\[\begin{align}
  v^2 = v_r^2 + v_\theta^2 = \left(\frac{\d r}{\d t}\right)^2 + r^2\left(\frac{\d \theta}{\d t}\right)^2 \, .
 \end{align}\]</div>
 <p>From equation <a class="reference internal" href="Lecture8.html#equation-bgt3498yei">(64)</a> we deduce that</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d7fbc556-5088-4f7e-9da7-6c9793a98b89">
-<span class="eqno">(93)<a class="headerlink" href="#equation-d7fbc556-5088-4f7e-9da7-6c9793a98b89" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-a47c06e2-3e7f-470d-8b21-fb83095086f1">
+<span class="eqno">(93)<a class="headerlink" href="#equation-a47c06e2-3e7f-470d-8b21-fb83095086f1" title="Permalink to this equation">#</a></span>\[\begin{align}
  r^2\left(\frac{\d \theta}{\d t}\right)^2 = \frac{L^2}{(mr)^2} \, ,
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(L\)</span> is the angular momentum of the planet. The direction of <span class="math notranslate nohighlight">\(\L\)</span> is perpendicular to the plane of the orbital motion. Substituting <span class="math notranslate nohighlight">\(v^2\)</span> into the kinetic energy of the planet, we obtain</p>
@@ -590,7 +576,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Lecture 9: Rotating rigid bodies</p>
+        <p class="prev-next-title">Rotating rigid bodies</p>
       </div>
     </a>
     <a class="right-next"
@@ -598,7 +584,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Lecture 11: Orbital mechanics</p>
+        <p class="prev-next-title">Orbital mechanics</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -634,7 +620,7 @@ document.write(`
   <div class="footer-item">
     
 <p class="component-author">
-By PK
+By Pieter Kok
 </p>
 
   </div>
@@ -644,7 +630,7 @@ By PK
 
   <p class="copyright">
     
-      © Copyright 2024.
+      © Copyright 2025.
       <br/>
     
   </p>

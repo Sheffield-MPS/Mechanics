@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Lecture 8: Angular momentum &#8212; Mechanics</title>
+    <title>Angular momentum &#8212; Mechanics</title>
   
   
   
@@ -64,7 +64,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Rotating rigid bodies" href="Lecture9.html" />
-    <link rel="prev" title="Lecture 7: Polar coordinates and circular motion" href="Lecture7.html" />
+    <link rel="prev" title="Polar coordinates and circular motion" href="Lecture7.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -172,33 +172,18 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="Mechanics.html">
-                    PHY11006 Mechanics
+                    MPS111 Mechanics
                 </a>
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Lecture1.html">1 Where do forces come from?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lecture2.html">Lecture 2: Newton’s Second Law</a></li>
-
-
-
-
-
-
-
-<li class="toctree-l1"><a class="reference internal" href="Lecture3.html">Lecture 3: Vectors</a></li>
-
-<li class="toctree-l1"><a class="reference internal" href="Lecture4.html">Lecture 4: Compound Systems</a></li>
-
-
-
-<li class="toctree-l1"><a class="reference internal" href="Lecture5.html">Lecture 5: Conservation of energy and momentum</a></li>
-
-
-
+<li class="toctree-l1"><a class="reference internal" href="Lecture2.html">2 Newtons second law</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture3.html">3 Vectors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture4.html">4 Motion in 2D and 3D</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture5.html">5 Energy and momentum</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lecture6.html">6 Applications I</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lecture7.html">Lecture 7: Polar coordinates and circular motion</a></li>
-
+<li class="toctree-l1"><a class="reference internal" href="Lecture7.html">7 Circular motion</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">8 Angular momentum</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lecture9.html">9 Rotating rigid bodies</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lecture10.html">10 Applications II</a></li>
@@ -386,7 +371,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Lecture 8: Angular momentum</h1>
+    <h1>Angular momentum</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -438,42 +423,42 @@ document.write(`
 <span class="math notranslate nohighlight">\(\newcommand{\problems}[1]{\noindent{\color{LightSlateGrey}{\textbf{\textsf{Weekly problems:}}} #1}}\)</span></p>
 <p><span class="math notranslate nohighlight">\(\newcommand{\af}[1]{[A\&amp;F: #1]}\)</span>
 <span class="math notranslate nohighlight">\(\newcommand{\basis}[1]{\hat{\text{e}}_{#1}}\)</span></p>
-<section id="lecture-8-angular-momentum">
-<h1>Lecture 8: Angular momentum<a class="headerlink" href="#lecture-8-angular-momentum" title="Link to this heading">#</a></h1>
+<section class="tex2jax_ignore mathjax_ignore" id="angular-momentum">
+<h1>Angular momentum<a class="headerlink" href="#angular-momentum" title="Link to this heading">#</a></h1>
 <p>Let’s consider again the torque in vector form given in the previous lecture:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-6d623688-bed0-484f-a35f-2ae47e66c91b">
-<span class="eqno">(54)<a class="headerlink" href="#equation-6d623688-bed0-484f-a35f-2ae47e66c91b" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-2aa31a9b-4b89-468b-a96b-ccaee6d854d6">
+<span class="eqno">(54)<a class="headerlink" href="#equation-2aa31a9b-4b89-468b-a96b-ccaee6d854d6" title="Permalink to this equation">#</a></span>\[\begin{align}
  \vec{\tau}  = \r\times \F = \r\times \frac{\d\p}{\d t}\, .
 \end{align}\]</div>
 <p>We can write the time derivative of <span class="math notranslate nohighlight">\(\p\)</span> in terms of the chain rule on the whole cross product <span class="math notranslate nohighlight">\(\r\times\p\)</span> using</p>
-<div class="amsmath math notranslate nohighlight" id="equation-3011142d-397a-42ee-b9a9-107726b1e201">
-<span class="eqno">(55)<a class="headerlink" href="#equation-3011142d-397a-42ee-b9a9-107726b1e201" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-92b304b6-d211-4218-b827-005143dd4aab">
+<span class="eqno">(55)<a class="headerlink" href="#equation-92b304b6-d211-4218-b827-005143dd4aab" title="Permalink to this equation">#</a></span>\[\begin{align}
  \frac{\d}{\d t} (\r\times\p) =  \frac{\d\r}{\d t} \times \p + \r\times \frac{\d\p}{\d t}\, .
 \end{align}\]</div>
 <p>The term <span class="math notranslate nohighlight">\(\dot{\r}\times \p\)</span> is zero because <span class="math notranslate nohighlight">\(\dot{\r}=\v\)</span> and <span class="math notranslate nohighlight">\(\p =m\v\)</span> are parallel, and we can therefore write</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e4375005-a8c1-4e93-868f-b19aa36e3c8d">
-<span class="eqno">(56)<a class="headerlink" href="#equation-e4375005-a8c1-4e93-868f-b19aa36e3c8d" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-643709f0-5506-41a0-a3d8-e793735421d5">
+<span class="eqno">(56)<a class="headerlink" href="#equation-643709f0-5506-41a0-a3d8-e793735421d5" title="Permalink to this equation">#</a></span>\[\begin{align}
  \tau =  \frac{\d }{\d t} (\r\times\p) \equiv \frac{\d \L}{\d t} \qquad\text{with}\qquad \L = \r\times\p\, .
 \end{align}\]</div>
 <p>The quantity <span class="math notranslate nohighlight">\(\L\)</span> is called <em>angular momentum</em>, and it is the rotational equivalent to the linear momentum <span class="math notranslate nohighlight">\(\p\)</span>. The expression <span class="math notranslate nohighlight">\(\vec{\tau} = \dot{\L}\)</span> is the analog of <span class="math notranslate nohighlight">\(\F = \dot{\p}\)</span> for rotational motion.</p>
 <p>Just like the case where an absence of external forces leads to conservation of momentum:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e52398ce-9a67-4b01-a5b1-797b4d23b15a">
-<span class="eqno">(57)<a class="headerlink" href="#equation-e52398ce-9a67-4b01-a5b1-797b4d23b15a" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-9eddc176-2adb-4cb2-9db5-011390eba52a">
+<span class="eqno">(57)<a class="headerlink" href="#equation-9eddc176-2adb-4cb2-9db5-011390eba52a" title="Permalink to this equation">#</a></span>\[\begin{align}
  \F = 0 = \frac{\d\p}{\d t} \qquad\Rightarrow\qquad \p ~\text{is constant in time,}
 \end{align}\]</div>
 <p>so does an absence of torque lead to conservation of angular momentum:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-3f244c28-c058-42c6-9044-4423f6d87a07">
-<span class="eqno">(58)<a class="headerlink" href="#equation-3f244c28-c058-42c6-9044-4423f6d87a07" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-7e6c7c10-8cff-43ca-80f7-709d13923b75">
+<span class="eqno">(58)<a class="headerlink" href="#equation-7e6c7c10-8cff-43ca-80f7-709d13923b75" title="Permalink to this equation">#</a></span>\[\begin{align}
  \vec{\tau} = 0 = \frac{\d\L}{\d t} \qquad\Rightarrow\qquad \L ~\text{is constant in time.}
 \end{align}\]</div>
 <p>One example of this is planetary motion. The only force on a planet orbiting a star is gravity, which always points along the line connecting the planet and the star at every moment in time. Therefore, the cross product <span class="math notranslate nohighlight">\(\r\times\F = \vec{\tau}\)</span> is always zero (<span class="math notranslate nohighlight">\(\F\)</span> is in the direction of <span class="math notranslate nohighlight">\(\r\)</span>). As a consequence, the angular momentum of a planet in orbit around a star is conserved. Specifically the angular momentum at the aphelion is equal to the angular momentum at the perihelion:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-01c94e77-9850-40d8-b892-8d6b587e93e5">
-<span class="eqno">(59)<a class="headerlink" href="#equation-01c94e77-9850-40d8-b892-8d6b587e93e5" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-a78e4168-37e3-4fa3-8ea9-6a31fe322ef9">
+<span class="eqno">(59)<a class="headerlink" href="#equation-a78e4168-37e3-4fa3-8ea9-6a31fe322ef9" title="Permalink to this equation">#</a></span>\[\begin{align}
  \L = \r_{\rm ap} \times \p_{\rm ap} = \r_{\rm peri} \times \p_{\rm peri}\, .
 \end{align}\]</div>
 <p>At both aphelion and perihelion the position and momentum vectors are perpendicular, so we can ignore the <span class="math notranslate nohighlight">\(\sin\theta\)</span> term in the cross product. We then have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ee8e4911-be0e-4bd4-9384-dfd48d1ad153">
-<span class="eqno">(60)<a class="headerlink" href="#equation-ee8e4911-be0e-4bd4-9384-dfd48d1ad153" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-4afea82f-1d07-49d7-8ef8-bb04ece8cdc9">
+<span class="eqno">(60)<a class="headerlink" href="#equation-4afea82f-1d07-49d7-8ef8-bb04ece8cdc9" title="Permalink to this equation">#</a></span>\[\begin{align}
  r_{\rm ap} p_{\rm ap} = r_{\rm peri} p_{\rm peri}\, ,
 \end{align}\]</div>
 <p>where we use the convention that non-bold symbols signify the magnitude.</p>
@@ -484,8 +469,8 @@ document.write(`
 <div class="math notranslate nohighlight" id="equation-vjgerhuoijdf">
 <span class="eqno">(61)<a class="headerlink" href="#equation-vjgerhuoijdf" title="Link to this equation">#</a></span>\[ L = rp = mrv = mr^2\omega\, ,\]</div>
 <p>where we preferred <span class="math notranslate nohighlight">\(\omega\)</span> to <span class="math notranslate nohighlight">\(v\)</span> because the angular velocity is more natural to use here (<span class="math notranslate nohighlight">\(v = r\omega\)</span>). From the cross product we deduce that <span class="math notranslate nohighlight">\(\L\)</span> is in the same direction as <span class="math notranslate nohighlight">\(\vec{\omega}\)</span>, so we can write</p>
-<div class="amsmath math notranslate nohighlight" id="equation-6292145a-6f69-42d8-aed8-f94d16b6d973">
-<span class="eqno">(62)<a class="headerlink" href="#equation-6292145a-6f69-42d8-aed8-f94d16b6d973" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-611b0753-807a-4ba2-a9b2-3df8e6ac92b5">
+<span class="eqno">(62)<a class="headerlink" href="#equation-611b0753-807a-4ba2-a9b2-3df8e6ac92b5" title="Permalink to this equation">#</a></span>\[\begin{align}
  \L = mr^2\vec{\omega}\, .
 \end{align}\]</div>
 <figure class="align-default" id="fig-gru4wojirf">
@@ -495,8 +480,8 @@ document.write(`
 </figcaption>
 </figure>
 <p>Next, consider a more general curved motion, shown in Fig. 16. At any point along the path the velocity <span class="math notranslate nohighlight">\(\v\)</span> will have a radial and a transversal component, <span class="math notranslate nohighlight">\(\v_r\)</span> and <span class="math notranslate nohighlight">\(\v_\theta\)</span>, which sum together to form <span class="math notranslate nohighlight">\(\v = \v_r + \v_\theta\)</span>. The angular momentum can then be written as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-942c4c14-ea77-4342-8723-a0800edca6cb">
-<span class="eqno">(63)<a class="headerlink" href="#equation-942c4c14-ea77-4342-8723-a0800edca6cb" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-d2d84c8f-e910-4309-b8b2-5395f155d1ff">
+<span class="eqno">(63)<a class="headerlink" href="#equation-d2d84c8f-e910-4309-b8b2-5395f155d1ff" title="Permalink to this equation">#</a></span>\[\begin{align}
  \L = \r\times\p = m \r\times \v = m \r\times (\v_r + \v_\theta) =   m \r\times \v_r + m\r\times \v_\theta = m\r\times \v_\theta\, .
 \end{align}\]</div>
 <p>The last equality holds because <span class="math notranslate nohighlight">\(\v_r\)</span> is parallel to <span class="math notranslate nohighlight">\(\r\)</span>, by definition, and the cross product between the two must therefore be zero. Hence <span class="math notranslate nohighlight">\(\L\)</span> always captures only the transversal part of the momentum. Also, since <span class="math notranslate nohighlight">\(v_\theta = r \d\theta/\d t\)</span>, we can write the magnitude in the most general form</p>
@@ -514,21 +499,21 @@ document.write(`
 </figcaption>
 </figure>
 <p>Finally, we consider the important example of the scattering of particles from a central potential, shown in Fig. 17. We assume that the central potential falls off with <span class="math notranslate nohighlight">\(1/r\)</span> (for example the electrostatic potential of a point charge), so that the force is given by <span class="math notranslate nohighlight">\(F = k/r^2\)</span>. We want to know how the scattering angle <span class="math notranslate nohighlight">\(\phi\)</span> depends on the scattering parameter <span class="math notranslate nohighlight">\(b\)</span>, the mass <span class="math notranslate nohighlight">\(m\)</span> of the particle, and its initial velocity <span class="math notranslate nohighlight">\(v_0\)</span>. First, we calculate the angular momentum of the particle. In point <span class="math notranslate nohighlight">\(A\)</span> in Fig. 17, the angular momentum is (see weekly practice problems):</p>
-<div class="amsmath math notranslate nohighlight" id="equation-78e7e4c8-8e74-450a-ac27-caaba8cb067b">
-<span class="eqno">(65)<a class="headerlink" href="#equation-78e7e4c8-8e74-450a-ac27-caaba8cb067b" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-ca26529f-339b-4a40-bd6a-2517714a2005">
+<span class="eqno">(65)<a class="headerlink" href="#equation-ca26529f-339b-4a40-bd6a-2517714a2005" title="Permalink to this equation">#</a></span>\[\begin{align}
  L = m v_0 b\, .
 \end{align}\]</div>
 <p>Then, at some other (arbitrary) point <span class="math notranslate nohighlight">\(M\)</span>, according to equation <a class="reference internal" href="#equation-bgt3498yei">(64)</a> the angular momentum must be equal to</p>
-<div class="amsmath math notranslate nohighlight" id="equation-edf1138a-9fe0-4438-a387-6f467fd5a684">
-<span class="eqno">(66)<a class="headerlink" href="#equation-edf1138a-9fe0-4438-a387-6f467fd5a684" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-53958f3c-1673-4084-bb3e-e31b45658b30">
+<span class="eqno">(66)<a class="headerlink" href="#equation-53958f3c-1673-4084-bb3e-e31b45658b30" title="Permalink to this equation">#</a></span>\[\begin{align}
  L = m r^2 \frac{\d\theta}{\d t}\, .
 \end{align}\]</div>
 <p>Conservation of angular momentum applies, since <span class="math notranslate nohighlight">\(F\)</span> is a central force, so</p>
 <div class="math notranslate nohighlight" id="equation-nbhgueorwijs">
 <span class="eqno">(67)<a class="headerlink" href="#equation-nbhgueorwijs" title="Link to this equation">#</a></span>\[ m r^2 \frac{\d\theta}{\d t} = m v_0 b\, .\]</div>
 <p>Next, we consider the vertical force</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9a9bff53-8f32-49ec-82b3-edc1f4fc6fc2">
-<span class="eqno">(68)<a class="headerlink" href="#equation-9a9bff53-8f32-49ec-82b3-edc1f4fc6fc2" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-2a5be60b-f8ab-44ac-b45c-2a848c6d2093">
+<span class="eqno">(68)<a class="headerlink" href="#equation-2a5be60b-f8ab-44ac-b45c-2a848c6d2093" title="Permalink to this equation">#</a></span>\[\begin{align}
   m \frac{\d v_y}{\d t} = F_y = F\sin\theta = \frac{k\sin\theta}{r^2}\, .
 \end{align}\]</div>
 <p>This allows us to eliminate <span class="math notranslate nohighlight">\(r^2\)</span> from equation <a class="reference internal" href="#equation-nbhgueorwijs">(67)</a>:</p>
@@ -583,7 +568,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Lecture 7: Polar coordinates and circular motion</p>
+        <p class="prev-next-title">Polar coordinates and circular motion</p>
       </div>
     </a>
     <a class="right-next"
@@ -611,7 +596,7 @@ document.write(`
   <div class="footer-item">
     
 <p class="component-author">
-By PK
+By Pieter Kok
 </p>
 
   </div>
@@ -621,7 +606,7 @@ By PK
 
   <p class="copyright">
     
-      © Copyright 2024.
+      © Copyright 2025.
       <br/>
     
   </p>

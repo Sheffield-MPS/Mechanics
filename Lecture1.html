@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Lecture 1: Where do forces come from? &#8212; Mechanics</title>
+    <title>Where do forces come from? &#8212; Mechanics</title>
   
   
   
@@ -63,8 +63,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'Lecture1';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Lecture 2: Newton’s Second Law" href="Lecture2.html" />
-    <link rel="prev" title="PHY11006 Mechanics" href="Mechanics.html" />
+    <link rel="next" title="Newton’s Second Law" href="Lecture2.html" />
+    <link rel="prev" title="MPS111 Mechanics" href="Mechanics.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -172,33 +172,18 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="Mechanics.html">
-                    PHY11006 Mechanics
+                    MPS111 Mechanics
                 </a>
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">1 Where do forces come from?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lecture2.html">Lecture 2: Newton’s Second Law</a></li>
-
-
-
-
-
-
-
-<li class="toctree-l1"><a class="reference internal" href="Lecture3.html">Lecture 3: Vectors</a></li>
-
-<li class="toctree-l1"><a class="reference internal" href="Lecture4.html">Lecture 4: Compound Systems</a></li>
-
-
-
-<li class="toctree-l1"><a class="reference internal" href="Lecture5.html">Lecture 5: Conservation of energy and momentum</a></li>
-
-
-
+<li class="toctree-l1"><a class="reference internal" href="Lecture2.html">2 Newtons second law</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture3.html">3 Vectors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture4.html">4 Motion in 2D and 3D</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture5.html">5 Energy and momentum</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lecture6.html">6 Applications I</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lecture7.html">Lecture 7: Polar coordinates and circular motion</a></li>
-
+<li class="toctree-l1"><a class="reference internal" href="Lecture7.html">7 Circular motion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lecture8.html">8 Angular momentum</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lecture9.html">9 Rotating rigid bodies</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lecture10.html">10 Applications II</a></li>
@@ -388,7 +373,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Lecture 1: Where do forces come from?</h1>
+    <h1>Where do forces come from?</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -451,8 +436,8 @@ document.write(`
 <span class="math notranslate nohighlight">\(\newcommand{\problems}[1]{\noindent{\color{LightSlateGrey}{\textbf{\textsf{Weekly problems:}}} #1}}\)</span></p>
 <p><span class="math notranslate nohighlight">\(\newcommand{\af}[1]{[A\&amp;F: #1]}\)</span>
 <span class="math notranslate nohighlight">\(\newcommand{\basis}[1]{\hat{\text{\small{e}}}_{#1}}\)</span></p>
-<section id="lecture-1-where-do-forces-come-from">
-<h1>Lecture 1: Where do forces come from?<a class="headerlink" href="#lecture-1-where-do-forces-come-from" title="Link to this heading">#</a></h1>
+<section class="tex2jax_ignore mathjax_ignore" id="where-do-forces-come-from">
+<h1>Where do forces come from?<a class="headerlink" href="#where-do-forces-come-from" title="Link to this heading">#</a></h1>
 <p>What is mechanics? It’s not just about projectile motion and pulleys, although there is plenty of that. Mechanics is a way of understanding the behaviour of physical systems. Anything that produces a force can be analysed using mechanics, and that includes gravity, electric and magnetic forces, and even many-body systems like gasses. Only with the development of quantum mechanics did physics truly depart from the framework for understanding Nature that mechanics provided. Relativity, and electric and magnetic fields, can and have all been incorporated into a classical mechanical description.</p>
 <p>Mechanics was first cast in the language of forces by Newton in the 1680s, and that was a radical concept at the time, even mystical to some. It was subsequently developed by many others. Laplace introduced differential equations into mechanics in the 1770s, and Hamilton applied the concept of energy to mechanics in the 1820s, developing the language of mechanics as we use it today. Lagrange and Euler developed the calculus of variations for mechanics in the 1750s, which is used equally often in modern physics as an alternative formulation to Hamilton’s.</p>
 <p>So what is mechanics? It is a mathematical framework describing the motion of physical systems. It relates the positions and velocities of objects to forces and potentials, and tells us how to calculate how systems behave. It would not be a stretch to claim that the entirety of classical physics falls under the umbrella of mechanics, even though areas like optics and electromagnetism do not simply reduce to the positions and velocities of particles. In this course, we will consider a slightly more modest scope of mechanics as a discipline. We will treat only one, or a few objects at a time, excluding many-body physics. We will not talk about fields, but leave that for second semester. Instead, we bring together the mathematical tools that underpin mechanics.</p>
@@ -469,8 +454,8 @@ document.write(`
 <h2>Worked example: Uniform gravitational acceleration<a class="headerlink" href="#worked-example-uniform-gravitational-acceleration" title="Link to this heading">#</a></h2>
 <p>When I drop a ball from a (modest) height <span class="math notranslate nohighlight">\(h\)</span>, it experiences a force that is directed towards the ground, <span class="math notranslate nohighlight">\(F = mg\)</span>, with <span class="math notranslate nohighlight">\(m\)</span> the mass of the ball and <span class="math notranslate nohighlight">\(g=9.81\mss\)</span> the gravitational acceleration. The ball started out at rest, and accelerates towards the ground. What makes the ball `want’ to leave the higher position and move towards the lower position? One answer is that the Earth attracts the ball.</p>
 <p>Another, more fruitful answer is that the ball starts out in a position with high potential energy, and it moves towards a position with low potential energy. The force on the ball is in the direction of decreasing potential energy. When we choose the zero point of the potential energy at ground level, the potential energy at height <span class="math notranslate nohighlight">\(h\)</span> is given by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-dab24fc4-7877-4978-87b2-4fc07fd98a71">
-<span class="eqno">(1)<a class="headerlink" href="#equation-dab24fc4-7877-4978-87b2-4fc07fd98a71" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-678928d4-02e8-4db9-92ef-11e07bb9e530">
+<span class="eqno">(1)<a class="headerlink" href="#equation-678928d4-02e8-4db9-92ef-11e07bb9e530" title="Permalink to this equation">#</a></span>\[\begin{equation}
  V_{\rm gr} = mgh\, .
 \end{equation}\]</div>
 <p>The force <span class="math notranslate nohighlight">\(F=mg\)</span> is in the direction in which the potential energy <em>decreases</em>.</p>
@@ -485,8 +470,8 @@ document.write(`
 <section id="worked-example-hooke-s-law">
 <h2>Worked example: Hooke’s law<a class="headerlink" href="#worked-example-hooke-s-law" title="Link to this heading">#</a></h2>
 <p>Imagine a spring with a block of mass <span class="math notranslate nohighlight">\(m\)</span> attached to the end. We arrange it horizontally, where the block can slide without friction on a surface. This way we can ignore the role of gravity. The other end of the spring is secured to a fixed point. There is an equilibrium position <span class="math notranslate nohighlight">\(x=0\)</span>, where the block is placed such that the spring is neither compressed nor extended. We need to apply a force to move the block, because it will compress or extend the spring. The direction of the compressing/extending force is always <em>away</em> from the equilibrium position <span class="math notranslate nohighlight">\(x=0\)</span>. Similarly, from Newton’s third law, the spring exerts a force on the block that is always <em>towards</em> <span class="math notranslate nohighlight">\(x=0\)</span>. It is called a <em>restoring</em> force, and because it always points towards <span class="math notranslate nohighlight">\(x=0\)</span>, it has a different sign when it is compressing then when it is extending. Moreover, the further the spring is extended, the stronger the restoring force <span class="math notranslate nohighlight">\(F\)</span> on the block:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b1e9ba1e-79d9-4250-9515-a2457e461da2">
-<span class="eqno">(2)<a class="headerlink" href="#equation-b1e9ba1e-79d9-4250-9515-a2457e461da2" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-05a63e14-2901-4ae6-a686-592e05641da5">
+<span class="eqno">(2)<a class="headerlink" href="#equation-05a63e14-2901-4ae6-a686-592e05641da5" title="Permalink to this equation">#</a></span>\[\begin{align}
  F= - k x\, ,
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(k\)</span> is the spring constant. This is of course Hooke’s law. The minus sign is very important. It makes the force on the block a restoring force.</p>
@@ -497,8 +482,8 @@ document.write(`
 </figcaption>
 </figure>
 <p>We can also understand this force as a result of a potential. When we compress or extend the spring by an amount <span class="math notranslate nohighlight">\(x\)</span>, the potential energy of the system is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-09b256c2-0715-4a7b-9c3f-6d5271eeb53b">
-<span class="eqno">(3)<a class="headerlink" href="#equation-09b256c2-0715-4a7b-9c3f-6d5271eeb53b" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-14f04980-7ae7-43fe-b7e0-660f799ebdd2">
+<span class="eqno">(3)<a class="headerlink" href="#equation-14f04980-7ae7-43fe-b7e0-660f799ebdd2" title="Permalink to this equation">#</a></span>\[\begin{align}
  V_{\rm spring} = \frac12 k x^2\, .
 \end{align}\]</div>
 <p>It does not matter whether we compress the spring or extend it, the potential energy will be the same, since <span class="math notranslate nohighlight">\((-x)^2 = x^2\)</span>. The restoring force on the block is in the direction for which the potential decreases, i.e., in the direction of <span class="math notranslate nohighlight">\(x=0\)</span>. So again, the force is given by the <em>change</em> in potential with the distance <span class="math notranslate nohighlight">\(x\)</span>. This is given by a derivative of the potential with respect to <span class="math notranslate nohighlight">\(x\)</span>. Since the force is in the direction of decreasing potential, it has to be the negative derivative:</p>
@@ -517,13 +502,13 @@ document.write(`
 <span class="eqno">(5)<a class="headerlink" href="#equation-njgewhiresjkh" title="Link to this equation">#</a></span>\[ F = -\frac{GmM}{r^2}\, ,\]</div>
 <p>where <span class="math notranslate nohighlight">\(G= 6.67408 \times 10^{-11}~{\rm m}^3\; {\rm kg}^{-1}\; {\rm s}^{-2}\)</span> is Newton’s constant of gravitation. We included a minus sign, because the force of gravity is attractive. The force lies in the direction along the axis that connects the two masses.</p>
 <p>We can also cast this problem in terms of potential energy. The closer that  the mass <span class="math notranslate nohighlight">\(m\)</span> is to mass <span class="math notranslate nohighlight">\(M\)</span>, the lower its potential energy. We define <span class="math notranslate nohighlight">\(V=0\)</span> for the situation where the two masses are infinitely far apart, and we can write the potential as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-6ead001a-8541-40ff-9c45-63dae8cf8e4c">
-<span class="eqno">(6)<a class="headerlink" href="#equation-6ead001a-8541-40ff-9c45-63dae8cf8e4c" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-083af64e-e33d-495d-8eee-1cf87bba19ed">
+<span class="eqno">(6)<a class="headerlink" href="#equation-083af64e-e33d-495d-8eee-1cf87bba19ed" title="Permalink to this equation">#</a></span>\[\begin{align}
  V_{\rm gravity} = -\frac{GmM}{r}\, .
 \end{align}\]</div>
 <p>The direction in which the potential changes is <span class="math notranslate nohighlight">\(r\)</span>. So if we want to find the force, we need to take the derivative in the <span class="math notranslate nohighlight">\(r\)</span> direction:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d6453b5c-d8e3-4046-941f-17e92dbc0115">
-<span class="eqno">(7)<a class="headerlink" href="#equation-d6453b5c-d8e3-4046-941f-17e92dbc0115" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-5ad8b4fc-3147-4ca2-ab28-48f0c5a1a824">
+<span class="eqno">(7)<a class="headerlink" href="#equation-5ad8b4fc-3147-4ca2-ab28-48f0c5a1a824" title="Permalink to this equation">#</a></span>\[\begin{align}
  F(r) = - \frac{\d V_{\rm gravity}}{\d r} = -\frac{GmM}{r^2}\, ,
 \end{align}\]</div>
 <p>which agrees with equation  <a class="reference internal" href="#equation-njgewhiresjkh">(5)</a>. Note that we take the derivative with respect to <span class="math notranslate nohighlight">\(r\)</span>, not <span class="math notranslate nohighlight">\(x\)</span>. In general we will have to be careful about the direction in which the potential has its steepest descent, because that is where the force will be directed. The steepest descent is exactly the direction a ball will roll on a map with uneven elevation (for example rolling down a hill).</p>
@@ -531,18 +516,18 @@ document.write(`
 <section id="worked-example-electrostatic-force-between-two-charges">
 <h2>Worked example: Electrostatic force between two charges<a class="headerlink" href="#worked-example-electrostatic-force-between-two-charges" title="Link to this heading">#</a></h2>
 <p>As a final example of forces between objects, consider two charges, <span class="math notranslate nohighlight">\(q_1\)</span> and <span class="math notranslate nohighlight">\(q_2\)</span> a distance <span class="math notranslate nohighlight">\(d\)</span> apart. The force on charge <span class="math notranslate nohighlight">\(q_1\)</span> due to charge <span class="math notranslate nohighlight">\(q_2\)</span> is given by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-aa3e1321-5b4b-4845-9989-89bb5361a83d">
-<span class="eqno">(8)<a class="headerlink" href="#equation-aa3e1321-5b4b-4845-9989-89bb5361a83d" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-1cbce7e0-aea5-4191-b37c-e2956d09a0e9">
+<span class="eqno">(8)<a class="headerlink" href="#equation-1cbce7e0-aea5-4191-b37c-e2956d09a0e9" title="Permalink to this equation">#</a></span>\[\begin{align}
  F_{\rm electric} = \frac{q_1 q_2}{4\pi\epsilon_0 d^2}\, ,
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(\epsilon_0\)</span> is the permittivity of free space. Even though we wrote a distance <span class="math notranslate nohighlight">\(d\)</span>, this is essentially again an inverse-square law, and it makes sense to use the coordinate <span class="math notranslate nohighlight">\(r\)</span> instead of <span class="math notranslate nohighlight">\(d\)</span>. The force is again directed along the axis connecting the two charges, and to a large degree the connection with the electric potential energy is very similar to that of the two masses in Newton’s law of gravity:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-3c1f87f2-b03e-472b-b5f9-21da3345cb01">
-<span class="eqno">(9)<a class="headerlink" href="#equation-3c1f87f2-b03e-472b-b5f9-21da3345cb01" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-8650fb3e-bab4-4971-8760-abe50af016d7">
+<span class="eqno">(9)<a class="headerlink" href="#equation-8650fb3e-bab4-4971-8760-abe50af016d7" title="Permalink to this equation">#</a></span>\[\begin{align}
  V_{\rm electric} = \frac{q_1 q_2}{4\pi\epsilon_0 r}\, .
 \end{align}\]</div>
 <p>The one notable difference is the lack of the minus sign. In gravity, all the masses are positive numbers, whereas charges can be both positive and negative. This potential says that when two charges have different signs, the overall potential is negative and they attract each other. When the charges have equal sign the potential is positive and the charges repel. You can verify that we obtain the correct electrostatic force when we take the negative derivative with respect to <span class="math notranslate nohighlight">\(r\)</span>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ec40c2ef-9996-4104-8355-bc8d838cf026">
-<span class="eqno">(10)<a class="headerlink" href="#equation-ec40c2ef-9996-4104-8355-bc8d838cf026" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-88b7aec6-9535-4971-a687-369a76930280">
+<span class="eqno">(10)<a class="headerlink" href="#equation-88b7aec6-9535-4971-a687-369a76930280" title="Permalink to this equation">#</a></span>\[\begin{align}
  F(r) = - \frac{\d V_{\rm electric}}{\d r} \, .
 \end{align}\]</div>
 <p>Again, the force is in the direction of the steepest descent.</p>
@@ -592,7 +577,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">PHY11006 Mechanics</p>
+        <p class="prev-next-title">MPS111 Mechanics</p>
       </div>
     </a>
     <a class="right-next"
@@ -600,7 +585,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Lecture 2: Newton’s Second Law</p>
+        <p class="prev-next-title">Newton’s Second Law</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -638,7 +623,7 @@ document.write(`
   <div class="footer-item">
     
 <p class="component-author">
-By PK
+By Pieter Kok
 </p>
 
   </div>
@@ -648,7 +633,7 @@ By PK
 
   <p class="copyright">
     
-      © Copyright 2024.
+      © Copyright 2025.
       <br/>
     
   </p>
