@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Applications &#8212; Mechanics</title>
+    <title>Lecture 6: Applications &#8212; Mechanics</title>
   
   
   
@@ -63,7 +63,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'Lecture6';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Polar coordinates and circular motion" href="Lecture7.html" />
+    <link rel="next" title="Lecture 7: Polar coordinates and circular motion" href="Lecture7.html" />
     <link rel="prev" title="Lecture 5: Conservation of energy and momentum" href="Lecture5.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -178,12 +178,27 @@
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Lecture1.html">1 Where do forces come from?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lecture2.html">2 Newtons second law</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lecture3.html">3 Vectors</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lecture4.html">4 Motion in 2D and 3D</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lecture5.html">5 Energy and momentum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture2.html">Lecture 2: Newton’s Second Law</a></li>
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="Lecture3.html">Lecture 3: Vectors</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="Lecture4.html">Lecture 4: Compound Systems</a></li>
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="Lecture5.html">Lecture 5: Conservation of energy and momentum</a></li>
+
+
+
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">6 Applications I</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lecture7.html">7 Circular motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture7.html">Lecture 7: Polar coordinates and circular motion</a></li>
+
 <li class="toctree-l1"><a class="reference internal" href="Lecture8.html">8 Angular momentum</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lecture9.html">9 Rotating rigid bodies</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lecture10.html">10 Applications II</a></li>
@@ -373,7 +388,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Applications</h1>
+    <h1>Lecture 6: Applications</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -435,51 +450,51 @@ document.write(`
 <span class="math notranslate nohighlight">\(\newcommand{\problems}[1]{\noindent{\color{LightSlateGrey}{\textbf{\textsf{Weekly problems:}}} #1}}\)</span></p>
 <p><span class="math notranslate nohighlight">\(\newcommand{\af}[1]{[A\&amp;F: #1]}\)</span>
 <span class="math notranslate nohighlight">\(\newcommand{\basis}[1]{\hat{\text{e}}_{#1}}\)</span></p>
-<section id="applications">
-<h1>Applications<a class="headerlink" href="#applications" title="Link to this heading">#</a></h1>
+<section id="lecture-6-applications">
+<h1>Lecture 6: Applications<a class="headerlink" href="#lecture-6-applications" title="Link to this heading">#</a></h1>
 <p>In this lecture we will consider a few applications of the basic concepts of mechanics that we have covered so far, and show the broad applicability of the theory.</p>
 <hr class="docutils" />
 <section id="van-der-waals-forces-between-atoms">
 <h2>Van der Waals forces between atoms<a class="headerlink" href="#van-der-waals-forces-between-atoms" title="Link to this heading">#</a></h2>
 <p>The Lennard-Jones potential, shown in Fig. 8, describes the Van der Waals potential energy between two atoms,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a8e14740-c343-458b-94bc-82743d2250dc">
-<span class="eqno">(104)<a class="headerlink" href="#equation-a8e14740-c343-458b-94bc-82743d2250dc" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-d8e63cfe-1281-4709-b470-7591e9ecf1a0">
+<span class="eqno">(11)<a class="headerlink" href="#equation-d8e63cfe-1281-4709-b470-7591e9ecf1a0" title="Permalink to this equation">#</a></span>\[\begin{align}
   V(r) = - \epsilon \left[2\left( \frac{r_{\rm m}}{r}\right)^6 - \left( \frac{r_{\rm m}}{r}\right)^{12} \right]\, ,
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(r\)</span> is the distance between the molecules, and <span class="math notranslate nohighlight">\(-\epsilon\)</span> is the bottom of the potential well at a distance <span class="math notranslate nohighlight">\(r_{\rm m}\)</span>. This is a very complicated potential, but we can solve for the situation when the two atoms are roughly a distance <span class="math notranslate nohighlight">\(r_{\rm m}\)</span> apart. In this case the two atoms are bound together since they are in the potential well.</p>
 <figure class="align-default" id="fig-fvnjhrow">
 <img alt="_images/LJPotential.png" src="_images/LJPotential.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 7 </span><span class="caption-text">The Lennard-Jones potential. Left: the potential with minimum at <span class="math notranslate nohighlight">\(r_{\rm m}\)</span>. Right: the parabolic approximation of the Lennard-Jones potential around <span class="math notranslate nohighlight">\(r_{\rm m}\)</span> that leads to a linear restoring force.</span><a class="headerlink" href="#fig-fvnjhrow" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 6 </span><span class="caption-text">The Lennard-Jones potential. Left: the potential with minimum at <span class="math notranslate nohighlight">\(r_{\rm m}\)</span>. Right: the parabolic approximation of the Lennard-Jones potential around <span class="math notranslate nohighlight">\(r_{\rm m}\)</span> that leads to a linear restoring force.</span><a class="headerlink" href="#fig-fvnjhrow" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>A slight change in distance between them will increase the potential energy, and there will be a force restoring the atoms to a distance <span class="math notranslate nohighlight">\(r_{\rm m}\)</span>. We find the force from</p>
-<div class="amsmath math notranslate nohighlight" id="equation-952ddaf9-51d9-436d-94b1-7c094af85e38">
-<span class="eqno">(105)<a class="headerlink" href="#equation-952ddaf9-51d9-436d-94b1-7c094af85e38" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-4750b477-e68a-4ea7-8442-a5c96892a7e0">
+<span class="eqno">(12)<a class="headerlink" href="#equation-4750b477-e68a-4ea7-8442-a5c96892a7e0" title="Permalink to this equation">#</a></span>\[\begin{align}
  F(r) = -\frac{\d V}{\d r} = -12 \epsilon \left[ \frac{r_{\rm m}^6}{r^7} - \frac{r_{\rm m}^{12}}{r^{13}} \right]\, .
 \end{align}\]</div>
 <p>This is still far too complicated to substitute into Newton’s law, so we will approximate this force with a Taylor series around <span class="math notranslate nohighlight">\(r_{\rm m}\)</span>, where we are interested in the physical behaviour of the atoms:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-99da2fdb-c779-4941-b8bf-8a2d28023d29">
-<span class="eqno">(106)<a class="headerlink" href="#equation-99da2fdb-c779-4941-b8bf-8a2d28023d29" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-3955b7d6-dd52-4cfa-b08b-9ff8fee58e3b">
+<span class="eqno">(13)<a class="headerlink" href="#equation-3955b7d6-dd52-4cfa-b08b-9ff8fee58e3b" title="Permalink to this equation">#</a></span>\[\begin{align}
  F(r) = F(r_{\rm m}) + (r-r_{\rm m}) \left.\frac{\d F}{\d r}\right|_{r=r_{\rm m}} + \frac{(r-r_{\rm m})^2}{2} \left.\frac{\d^2 F}{\d r^2}\right|_{r=r_{\rm m}} + \ldots
 \end{align}\]</div>
 <p>We can take the derivatives of <span class="math notranslate nohighlight">\(F\)</span> with respect to <span class="math notranslate nohighlight">\(r\)</span> and substitute <span class="math notranslate nohighlight">\(r=r_{\rm m}\)</span>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-efd1604e-10af-43c0-9a91-bc6d4084b507">
-<span class="eqno">(107)<a class="headerlink" href="#equation-efd1604e-10af-43c0-9a91-bc6d4084b507" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-b584f6d4-abf8-48f1-b439-2c795de040bb">
+<span class="eqno">(14)<a class="headerlink" href="#equation-b584f6d4-abf8-48f1-b439-2c795de040bb" title="Permalink to this equation">#</a></span>\[\begin{align}
  F(r_{\rm m})  = 0 \qquad\text{and}\qquad
  \left.\frac{\d F}{\d r} \right|_{r=r_{\rm m}}  = -12 \epsilon \left(\frac{13 r_{\rm m}^{12}}{r^{14}}-\frac{7 r_{\rm m}^6}{r^8}\right)_{r=r_{\rm m}} = -\frac{72 \epsilon}{r_{\rm m}^2}
 \end{align}\]</div>
 <p>We need the force only up to the first non-zero term, the linear term. This corresponds to the quadratic potential around <span class="math notranslate nohighlight">\(r_{\rm m}\)</span>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-41d7f2b8-428b-4aa4-a3f9-13af4437e59e">
-<span class="eqno">(108)<a class="headerlink" href="#equation-41d7f2b8-428b-4aa4-a3f9-13af4437e59e" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-4ba99da7-6577-4460-bbea-8bfa4b1097ed">
+<span class="eqno">(15)<a class="headerlink" href="#equation-4ba99da7-6577-4460-bbea-8bfa4b1097ed" title="Permalink to this equation">#</a></span>\[\begin{align}
  F(r) \simeq  -(r-r_{\rm m})  \frac{72 \epsilon}{r_{\rm m}^2}\, .
 \end{align}\]</div>
 <p>We can define <span class="math notranslate nohighlight">\(k=72 \epsilon/r_{\rm m}^2\)</span> and the radial displacement from the equilibrium position <span class="math notranslate nohighlight">\(x = r-r_{\rm m}\)</span>. The force is then in a form that we can use in Newton’s second law:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-844480de-0e77-4aa1-99bc-2fa518e2127f">
-<span class="eqno">(109)<a class="headerlink" href="#equation-844480de-0e77-4aa1-99bc-2fa518e2127f" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-a1c63c58-8587-408f-9ed6-6c04d36229d4">
+<span class="eqno">(16)<a class="headerlink" href="#equation-a1c63c58-8587-408f-9ed6-6c04d36229d4" title="Permalink to this equation">#</a></span>\[\begin{align}
  F(x) \simeq  -kx\, .
 \end{align}\]</div>
-<p>This is formally identical to Hooke’s law, and the solutions to the differential equation are therefore given by equation <a class="reference internal" href="Lecture2.html#equation-fvmnghre9w4ueirdfg">(31)</a>. The two atoms thus oscillate harmonically towards and away from each other around the equilibrium separation <span class="math notranslate nohighlight">\(r_{\rm m}\)</span>.</p>
+<p>This is formally identical to Hooke’s law, and the solutions to the differential equation are therefore given by equation <code class="xref eq docutils literal notranslate"><span class="pre">fvmnghre9w4ueirdfg</span></code>. The two atoms thus oscillate harmonically towards and away from each other around the equilibrium separation <span class="math notranslate nohighlight">\(r_{\rm m}\)</span>.</p>
 </section>
 <hr class="docutils" />
 <section id="lifting-heavy-loads">
@@ -488,32 +503,32 @@ document.write(`
 <figure class="align-default" id="fig-tryjuhkkj">
 <a class="reference internal image-reference" href="_images/pulleys.jpg"><img alt="_images/pulleys.jpg" src="_images/pulleys.jpg" style="width: 200px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 8 </span><span class="caption-text">Lifting a mass using a pulley system.</span><a class="headerlink" href="#fig-tryjuhkkj" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 7 </span><span class="caption-text">Lifting a mass using a pulley system.</span><a class="headerlink" href="#fig-tryjuhkkj" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>We work out the acceleration <span class="math notranslate nohighlight">\(\ddot{x}\)</span> of the hand, which is of course related to the force with which the hand pulls (<span class="math notranslate nohighlight">\(F_h = m\ddot{x}\)</span>), and compare it to the acceleration of the block <span class="math notranslate nohighlight">\(\ddot{X}\)</span>. Assuming that the length of the string is a constant <span class="math notranslate nohighlight">\(l\)</span> and the radius of the wheels is <span class="math notranslate nohighlight">\(R\)</span>, we know that</p>
-<div class="amsmath math notranslate nohighlight" id="equation-cd5a6a7b-1a59-41f9-b610-436aed79e810">
-<span class="eqno">(110)<a class="headerlink" href="#equation-cd5a6a7b-1a59-41f9-b610-436aed79e810" title="Permalink to this equation">#</a></span>\[\begin{align}\nonumber
+<div class="amsmath math notranslate nohighlight" id="equation-744564d5-a658-4c76-8fea-8920561fe21c">
+<span class="eqno">(17)<a class="headerlink" href="#equation-744564d5-a658-4c76-8fea-8920561fe21c" title="Permalink to this equation">#</a></span>\[\begin{align}\nonumber
  l = X + \pi R + (X-h) + \pi R + (x-h)\, .
 \end{align}\]</div>
 <p>Rearranging this, we obtain a relation between <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(X\)</span>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-596ecd49-9b46-42cf-8e9a-2d8b2477b979">
-<span class="eqno">(111)<a class="headerlink" href="#equation-596ecd49-9b46-42cf-8e9a-2d8b2477b979" title="Permalink to this equation">#</a></span>\[\begin{align}\nonumber
+<div class="amsmath math notranslate nohighlight" id="equation-902b5cbf-7800-42b5-8a58-7a42cb7ac69e">
+<span class="eqno">(18)<a class="headerlink" href="#equation-902b5cbf-7800-42b5-8a58-7a42cb7ac69e" title="Permalink to this equation">#</a></span>\[\begin{align}\nonumber
  x = l - 2(X+\pi R - h)\, .
 \end{align}\]</div>
 <p>Taking the second derivative to obtain the relationship between the accelerations of the hand and the mass, we find</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b2e14259-3dd2-4b4a-ab43-e2ef1e1e6a84">
-<span class="eqno">(112)<a class="headerlink" href="#equation-b2e14259-3dd2-4b4a-ab43-e2ef1e1e6a84" title="Permalink to this equation">#</a></span>\[\begin{align}\nonumber
+<div class="amsmath math notranslate nohighlight" id="equation-4ed290d6-2667-4344-8b1a-e8e4f45dbc1c">
+<span class="eqno">(19)<a class="headerlink" href="#equation-4ed290d6-2667-4344-8b1a-e8e4f45dbc1c" title="Permalink to this equation">#</a></span>\[\begin{align}\nonumber
  \ddot{X} = -\frac12 \ddot{x}\, .
 \end{align}\]</div>
 <p>To raise the block a distance <span class="math notranslate nohighlight">\(s\)</span>, the hand must pull down the rope <em>twice</em> that distance downwards. Note the relative signs and the direction of pulling and lifting. To work out the force with which the hand must pull, we can use the work done on the block:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-042e3f35-c723-4dae-8f95-93de6a08fc28">
-<span class="eqno">(113)<a class="headerlink" href="#equation-042e3f35-c723-4dae-8f95-93de6a08fc28" title="Permalink to this equation">#</a></span>\[\begin{align}\nonumber
+<div class="amsmath math notranslate nohighlight" id="equation-f933229b-f30b-4951-926e-fa3d625cb5d5">
+<span class="eqno">(20)<a class="headerlink" href="#equation-f933229b-f30b-4951-926e-fa3d625cb5d5" title="Permalink to this equation">#</a></span>\[\begin{align}\nonumber
  W = F s = mgs\, .
 \end{align}\]</div>
 <p>By conservation of energy, the work done by the hand is equal to the work done on the block, and we find</p>
-<div class="amsmath math notranslate nohighlight" id="equation-3d499d5d-0135-4558-acef-dc748ca362ac">
-<span class="eqno">(114)<a class="headerlink" href="#equation-3d499d5d-0135-4558-acef-dc748ca362ac" title="Permalink to this equation">#</a></span>\[\begin{align}\nonumber
+<div class="amsmath math notranslate nohighlight" id="equation-f3a16dbb-6f4b-4bc0-97b0-0c0ae520b5a0">
+<span class="eqno">(21)<a class="headerlink" href="#equation-f3a16dbb-6f4b-4bc0-97b0-0c0ae520b5a0" title="Permalink to this equation">#</a></span>\[\begin{align}\nonumber
  W_h = F_h \times 2s = mgs \qquad\Rightarrow\qquad F_h = \frac12 mg\, .
 \end{align}\]</div>
 <p>In other words, we have to apply only <em>half</em> the force that we would need if we were to lift the block directly, but the trade-off is that we need to pull the rope <em>twice</em> the distance we want to move the block. Using more pulleys you can lift heavier objects with the same force.</p>
@@ -522,61 +537,61 @@ document.write(`
 <section id="terminal-velocity">
 <h2>Terminal velocity<a class="headerlink" href="#terminal-velocity" title="Link to this heading">#</a></h2>
 <p>We want to calculate the terminal velocity of a sphere with mass <span class="math notranslate nohighlight">\(m\)</span> in a fluid under gravity. We can start with the exercise in problem set 2, where we looked at the drag force. Here, we have a drag force against the direction of the velocity <span class="math notranslate nohighlight">\(v\)</span>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-cce98366-6c90-4bc2-a85c-b2a13261c3ec">
-<span class="eqno">(115)<a class="headerlink" href="#equation-cce98366-6c90-4bc2-a85c-b2a13261c3ec" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-da9dd80b-4759-4592-a10b-e0ad80bfa0c5">
+<span class="eqno">(22)<a class="headerlink" href="#equation-da9dd80b-4759-4592-a10b-e0ad80bfa0c5" title="Permalink to this equation">#</a></span>\[\begin{align}
   F_{\rm drag} = -bv\, ,
  \end{align}\]</div>
 <p>as well as the gravitational force <span class="math notranslate nohighlight">\(F_{\rm gr} = mg\)</span> due to the gravitational acceleration <span class="math notranslate nohighlight">\(g\)</span>. The net force experienced by the sphere is the sum of these two forces,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-71059428-f1ba-43eb-805d-c5ef0dea3ad1">
-<span class="eqno">(116)<a class="headerlink" href="#equation-71059428-f1ba-43eb-805d-c5ef0dea3ad1" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-ef8f0000-9f3b-4c9b-abd0-3ad0ede899fd">
+<span class="eqno">(23)<a class="headerlink" href="#equation-ef8f0000-9f3b-4c9b-abd0-3ad0ede899fd" title="Permalink to this equation">#</a></span>\[\begin{align}
   F_{\rm net} = F_{\rm gr} + F_{\rm drag} = mg - bv\, .
  \end{align}\]</div>
 <p>The positive direction is chosen downwards. We set this equal to <span class="math notranslate nohighlight">\(F_{\rm net} = ma\)</span>, but instead of finding the position <span class="math notranslate nohighlight">\(x(t)\)</span>, we want to find a differential equation for the velocity <span class="math notranslate nohighlight">\(v(t)\)</span>, since we are interested in the terminal <em>velocity</em>. That is actually easier:</p>
 <div class="math notranslate nohighlight" id="equation-lgkjeuo">
-<span class="eqno">(117)<a class="headerlink" href="#equation-lgkjeuo" title="Link to this equation">#</a></span>\[ \frac{\d v}{\d t} = -\frac{b}{m}v + g\, .\]</div>
+<span class="eqno">(24)<a class="headerlink" href="#equation-lgkjeuo" title="Link to this equation">#</a></span>\[ \frac{\d v}{\d t} = -\frac{b}{m}v + g\, .\]</div>
 <p>To solve a differential equation, we often make a so-called <em>Ansatz</em> (German for `guess’). Here, we will try</p>
-<div class="amsmath math notranslate nohighlight" id="equation-0a5c18ff-2879-4cb2-b24a-a460e05e9892">
-<span class="eqno">(118)<a class="headerlink" href="#equation-0a5c18ff-2879-4cb2-b24a-a460e05e9892" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-3a3edc1f-baf5-48d9-b167-349166489d5b">
+<span class="eqno">(25)<a class="headerlink" href="#equation-3a3edc1f-baf5-48d9-b167-349166489d5b" title="Permalink to this equation">#</a></span>\[\begin{align}
   v(t) = u + w \e^{-st}\, ,
  \end{align}\]</div>
 <p>where we need to find <span class="math notranslate nohighlight">\(u\)</span>, <span class="math notranslate nohighlight">\(w\)</span> and <span class="math notranslate nohighlight">\(s\)</span>. First we calculate <span class="math notranslate nohighlight">\(\dot{v}(t)\)</span>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-bd9e0091-4972-4633-8a0a-31aa65e2ca44">
-<span class="eqno">(119)<a class="headerlink" href="#equation-bd9e0091-4972-4633-8a0a-31aa65e2ca44" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-5a7d2bbb-141f-4d95-ba6c-e7ecfc7d4da8">
+<span class="eqno">(26)<a class="headerlink" href="#equation-5a7d2bbb-141f-4d95-ba6c-e7ecfc7d4da8" title="Permalink to this equation">#</a></span>\[\begin{align}
   \frac{\d v}{\d t} = -ws\, \e^{-st}\, ,
  \end{align}\]</div>
-<p>and we substitute this back into the differential equation <a class="reference internal" href="#equation-lgkjeuo">(117)</a>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d0624f97-6ea2-488d-b27b-4808836eecd0">
-<span class="eqno">(120)<a class="headerlink" href="#equation-d0624f97-6ea2-488d-b27b-4808836eecd0" title="Permalink to this equation">#</a></span>\[\begin{align}
+<p>and we substitute this back into the differential equation <a class="reference internal" href="#equation-lgkjeuo">(24)</a>:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-2ba3f753-81d7-49dd-98f2-3904b3e9cbe9">
+<span class="eqno">(27)<a class="headerlink" href="#equation-2ba3f753-81d7-49dd-98f2-3904b3e9cbe9" title="Permalink to this equation">#</a></span>\[\begin{align}
  -ws\, \e^{-st} = -\frac{b}{m}\left( u + w \e^{-st} \right) + g\, .
 \end{align}\]</div>
 <p>This can only be a valid equation if the factors in front of the exponentials are the same, and the remaining constants sum to zero:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-7abc9f90-b1a4-488a-ae07-2ca1128120fc">
-<span class="eqno">(121)<a class="headerlink" href="#equation-7abc9f90-b1a4-488a-ae07-2ca1128120fc" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-8e6e4a9a-e139-41c1-9cf6-4ef73a9fb0de">
+<span class="eqno">(28)<a class="headerlink" href="#equation-8e6e4a9a-e139-41c1-9cf6-4ef73a9fb0de" title="Permalink to this equation">#</a></span>\[\begin{align}
  -ws = -\frac{b}{m}w \qquad\text{and}\qquad -\frac{b}{m} u + g = 0\, . 
 \end{align}\]</div>
 <p>From this we find that</p>
-<div class="amsmath math notranslate nohighlight" id="equation-42f574fe-2753-41ef-b0d9-73fb1d00b9ba">
-<span class="eqno">(122)<a class="headerlink" href="#equation-42f574fe-2753-41ef-b0d9-73fb1d00b9ba" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-25ec5492-b3b7-44c4-abe4-af256c950458">
+<span class="eqno">(29)<a class="headerlink" href="#equation-25ec5492-b3b7-44c4-abe4-af256c950458" title="Permalink to this equation">#</a></span>\[\begin{align}
  s = \frac{b}{m} \qquad\text{and}\qquad u = \frac{mg}{b}\, .
 \end{align}\]</div>
 <p>We do not know what <span class="math notranslate nohighlight">\(w\)</span> is yet. To find it, we need to use the initial condition for the differential equation, e.g., <span class="math notranslate nohighlight">\(v(t=0) = v_0\)</span>. The we find</p>
-<div class="amsmath math notranslate nohighlight" id="equation-58d8b915-bf75-4d8a-851b-b1a05bd368b7">
-<span class="eqno">(123)<a class="headerlink" href="#equation-58d8b915-bf75-4d8a-851b-b1a05bd368b7" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-9ed82ae1-c16d-43f7-a1c4-47e1c0e5cacb">
+<span class="eqno">(30)<a class="headerlink" href="#equation-9ed82ae1-c16d-43f7-a1c4-47e1c0e5cacb" title="Permalink to this equation">#</a></span>\[\begin{align}
  v(t) = \frac{mg}{b} + w\, \e^{-bt/m}\, .
 \end{align}\]</div>
 <p>Hence</p>
-<div class="amsmath math notranslate nohighlight" id="equation-52c27bdb-e272-43b5-8acd-4aa63fa90a68">
-<span class="eqno">(124)<a class="headerlink" href="#equation-52c27bdb-e272-43b5-8acd-4aa63fa90a68" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-7fdba4ef-b63b-47d4-b5fc-68af9d01db31">
+<span class="eqno">(31)<a class="headerlink" href="#equation-7fdba4ef-b63b-47d4-b5fc-68af9d01db31" title="Permalink to this equation">#</a></span>\[\begin{align}
  v(0) = \frac{mg}{b} + w\, \e^0 = v_0 \qquad\to\qquad w = v_0 - \frac{mg}{b}\, .
 \end{align}\]</div>
 <p>This leads to the final result</p>
-<div class="amsmath math notranslate nohighlight" id="equation-dd8f740a-d8b0-4545-89f9-2c66ed5aa9b8">
-<span class="eqno">(125)<a class="headerlink" href="#equation-dd8f740a-d8b0-4545-89f9-2c66ed5aa9b8" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-5bc6f3e3-7a10-41e4-ba8c-482b4e597931">
+<span class="eqno">(32)<a class="headerlink" href="#equation-5bc6f3e3-7a10-41e4-ba8c-482b4e597931" title="Permalink to this equation">#</a></span>\[\begin{align}
   v(t) = \frac{mg}{b} \left( 1 - \e^{-bt/m}\right) +v_0\,  \e^{-bt/m}\, .
  \end{align}\]</div>
 <p>When <span class="math notranslate nohighlight">\(g=0\)</span> we recover the result from problem set 2, as required. But more interestingly, we can find the terminal velocity by taking the limit of <span class="math notranslate nohighlight">\(t\to\infty\)</span>. The exponetials will tend to zero in this limit, so we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-969d7086-6983-4d98-9a52-0c4ed7598a9a">
-<span class="eqno">(126)<a class="headerlink" href="#equation-969d7086-6983-4d98-9a52-0c4ed7598a9a" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-e3e7e2aa-79da-4c36-a10f-2474179a75ea">
+<span class="eqno">(33)<a class="headerlink" href="#equation-e3e7e2aa-79da-4c36-a10f-2474179a75ea" title="Permalink to this equation">#</a></span>\[\begin{align}
   v_{\rm terminal} = \lim_{t\to\infty} v(t) =  \frac{mg}{b}\, .
  \end{align}\]</div>
 <p>This is independent of the initial velocity <span class="math notranslate nohighlight">\(v_0\)</span>, but it does depend on <span class="math notranslate nohighlight">\(b\)</span>, which itself captures all the relevant information about the shape and density of the object, as well as the viscosity of the fluid or gas.</p>
@@ -627,7 +642,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Polar coordinates and circular motion</p>
+        <p class="prev-next-title">Lecture 7: Polar coordinates and circular motion</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

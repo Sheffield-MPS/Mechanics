@@ -63,7 +63,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'Lecture1';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Lecture 2: Newton’s second law" href="Lecture2.html" />
+    <link rel="next" title="Lecture 2: Newton’s Second Law" href="Lecture2.html" />
     <link rel="prev" title="PHY11006 Mechanics" href="Mechanics.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -178,12 +178,27 @@
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">1 Where do forces come from?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lecture2.html">2 Newtons second law</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lecture3.html">3 Vectors</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lecture4.html">4 Motion in 2D and 3D</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lecture5.html">5 Energy and momentum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture2.html">Lecture 2: Newton’s Second Law</a></li>
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="Lecture3.html">Lecture 3: Vectors</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="Lecture4.html">Lecture 4: Compound Systems</a></li>
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="Lecture5.html">Lecture 5: Conservation of energy and momentum</a></li>
+
+
+
 <li class="toctree-l1"><a class="reference internal" href="Lecture6.html">6 Applications I</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lecture7.html">7 Circular motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture7.html">Lecture 7: Polar coordinates and circular motion</a></li>
+
 <li class="toctree-l1"><a class="reference internal" href="Lecture8.html">8 Angular momentum</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lecture9.html">9 Rotating rigid bodies</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lecture10.html">10 Applications II</a></li>
@@ -383,10 +398,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uniform-gravitational-acceleration">Uniform gravitational acceleration</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hooke-s-law">Hooke’s law</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#newton-s-law-of-gravity">Newton’s law of gravity</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#electrostatic-force-between-two-charges">Electrostatic force between two charges</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#worked-example-uniform-gravitational-acceleration">Worked example: Uniform gravitational acceleration</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#worked-example-hooke-s-law">Worked example: Hooke’s law</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#worked-example-newton-s-law-of-gravity">Worked example: Newton’s law of gravity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#worked-example-electrostatic-force-between-two-charges">Worked example: Electrostatic force between two charges</a></li>
 </ul>
             </nav>
         </div>
@@ -444,18 +459,18 @@ document.write(`
 <p>In this course we will develop the following concepts:</p>
 <ol class="arabic simple">
 <li><p>Position, velocity and acceleration as mathematical functions of time,</p></li>
-<li><p>forces as vectors and Newton’s laws of motion,</p></li>
-<li><p>the relation between force, potential, and work,
-Most of the course is about developing these techniques, but in the second half we consider the special case of rotating and orbiting bodies. They are incredibly common in physics, and require new concepts such as angular momentum and the moment of inertia. We conclude with the application that started it all for Newton, namely orbital mechanics and the demonstration that Kepler’s laws follow from his inverse-square law of gravity and his three laws of motion.</p></li>
+<li><p>Forces as vectors and Newton’s laws of motion,</p></li>
+<li><p>The relation between force, potential, and work.</p></li>
 </ol>
+<p>Most of the course is about developing these techniques, but in the second half we consider the special case of rotating and orbiting bodies. They are incredibly common in physics, and require new concepts such as angular momentum and the moment of inertia. We conclude with the application that started it all for Newton, namely orbital mechanics and the demonstration that Kepler’s laws follow from his inverse-square law of gravity and his three laws of motion.</p>
 <hr class="docutils" />
 <p>First, we will ask a simple question: where do forces come from? Let’s consider some simple examples that you are already familiar with.</p>
-<section id="uniform-gravitational-acceleration">
-<h2>Uniform gravitational acceleration<a class="headerlink" href="#uniform-gravitational-acceleration" title="Link to this heading">#</a></h2>
+<section id="worked-example-uniform-gravitational-acceleration">
+<h2>Worked example: Uniform gravitational acceleration<a class="headerlink" href="#worked-example-uniform-gravitational-acceleration" title="Link to this heading">#</a></h2>
 <p>When I drop a ball from a (modest) height <span class="math notranslate nohighlight">\(h\)</span>, it experiences a force that is directed towards the ground, <span class="math notranslate nohighlight">\(F = mg\)</span>, with <span class="math notranslate nohighlight">\(m\)</span> the mass of the ball and <span class="math notranslate nohighlight">\(g=9.81\mss\)</span> the gravitational acceleration. The ball started out at rest, and accelerates towards the ground. What makes the ball `want’ to leave the higher position and move towards the lower position? One answer is that the Earth attracts the ball.</p>
 <p>Another, more fruitful answer is that the ball starts out in a position with high potential energy, and it moves towards a position with low potential energy. The force on the ball is in the direction of decreasing potential energy. When we choose the zero point of the potential energy at ground level, the potential energy at height <span class="math notranslate nohighlight">\(h\)</span> is given by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-09f2482a-18a3-4fe1-8bee-da195f0e02f8">
-<span class="eqno">(1)<a class="headerlink" href="#equation-09f2482a-18a3-4fe1-8bee-da195f0e02f8" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-dab24fc4-7877-4978-87b2-4fc07fd98a71">
+<span class="eqno">(1)<a class="headerlink" href="#equation-dab24fc4-7877-4978-87b2-4fc07fd98a71" title="Permalink to this equation">#</a></span>\[\begin{equation}
  V_{\rm gr} = mgh\, .
 \end{equation}\]</div>
 <p>The force <span class="math notranslate nohighlight">\(F=mg\)</span> is in the direction in which the potential energy <em>decreases</em>.</p>
@@ -467,11 +482,11 @@ Most of the course is about developing these techniques, but in the second half 
 </figure>
 <p>Next, imagine we let the ball roll down a ramp (see Fig. 1). If the ramp is very shallow, the force on the ball is quite a bit weaker than when we let it drop straight down. As a result, the ball won’t pick up speed as fast as when we let it drop straight down. The force is proportional to the <em>change</em> in the potential energy.</p>
 </section>
-<section id="hooke-s-law">
-<h2>Hooke’s law<a class="headerlink" href="#hooke-s-law" title="Link to this heading">#</a></h2>
+<section id="worked-example-hooke-s-law">
+<h2>Worked example: Hooke’s law<a class="headerlink" href="#worked-example-hooke-s-law" title="Link to this heading">#</a></h2>
 <p>Imagine a spring with a block of mass <span class="math notranslate nohighlight">\(m\)</span> attached to the end. We arrange it horizontally, where the block can slide without friction on a surface. This way we can ignore the role of gravity. The other end of the spring is secured to a fixed point. There is an equilibrium position <span class="math notranslate nohighlight">\(x=0\)</span>, where the block is placed such that the spring is neither compressed nor extended. We need to apply a force to move the block, because it will compress or extend the spring. The direction of the compressing/extending force is always <em>away</em> from the equilibrium position <span class="math notranslate nohighlight">\(x=0\)</span>. Similarly, from Newton’s third law, the spring exerts a force on the block that is always <em>towards</em> <span class="math notranslate nohighlight">\(x=0\)</span>. It is called a <em>restoring</em> force, and because it always points towards <span class="math notranslate nohighlight">\(x=0\)</span>, it has a different sign when it is compressing then when it is extending. Moreover, the further the spring is extended, the stronger the restoring force <span class="math notranslate nohighlight">\(F\)</span> on the block:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-f81816da-d7ce-4034-ae0d-86639affed30">
-<span class="eqno">(2)<a class="headerlink" href="#equation-f81816da-d7ce-4034-ae0d-86639affed30" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-b1e9ba1e-79d9-4250-9515-a2457e461da2">
+<span class="eqno">(2)<a class="headerlink" href="#equation-b1e9ba1e-79d9-4250-9515-a2457e461da2" title="Permalink to this equation">#</a></span>\[\begin{align}
  F= - k x\, ,
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(k\)</span> is the spring constant. This is of course Hooke’s law. The minus sign is very important. It makes the force on the block a restoring force.</p>
@@ -482,8 +497,8 @@ Most of the course is about developing these techniques, but in the second half 
 </figcaption>
 </figure>
 <p>We can also understand this force as a result of a potential. When we compress or extend the spring by an amount <span class="math notranslate nohighlight">\(x\)</span>, the potential energy of the system is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-31af0b68-adf9-47fa-9ab0-1bc75154ce37">
-<span class="eqno">(3)<a class="headerlink" href="#equation-31af0b68-adf9-47fa-9ab0-1bc75154ce37" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-09b256c2-0715-4a7b-9c3f-6d5271eeb53b">
+<span class="eqno">(3)<a class="headerlink" href="#equation-09b256c2-0715-4a7b-9c3f-6d5271eeb53b" title="Permalink to this equation">#</a></span>\[\begin{align}
  V_{\rm spring} = \frac12 k x^2\, .
 \end{align}\]</div>
 <p>It does not matter whether we compress the spring or extend it, the potential energy will be the same, since <span class="math notranslate nohighlight">\((-x)^2 = x^2\)</span>. The restoring force on the block is in the direction for which the potential decreases, i.e., in the direction of <span class="math notranslate nohighlight">\(x=0\)</span>. So again, the force is given by the <em>change</em> in potential with the distance <span class="math notranslate nohighlight">\(x\)</span>. This is given by a derivative of the potential with respect to <span class="math notranslate nohighlight">\(x\)</span>. Since the force is in the direction of decreasing potential, it has to be the negative derivative:</p>
@@ -493,40 +508,41 @@ Most of the course is about developing these techniques, but in the second half 
 </div></blockquote>
 <p>When we substitute the potential <span class="math notranslate nohighlight">\(V_{\rm spring}\)</span>, you see that we recover <span class="math notranslate nohighlight">\(F=-kx\)</span>. Note that all the signs for <span class="math notranslate nohighlight">\(F\)</span> are correct, both for positive and negative <span class="math notranslate nohighlight">\(x\)</span>.</p>
 <p>Note that we can add a constant <span class="math notranslate nohighlight">\(V_0\)</span> to the potential, and it will not contribute to the force, since the derivative of a constant is zero. This means that we can pick the zero point of our potential wherever we want, without observable consequences for the force. We already used this in the first example, when we chose <span class="math notranslate nohighlight">\(V=0\)</span> at ground level. We tend to pick the zero point of <span class="math notranslate nohighlight">\(V\)</span> in such a way that it makes our analysis simplest.</p>
+<p>At this point it is worth drawing attention to the way we use mathematics in physics. When you see an expression like equation <a class="reference internal" href="#equation-eq-ghureo940woijerfd">(4)</a>, you should treat both <span class="math notranslate nohighlight">\(F\)</span> and <span class="math notranslate nohighlight">\(V\)</span> as a function of <span class="math notranslate nohighlight">\(x\)</span>. The specific labels/names of functions (here <span class="math notranslate nohighlight">\(F\)</span> and <span class="math notranslate nohighlight">\(V\)</span>) are not important for how we manipulate those functions mathematically (e.g., in differentiation, integration, etc.). We \emph{need} to give different functions different names based on the physical quantities they represent (force <span class="math notranslate nohighlight">\(F\)</span> and potential <span class="math notranslate nohighlight">\(V\)</span>). Sometimes we will explicitly state the variables <span class="math notranslate nohighlight">\((x)\)</span>, such as <span class="math notranslate nohighlight">\(F(x)\)</span> or <span class="math notranslate nohighlight">\(V(x)\)</span>, while at other times we will not. Typically, if we include the functional dependence it will be on the left-hand side—as in equation <a class="reference internal" href="#equation-eq-ghureo940woijerfd">(4)</a>—to remind us what variable we are interested in. Previously, you may have taken derivatives almost exclusively on functions called <span class="math notranslate nohighlight">\(f(x)\)</span> or <span class="math notranslate nohighlight">\(y(x)\)</span>. Now you have to extrapolate this to other letters. In your degree you will take derivatives more than doing any other mathematical operation, so make sure you that by the end of the semester are completely comfortable with the procedure, especially including the chain rule and product rule.</p>
 </section>
-<section id="newton-s-law-of-gravity">
-<h2>Newton’s law of gravity<a class="headerlink" href="#newton-s-law-of-gravity" title="Link to this heading">#</a></h2>
+<section id="worked-example-newton-s-law-of-gravity">
+<h2>Worked example: Newton’s law of gravity<a class="headerlink" href="#worked-example-newton-s-law-of-gravity" title="Link to this heading">#</a></h2>
 <p>Newton’s famous insight was that the force that pulls apples to Earth is the same that makes the moon orbit the Earth. The constant gravitational acceleration <span class="math notranslate nohighlight">\(g\)</span> is only an approximation for when the drop height <span class="math notranslate nohighlight">\(h\)</span> is small compared to the radius of the Earth. The force on a mass <span class="math notranslate nohighlight">\(m\)</span> due to another mass <span class="math notranslate nohighlight">\(M\)</span> obeys Newton’s inverse-square law of gravity:</p>
 <div class="math notranslate nohighlight" id="equation-njgewhiresjkh">
 <span class="eqno">(5)<a class="headerlink" href="#equation-njgewhiresjkh" title="Link to this equation">#</a></span>\[ F = -\frac{GmM}{r^2}\, ,\]</div>
 <p>where <span class="math notranslate nohighlight">\(G= 6.67408 \times 10^{-11}~{\rm m}^3\; {\rm kg}^{-1}\; {\rm s}^{-2}\)</span> is Newton’s constant of gravitation. We included a minus sign, because the force of gravity is attractive. The force lies in the direction along the axis that connects the two masses.</p>
 <p>We can also cast this problem in terms of potential energy. The closer that  the mass <span class="math notranslate nohighlight">\(m\)</span> is to mass <span class="math notranslate nohighlight">\(M\)</span>, the lower its potential energy. We define <span class="math notranslate nohighlight">\(V=0\)</span> for the situation where the two masses are infinitely far apart, and we can write the potential as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d4fd4b9d-0f8f-4a3a-a9a7-b36b55e94cc2">
-<span class="eqno">(6)<a class="headerlink" href="#equation-d4fd4b9d-0f8f-4a3a-a9a7-b36b55e94cc2" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-6ead001a-8541-40ff-9c45-63dae8cf8e4c">
+<span class="eqno">(6)<a class="headerlink" href="#equation-6ead001a-8541-40ff-9c45-63dae8cf8e4c" title="Permalink to this equation">#</a></span>\[\begin{align}
  V_{\rm gravity} = -\frac{GmM}{r}\, .
 \end{align}\]</div>
 <p>The direction in which the potential changes is <span class="math notranslate nohighlight">\(r\)</span>. So if we want to find the force, we need to take the derivative in the <span class="math notranslate nohighlight">\(r\)</span> direction:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-dbc6cb9e-d601-4b10-9527-e54090521fe0">
-<span class="eqno">(7)<a class="headerlink" href="#equation-dbc6cb9e-d601-4b10-9527-e54090521fe0" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-d6453b5c-d8e3-4046-941f-17e92dbc0115">
+<span class="eqno">(7)<a class="headerlink" href="#equation-d6453b5c-d8e3-4046-941f-17e92dbc0115" title="Permalink to this equation">#</a></span>\[\begin{align}
  F(r) = - \frac{\d V_{\rm gravity}}{\d r} = -\frac{GmM}{r^2}\, ,
 \end{align}\]</div>
 <p>which agrees with equation  <a class="reference internal" href="#equation-njgewhiresjkh">(5)</a>. Note that we take the derivative with respect to <span class="math notranslate nohighlight">\(r\)</span>, not <span class="math notranslate nohighlight">\(x\)</span>. In general we will have to be careful about the direction in which the potential has its steepest descent, because that is where the force will be directed. The steepest descent is exactly the direction a ball will roll on a map with uneven elevation (for example rolling down a hill).</p>
 </section>
-<section id="electrostatic-force-between-two-charges">
-<h2>Electrostatic force between two charges<a class="headerlink" href="#electrostatic-force-between-two-charges" title="Link to this heading">#</a></h2>
+<section id="worked-example-electrostatic-force-between-two-charges">
+<h2>Worked example: Electrostatic force between two charges<a class="headerlink" href="#worked-example-electrostatic-force-between-two-charges" title="Link to this heading">#</a></h2>
 <p>As a final example of forces between objects, consider two charges, <span class="math notranslate nohighlight">\(q_1\)</span> and <span class="math notranslate nohighlight">\(q_2\)</span> a distance <span class="math notranslate nohighlight">\(d\)</span> apart. The force on charge <span class="math notranslate nohighlight">\(q_1\)</span> due to charge <span class="math notranslate nohighlight">\(q_2\)</span> is given by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e61f3324-c877-429c-94fb-26c540af8e44">
-<span class="eqno">(8)<a class="headerlink" href="#equation-e61f3324-c877-429c-94fb-26c540af8e44" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-aa3e1321-5b4b-4845-9989-89bb5361a83d">
+<span class="eqno">(8)<a class="headerlink" href="#equation-aa3e1321-5b4b-4845-9989-89bb5361a83d" title="Permalink to this equation">#</a></span>\[\begin{align}
  F_{\rm electric} = \frac{q_1 q_2}{4\pi\epsilon_0 d^2}\, ,
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(\epsilon_0\)</span> is the permittivity of free space. Even though we wrote a distance <span class="math notranslate nohighlight">\(d\)</span>, this is essentially again an inverse-square law, and it makes sense to use the coordinate <span class="math notranslate nohighlight">\(r\)</span> instead of <span class="math notranslate nohighlight">\(d\)</span>. The force is again directed along the axis connecting the two charges, and to a large degree the connection with the electric potential energy is very similar to that of the two masses in Newton’s law of gravity:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b7f24906-12b2-41e6-9276-b808b4971dcd">
-<span class="eqno">(9)<a class="headerlink" href="#equation-b7f24906-12b2-41e6-9276-b808b4971dcd" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-3c1f87f2-b03e-472b-b5f9-21da3345cb01">
+<span class="eqno">(9)<a class="headerlink" href="#equation-3c1f87f2-b03e-472b-b5f9-21da3345cb01" title="Permalink to this equation">#</a></span>\[\begin{align}
  V_{\rm electric} = \frac{q_1 q_2}{4\pi\epsilon_0 r}\, .
 \end{align}\]</div>
 <p>The one notable difference is the lack of the minus sign. In gravity, all the masses are positive numbers, whereas charges can be both positive and negative. This potential says that when two charges have different signs, the overall potential is negative and they attract each other. When the charges have equal sign the potential is positive and the charges repel. You can verify that we obtain the correct electrostatic force when we take the negative derivative with respect to <span class="math notranslate nohighlight">\(r\)</span>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c42638fd-58e5-451a-98c6-55e2819a3366">
-<span class="eqno">(10)<a class="headerlink" href="#equation-c42638fd-58e5-451a-98c6-55e2819a3366" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-ec40c2ef-9996-4104-8355-bc8d838cf026">
+<span class="eqno">(10)<a class="headerlink" href="#equation-ec40c2ef-9996-4104-8355-bc8d838cf026" title="Permalink to this equation">#</a></span>\[\begin{align}
  F(r) = - \frac{\d V_{\rm electric}}{\d r} \, .
 \end{align}\]</div>
 <p>Again, the force is in the direction of the steepest descent.</p>
@@ -584,7 +600,7 @@ Most of the course is about developing these techniques, but in the second half 
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Lecture 2: Newton’s second law</p>
+        <p class="prev-next-title">Lecture 2: Newton’s Second Law</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -604,10 +620,10 @@ Most of the course is about developing these techniques, but in the second half 
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uniform-gravitational-acceleration">Uniform gravitational acceleration</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hooke-s-law">Hooke’s law</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#newton-s-law-of-gravity">Newton’s law of gravity</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#electrostatic-force-between-two-charges">Electrostatic force between two charges</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#worked-example-uniform-gravitational-acceleration">Worked example: Uniform gravitational acceleration</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#worked-example-hooke-s-law">Worked example: Hooke’s law</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#worked-example-newton-s-law-of-gravity">Worked example: Newton’s law of gravity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#worked-example-electrostatic-force-between-two-charges">Worked example: Electrostatic force between two charges</a></li>
 </ul>
   </nav></div>
 

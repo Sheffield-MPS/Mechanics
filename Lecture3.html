@@ -63,8 +63,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'Lecture3';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Lecture 4: Motion and forces in 2 and 3 dimensions" href="Lecture4.html" />
-    <link rel="prev" title="Lecture 2: Newton’s second law" href="Lecture2.html" />
+    <link rel="next" title="Lecture 4: Compound Systems" href="Lecture4.html" />
+    <link rel="prev" title="Lecture 2: Newton’s Second Law" href="Lecture2.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -178,12 +178,27 @@
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Lecture1.html">1 Where do forces come from?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lecture2.html">2 Newtons second law</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">3 Vectors</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lecture4.html">4 Motion in 2D and 3D</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lecture5.html">5 Energy and momentum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture2.html">Lecture 2: Newton’s Second Law</a></li>
+
+
+
+
+
+
+
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Lecture 3: Vectors</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="Lecture4.html">Lecture 4: Compound Systems</a></li>
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="Lecture5.html">Lecture 5: Conservation of energy and momentum</a></li>
+
+
+
 <li class="toctree-l1"><a class="reference internal" href="Lecture6.html">6 Applications I</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lecture7.html">7 Circular motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture7.html">Lecture 7: Polar coordinates and circular motion</a></li>
+
 <li class="toctree-l1"><a class="reference internal" href="Lecture8.html">8 Angular momentum</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lecture9.html">9 Rotating rigid bodies</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lecture10.html">10 Applications II</a></li>
@@ -383,9 +398,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vectors-in-three-dimensions">Vectors in three dimensions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tangent-vectors-and-normal-vectors-to-a-curve">Tangent vectors and normal vectors to a curve</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Lecture 3: Vectors</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#coordinate-systems">Coordinate systems</a></li>
 </ul>
+
             </nav>
         </div>
     </div>
@@ -436,137 +452,192 @@ document.write(`
 <span class="math notranslate nohighlight">\(\newcommand{\basis}[1]{\hat{\text{e}}_{#1}}\)</span></p>
 <section id="lecture-3-vectors">
 <h1>Lecture 3: Vectors<a class="headerlink" href="#lecture-3-vectors" title="Link to this heading">#</a></h1>
-<section id="vectors-in-three-dimensions">
-<h2>Vectors in three dimensions<a class="headerlink" href="#vectors-in-three-dimensions" title="Link to this heading">#</a></h2>
-<p>Any object in three dimensions has a position that is given by three numbers. In cartesian coordinates, these are <span class="math notranslate nohighlight">\(x(t)\)</span>, <span class="math notranslate nohighlight">\(y(t)\)</span>, and <span class="math notranslate nohighlight">\(z(t)\)</span> with respect to some origin <span class="math notranslate nohighlight">\((0,0,0)\)</span>. The position can be written as a time-dependent vector</p>
-<div class="amsmath math notranslate nohighlight" id="equation-0f8b8334-f0a3-4ae5-9f0f-b21ae00b7e28">
-<span class="eqno">(35)<a class="headerlink" href="#equation-0f8b8334-f0a3-4ae5-9f0f-b21ae00b7e28" title="Permalink to this equation">#</a></span>\[\begin{align}
- \r(t) = 
- \begin{pmatrix}
-  {x}(t) \\ {y}(t) \\ {z}(t) 
- \end{pmatrix} 
- \equiv 
- \begin{pmatrix}
+</section>
+<section id="coordinate-systems">
+<h1>Coordinate systems<a class="headerlink" href="#coordinate-systems" title="Link to this heading">#</a></h1>
+<p>When we want to describe the motion of objects (particles, blocks sliding down ramps, planets orbiting stars, etc.), we must use a coordinate system. The simplest coordinate system is a Cartesian system, where three fictitious axes, <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span>, and <span class="math notranslate nohighlight">\(z\)</span>, cross each other at right angles in a single point called the <em>origin</em> <span class="math notranslate nohighlight">\(O\)</span>:</p>
+<figure class="align-default" id="id3">
+<img alt="_images/coordinate-system.png" src="_images/coordinate-system.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3 </span><span class="caption-text">Every point <span class="math notranslate nohighlight">\(P\)</span> has three coordinates, <span class="math notranslate nohighlight">\((a,b,c)\)</span>, determined by how far away from the origin <span class="math notranslate nohighlight">\(P\)</span> lies along the three orthogonal (perpendicular) axes. Note the orientation of the axes: the black lines indicate the positive direction, while the grey lines extend into the negative direction. You must adhere to this convention and avoid, say, swapping the <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> axis while keeping the <span class="math notranslate nohighlight">\(z\)</span> axis fixed. That will change the orientation of the coordinate system, and it will have consequences for some vector equations later on, most notably the cross product.</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+<div class="legend">
+<p>The point <span class="math notranslate nohighlight">\(P = (a,b,c)\)</span> determines a precise location in space relative to <span class="math notranslate nohighlight">\(O=(0,0,0)\)</span> and the three axes. However, it <em>also</em> defines a vector <span class="math notranslate nohighlight">\((a,b,c)\)</span> from the origin to <span class="math notranslate nohighlight">\(P\)</span>. That’s why we have indicated <span class="math notranslate nohighlight">\(P\)</span> with both a dot and an arrow. You don’t need to do this in your sketches, but you do need to remember the relation between a point and a vector: a point has coordinates relative to an origin, while a vector is an arrow from the origin to the point. We will give the point <span class="math notranslate nohighlight">\(P\)</span> a position vector <span class="math notranslate nohighlight">\(\mathbf{r}_P\)</span>, or <span class="math notranslate nohighlight">\(\mathbf{r}\)</span> for short.</p>
+<p>Next, imagine that <span class="math notranslate nohighlight">\(P\)</span> indicates the position of a body (a particle, a planet, …) that can move in time. We often designate the three coordinates <span class="math notranslate nohighlight">\((a,b,c)\)</span> of <span class="math notranslate nohighlight">\(P\)</span> with the axes labels <span class="math notranslate nohighlight">\(x(t)\)</span>, <span class="math notranslate nohighlight">\(y(t)\)</span>, and <span class="math notranslate nohighlight">\(z(t)\)</span>. We can then write the position of <span class="math notranslate nohighlight">\(P\)</span> relative to the origin <span class="math notranslate nohighlight">\(O\)</span> in vector form as</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathbf{r}(t) = 
+\begin{pmatrix}
+  x(t) \\ y(t) \\ z(t) 
+\end{pmatrix} 
+\equiv 
+\begin{pmatrix}
   r_{x}(t) \\ r_{y}(t) \\ r_{z}(t) 
- \end{pmatrix}\, ,
-\end{align}\]</div>
-<p>and taking the time derivatives of each component yields the three-dimensional velocity and acceleration of the object:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-91d0e4c5-475e-428a-8801-b4a8bc9e1122">
-<span class="eqno">(36)<a class="headerlink" href="#equation-91d0e4c5-475e-428a-8801-b4a8bc9e1122" title="Permalink to this equation">#</a></span>\[\begin{align}
- \v(t) = \frac{\d\r}{\d t} = 
- \begin{pmatrix}
+\end{pmatrix}\, .
+\end{split}\]</div>
+<p>Here, <span class="math notranslate nohighlight">\(\mathbf{r}\)</span> is a vector, and we also introduced another common notation where the coordinates <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span>, and <span class="math notranslate nohighlight">\(z\)</span> are included as indices on the vector name: <span class="math notranslate nohighlight">\(r_x\)</span>, <span class="math notranslate nohighlight">\(r_y\)</span>, and <span class="math notranslate nohighlight">\(r_z\)</span>. You need to be comfortable with both notations.</p>
+<p>Next, we define the velocity of the body with position <span class="math notranslate nohighlight">\(\mathbf{r}(t)\)</span>. The general definition holds:</p>
+<div class="math notranslate nohighlight">
+\[
+\mathbf{v}(t) = \frac{d\mathbf{r}}{dt}\, ;
+\]</div>
+<p>the velocity is the rate of change in time of the position. Hence we again have the time derivative. However, the time derivative of a vector is a lot more complicated than just taking the time derivative of its elements. Nevertheless, in Cartesian coordinates — and in Cartesian coordinates <em>only</em>! — the velocity is indeed the vector of time derivatives:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathbf{v}(t) = \frac{d\mathbf{r}}{dt} = 
+\begin{pmatrix}
   \dot{x}(t) \\ \dot{y}(t) \\ \dot{z}(t) 
- \end{pmatrix} 
- =
- \begin{pmatrix}
+\end{pmatrix}
+=
+\begin{pmatrix}
   v_{x}(t) \\ v_{y}(t) \\ v_{z}(t) 
- \end{pmatrix}
- \qquad\text{and}\qquad
-  \a(t) = \frac{\d\v}{\d t} = 
- \begin{pmatrix}
+\end{pmatrix}\, ,
+\end{split}\]</div>
+<p>where we use a subscript <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span>, or <span class="math notranslate nohighlight">\(z\)</span> again to denote the velocity components in that spatial direction. For acceleration we have to take the second time derivative of the position vector. Again <em>only</em> in Cartesian coordinates this is the time derivative of the components of <span class="math notranslate nohighlight">\(\mathbf{v}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathbf{a}(t) = \frac{d\mathbf{v}}{dt} = 
+\begin{pmatrix}
   \dot{v}_x(t) \\ \dot{v}_y(t) \\ \dot{v}_z(t) 
- \end{pmatrix}
-  =
- \begin{pmatrix}
+\end{pmatrix}
+=
+\begin{pmatrix}
   a_{x}(t) \\ a_{y}(t) \\ a_{z}(t) 
- \end{pmatrix}\, ,
-\end{align}\]</div>
-<p>where we use a subscript <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span>, or <span class="math notranslate nohighlight">\(z\)</span> to denote the velocity and acceleration components in that spatial direction. We also use a dot to denote time derivatives.</p>
-<p>Just like in the one-dimensional case, we can integrate velocity and acceleration with respect to time in order to find the position and velocity, respectively. We need to do this for each of the three components separately:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-83d39462-87cd-4e97-a267-c32f85b44adf">
-<span class="eqno">(37)<a class="headerlink" href="#equation-83d39462-87cd-4e97-a267-c32f85b44adf" title="Permalink to this equation">#</a></span>\[\begin{align}
- x(t) &amp; = x(t_0) + \int_{t_0}^t v_x(t')\, \d t' \, , \cr 
- y(t) &amp; = y(t_0) + \int_{t_0}^t v_y(t')\, \d t' \, , \cr
- z(t) &amp; = z(t_0) + \int_{t_0}^t v_z(t')\, \d t' \, . 
-\end{align}\]</div>
+\end{pmatrix}\, .
+\end{split}\]</div>
+<p>We also use a dot to denote time derivatives. This is Newton’s original notation, and you will often see time derivatives indicated by a dot over the function, and space derivatives as a prime.</p>
+<hr class="docutils" />
+<p>Just like in the one-dimensional case, we can integrate velocity and acceleration with respect to time in order to find the position and velocity, respectively. In Cartesian coordinates we need to do this for each of the three components separately:</p>
+<div class="math notranslate nohighlight">
+\[
+x(t) = x(t_0) + \int_{t_0}^t v_x(t')\, dt' \, , \quad 
+y(t) = y(t_0) + \int_{t_0}^t v_y(t')\, dt' \, , \quad
+z(t) = z(t_0) + \int_{t_0}^t v_z(t')\, dt' \, . 
+\]</div>
 <p>We can write this as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ee3e76dd-d5f5-4459-bc8d-2649d4545de6">
-<span class="eqno">(38)<a class="headerlink" href="#equation-ee3e76dd-d5f5-4459-bc8d-2649d4545de6" title="Permalink to this equation">#</a></span>\[\begin{align}
- \r(t) = \r(t_0) + \int_{t_0}^t \v(t')\, \d t' \, . 
-\end{align}\]</div>
+<div class="math notranslate nohighlight">
+\[
+\mathbf{r}(t) = \mathbf{r}(t_0) + \int_{t_0}^t \mathbf{v}(t')\, dt' \, . 
+\]</div>
 <p>However, you should always remember that these are really three separate integrals. Similarly, we can write for the velocity</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9fd3a54b-ce6f-48f5-b0c0-7bfe938686da">
-<span class="eqno">(39)<a class="headerlink" href="#equation-9fd3a54b-ce6f-48f5-b0c0-7bfe938686da" title="Permalink to this equation">#</a></span>\[\begin{align}
- \v(t) = \v(t_0) + \int_{t_0}^t \a(t')\, \d t' \, . 
-\end{align}\]</div>
-<p>Another useful way in which we can write the position, velocity and acceleration in three dimensions is using the unit vectors <span class="math notranslate nohighlight">\(\basis{x}\)</span>, <span class="math notranslate nohighlight">\(\basis{y}\)</span>, and <span class="math notranslate nohighlight">\(\basis{z}\)</span>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-649ffe2c-e599-4064-8a64-e46342abc9a4">
-<span class="eqno">(40)<a class="headerlink" href="#equation-649ffe2c-e599-4064-8a64-e46342abc9a4" title="Permalink to this equation">#</a></span>\[\begin{align}
- \basis{x} = \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix} \, , \qquad
- \basis{y} = \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix} \, , \qquad
- \basis{z} = \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix} \, .
-\end{align}\]</div>
-<p>You have seen these before as <span class="math notranslate nohighlight">\(\basis{x} = \hat{\mathbf{i}}\)</span>, <span class="math notranslate nohighlight">\(\basis{y} = \hat{\mathbf{j}}\)</span>, and <span class="math notranslate nohighlight">\(\basis{z} = \hat{\mathbf{k}}\)</span>, but we will use this `new’ notation that shows a more explicit link with the cartesian coordinates <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span>, and <span class="math notranslate nohighlight">\(z\)</span>. This will be useful later when we employ other coordinate systems, like polar coordinates. With these unit vectors we can write the velocity and acceleration as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e7f485a7-0f73-4a29-b4c4-3e73cfc50959">
-<span class="eqno">(41)<a class="headerlink" href="#equation-e7f485a7-0f73-4a29-b4c4-3e73cfc50959" title="Permalink to this equation">#</a></span>\[\begin{align}
- \v &amp;= \frac{\d x}{\d t}\, \basis{x} + \frac{\d y}{\d t}\,\basis{y} + \frac{\d z}{\d t}\,\basis{z} \quad\text{and} \cr
- \a &amp;= \frac{\d v_x}{\d t}\, \basis{x} + \frac{\d v_y}{\d t}\,\basis{y} + \frac{\d v_z}{\d t}\,\basis{z} = \frac{\d^2 x}{\d t^2}\, \basis{x} + \frac{\d^2 y}{\d t^2}\,\basis{y} + \frac{\d^2 z}{\d t^2}\,\basis{z}\, .
-\end{align}\]</div>
-</section>
-<section id="tangent-vectors-and-normal-vectors-to-a-curve">
-<h2>Tangent vectors and normal vectors to a curve<a class="headerlink" href="#tangent-vectors-and-normal-vectors-to-a-curve" title="Link to this heading">#</a></h2>
-<p>Consider a curved path of a particle, shown in Fig. 3. At time <span class="math notranslate nohighlight">\(t\)</span> the particle is at position <span class="math notranslate nohighlight">\(A\)</span> with position vector <span class="math notranslate nohighlight">\(\r\)</span>, and at time <span class="math notranslate nohighlight">\(t'\)</span> later the particle is at position <span class="math notranslate nohighlight">\(B\)</span> with position vector <span class="math notranslate nohighlight">\(\r'\)</span>. Define <span class="math notranslate nohighlight">\(\Delta t = t' - t\)</span> and <span class="math notranslate nohighlight">\(\Delta \r = \r' -\r\)</span>. The line segment along the curve is <span class="math notranslate nohighlight">\(\Delta s\)</span>, which is a little bit longer than <span class="math notranslate nohighlight">\(\Delta\r\)</span> because it is not straight. The average velocity <span class="math notranslate nohighlight">\(\v_{\rm gem}\)</span> over the segment <span class="math notranslate nohighlight">\(\Delta\r\)</span> is then defined as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-dca0815d-272c-408e-b5a5-e850e4c25384">
-<span class="eqno">(42)<a class="headerlink" href="#equation-dca0815d-272c-408e-b5a5-e850e4c25384" title="Permalink to this equation">#</a></span>\[\begin{align}
- \v_{\rm gem} = \frac{\Delta\r}{\Delta t}\, .
-\end{align}\]</div>
-<p>In the limit where <span class="math notranslate nohighlight">\(\Delta t\to0\)</span>, this becomes the time derivative <span class="math notranslate nohighlight">\(\v = \dot{\r}\)</span>, as expected:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-0a71cccc-6636-4eda-b3ca-def0ee09322b">
-<span class="eqno">(43)<a class="headerlink" href="#equation-0a71cccc-6636-4eda-b3ca-def0ee09322b" title="Permalink to this equation">#</a></span>\[\begin{align}
- \v = \lim_{\Delta t \to 0} \frac{\Delta\r}{\Delta t} =  \lim_{\Delta t \to 0} \frac{\r(t+\Delta t) - \r(t)}{\Delta t} = \frac{\d\r}{\d t}\, ,
-\end{align}\]</div>
-<p>where we have written <span class="math notranslate nohighlight">\(\r' = \r(t+\Delta t)\)</span>.
-However, we can also see from Fig. 3 that in this limit the velocity <span class="math notranslate nohighlight">\(\v\)</span> is the <em>tangent vector</em> to the curve. This is true for any continuous and differentiable path of a particle: the velocity at a point along the path is the tangent vector to the path at that point.</p>
-<figure class="align-default" id="fig-gnhrue4woijf">
-<img alt="_images/curves.png" src="_images/curves.png" />
+<div class="math notranslate nohighlight">
+\[
+\mathbf{v}(t) = \mathbf{v}(t_0) + \int_{t_0}^t \mathbf{a}(t')\, dt' \, . 
+\]</div>
+<p>Another useful way in which we can write the position, velocity and acceleration in three dimensions is using the unit vectors <span class="math notranslate nohighlight">\(\mathbf{e}_x\)</span>, <span class="math notranslate nohighlight">\(\mathbf{e}_y\)</span>, and <span class="math notranslate nohighlight">\(\mathbf{e}_z\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathbf{e}_x = \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix} \, , \qquad
+\mathbf{e}_y = \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix} \, , \qquad
+\mathbf{e}_z = \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix} \, .
+\end{split}\]</div>
+<p>You have seen these before as <span class="math notranslate nohighlight">\(\hat{\mathbf{i}}\)</span>, <span class="math notranslate nohighlight">\(\hat{\mathbf{j}}\)</span>, and <span class="math notranslate nohighlight">\(\hat{\mathbf{k}}\)</span>, but we will use this “new” notation that shows a more explicit link with the Cartesian coordinates <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span>, and <span class="math notranslate nohighlight">\(z\)</span>. This will be useful later when we employ other coordinate systems, like polar coordinates. With these unit vectors we can write the velocity and acceleration as</p>
+<div class="math notranslate nohighlight">
+\[
+\mathbf{v} = \frac{dx}{dt}\, \mathbf{e}_x + \frac{dy}{dt}\,\mathbf{e}_y + \frac{dz}{dt}\,\mathbf{e}_z \quad\text{and}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\mathbf{a} = \frac{dv_x}{dt}\, \mathbf{e}_x + \frac{dv_y}{dt}\,\mathbf{e}_y + \frac{dv_z}{dt}\,\mathbf{e}_z = \frac{d^2 x}{dt^2}\, \mathbf{e}_x + \frac{d^2 y}{dt^2}\,\mathbf{e}_y + \frac{d^2 z}{dt^2}\,\mathbf{e}_z\, .
+\]</div>
+<h2 class="rubric" id="force-balance">Force balance</h2>
+<p>Newton’s first law states that there is no <em>net</em> force on a body at rest or in uniform linear motion. This means that there may be multiple forces acting on the body, but they all sum to zero. In one dimension, this is easy to understand:</p>
+<div class="math notranslate nohighlight">
+\[
+F_1 + F_2 + \ldots + F_N = 0 \, .
+\]</div>
+<p>All these forces lie along the same line.<br />
+In three dimensions, this becomes a <em>vector</em> equation:</p>
+<div class="math notranslate nohighlight">
+\[
+\mathbf{F}_1 + \mathbf{F}_2 + \ldots + \mathbf{F}_N = 0 \, ,
+\]</div>
+<p>which should be understood as</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{pmatrix}
+  F_{1,x} \\ F_{1,y} \\ F_{1,z} 
+\end{pmatrix} 
++ 
+\begin{pmatrix}
+  F_{2,x} \\ F_{2,y} \\ F_{2,z} 
+\end{pmatrix} 
++ \ldots + 
+\begin{pmatrix}
+  F_{N,x} \\ F_{N,y} \\ F_{N,z} 
+\end{pmatrix}
+=
+\begin{pmatrix}
+  0 \\ 0 \\ 0 
+\end{pmatrix}
+\equiv 0 \, ,
+\end{split}\]</div>
+<p>Therefore, <em>each component</em> should add up to zero:</p>
+<div class="math notranslate nohighlight">
+\[
+F_{1,x} + F_{2,x} + \ldots + F_{N,x} = 0
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+F_{1,y} + F_{2,y} + \ldots + F_{N,y} = 0
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+F_{1,z} + F_{2,z} + \ldots + F_{N,z} = 0 \, .
+\]</div>
+<p>When you draw your diagrams, you will need to decompose your forces into their components.</p>
+<figure class="align-default" id="id4">
+<img alt="_images/forces.jpg" src="_images/forces.jpg" />
 <figcaption>
-<p><span class="caption-number">Fig. 3 </span><span class="caption-text">Left: curved path in three dimensions. Right: velocity and acceleration along a curved path.</span><a class="headerlink" href="#fig-gnhrue4woijf" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 4 </span><span class="caption-text"><img alt="Forces balance in two dimensions. From Kleppner &amp; Kolenkow, CUP 2014." src="forces.jpg" /><br />
+<em>Figure: Forces balance in two dimensions.</em></span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
+<div class="legend">
+<p>As an example, consider a mass <span class="math notranslate nohighlight">\(m\)</span> on a frictionless ramp that is subject to a force <span class="math notranslate nohighlight">\(f\)</span> preventing it from sliding down (see Fig. [ref:fig:04ueorfjsl]). Gravity produces a downward force <span class="math notranslate nohighlight">\(W\)</span>, the weight, and the ramp produces a normal force <span class="math notranslate nohighlight">\(N\)</span> that prevents the mass from moving into the ramp. The normal force will always have exactly the magnitude to keep it on the ramp. We can choose our <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> coordinates any way we like, as long as they are perpendicular (orthogonal) to each other. In this problem it is convenient to take <span class="math notranslate nohighlight">\(x\)</span> down the ramp, and <span class="math notranslate nohighlight">\(y\)</span> perpendicular to the ramp.</p>
+<p>Consider Newton’s second law, <span class="math notranslate nohighlight">\(\mathbf{F} = m\mathbf{a}\)</span> in vector form. Since the mass is at rest, the acceleration is zero (<span class="math notranslate nohighlight">\(\mathbf{a}=0\)</span>), and the three forces should balance, i.e., sum to zero<a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>:</p>
+<div class="math notranslate nohighlight">
+\[
+\mathbf{f} + \mathbf{N} + \mathbf{W} = 0 \, .
+\]</div>
+<p>In vector form this is</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{pmatrix} -f \\ 0 \end{pmatrix}  
++ \begin{pmatrix} 0 \\ N \end{pmatrix} 
++ \begin{pmatrix} W\sin\theta \\ -W\cos\theta \end{pmatrix} 
+= \begin{pmatrix} 0 \\ 0 \end{pmatrix} = 0 \, .
+\end{split}\]</div>
+<p>Setting the <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> components to zero leads to the two equations:</p>
+<div class="math notranslate nohighlight">
+\[
+-f + W\sin\theta = 0 
+\qquad \text{and} \qquad 
+N - W \cos\theta = 0 \, .
+\]</div>
+<p>Since <span class="math notranslate nohighlight">\(W = mg\)</span>, and we want to know the values of the magnitudes <span class="math notranslate nohighlight">\(f\)</span> and <span class="math notranslate nohighlight">\(N\)</span> in terms of <span class="math notranslate nohighlight">\(m\)</span> and <span class="math notranslate nohighlight">\(\theta\)</span>, we can rearrange:</p>
+<div class="math notranslate nohighlight">
+\[
+f = mg\sin\theta  
+\qquad \text{and} \qquad 
+N = mg \cos\theta \, .
+\]</div>
+<p>The normal force <span class="math notranslate nohighlight">\(N\)</span> is due to Newton’s third law, which states that a force on one body (the ramp) due to another (the mass) produces a force equal in magnitude and opposite in direction on the first body (the mass) due to the other (the ramp). Note the subtlety here that the normal force on the mass due to the ramp is <em>not</em> along <span class="math notranslate nohighlight">\(\mathbf{W}\)</span>, so it is the component perpendicular to the ramp that determines <span class="math notranslate nohighlight">\(\mathbf{N}\)</span>.</p>
+<p>Note that in this case the forces are easy to determine, so we do not need to use equation ([ref:eq:ghureo940woijerfd]) to find the force balance. Moreover, the force <span class="math notranslate nohighlight">\(\mathbf{f}\)</span> is not conservative since its magnitude depends on the ramp inclination and not the position (it could be friction, which does not have a corresponding potential energy).</p>
+<p><strong>Exercise:</strong> Solve the problem in figure [ref:fig:04ueorfjsl] using coordinates where the <span class="math notranslate nohighlight">\(x\)</span> direction is horizontal and the <span class="math notranslate nohighlight">\(y\)</span> direction is vertical.</p>
+<hr class="docutils" />
+<p>Another important concept for vectors is the <em>point of engagement</em>, or the starting point of the arrow that represents the force. We treated the mass in figure [ref:fig:04ueorfjsl] as a point mass, and all forces therefore engage at the centre of gravity. However, for extended systems this can be different. For example, while the weight force (<span class="math notranslate nohighlight">\(mg\)</span>) always has the centre of gravity as the point of engagement, the normal force has the boundary between the block and the ramp surface as the point of engagement. Any friction force also has the point of engagement lying in the contact surface between the block and the ramp. We will explore the importance of this when we consider torque in a future lecture.</p>
+</div>
 </figcaption>
 </figure>
-<p>The situation is different for the acceleration. In order to have a curved path we need to bend the particle away from moving in a straight line. This requires an acceleration away from the tangent to the curve. An example is given in Fig. 3 (right). In the extreme case of a circular path the acceleration always points to the centre, and the tangential component is zero. We can use this to explore the more general case.</p>
-<p>Consider a velocity <span class="math notranslate nohighlight">\(\v = v \basis{T}\)</span> at point <span class="math notranslate nohighlight">\(A\)</span> along the curve, where <span class="math notranslate nohighlight">\(\basis{T}\)</span> is the unit vector tangent to the curve at <span class="math notranslate nohighlight">\(A\)</span>. The magnitude of the velocity vector (the speed) is given by <span class="math notranslate nohighlight">\(v\)</span>. We can write the acceleration as</p>
-<div class="math notranslate nohighlight" id="equation-gbnhiue9">
-<span class="eqno">(44)<a class="headerlink" href="#equation-gbnhiue9" title="Link to this equation">#</a></span>\[\a = \frac{\d\v}{\d t} = \frac{\d}{\d t} (v \basis{T}) = \frac{\d v}{\d t} \basis{T} + v \frac{\d\basis{T}}{\d t} \, ,\]</div>
-<p>where we used the product rule for derivatives. The unit vector <span class="math notranslate nohighlight">\(\basis{T}\)</span> may change direction along the curve, so the derivative <span class="math notranslate nohighlight">\(\d\basis{T}/\d t\)</span> is generally not zero. In order to say a little bit more about this time dependence, we make the drawing in Fig. 4.</p>
-<figure class="align-default" id="fig-njghiuer9ywiuhs">
-<a class="reference internal image-reference" href="_images/radiuscurvature.png"><img alt="_images/radiuscurvature.png" src="_images/radiuscurvature.png" style="width: 400px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 4 </span><span class="caption-text">The radius of curvature <span class="math notranslate nohighlight">\(\rho\)</span>.</span><a class="headerlink" href="#fig-njghiuer9ywiuhs" title="Link to this image">#</a></p>
+</div>
 </figcaption>
 </figure>
-<p>At the point <span class="math notranslate nohighlight">\(A\)</span>, we define the tangent and normal unit vectors</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e33056df-2aca-47bc-a112-f45bc2fc8e53">
-<span class="eqno">(45)<a class="headerlink" href="#equation-e33056df-2aca-47bc-a112-f45bc2fc8e53" title="Permalink to this equation">#</a></span>\[\begin{align}
- \basis{T} = \basis{x} \cos\phi + \basis{y} \sin\phi \qquad\text{and}\qquad \basis{N} = -\basis{x} \sin\phi + \basis{y} \cos\phi\, .
-\end{align}\]</div>
-<p>We can take the time derivative of <span class="math notranslate nohighlight">\(\basis{T}\)</span>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-0e59558f-855d-498c-8a25-046436a568c8">
-<span class="eqno">(46)<a class="headerlink" href="#equation-0e59558f-855d-498c-8a25-046436a568c8" title="Permalink to this equation">#</a></span>\[\begin{align}
- \frac{\d\basis{T}}{\d t} &amp; = \basis{x} \frac{\d\cos\phi}{\d t} + \basis{y} \frac{\d\sin\phi}{\d t} = \, - \basis{x} \sin\phi\frac{\d\phi}{\d t} + \basis{y} \cos\phi\frac{\d\phi}{\d t} \, .
-\end{align}\]</div>
-<p>This yields the very simple relationship</p>
-<div class="amsmath math notranslate nohighlight" id="equation-da9a2d5f-8a5d-493f-b3a8-a70fdaf2b943">
-<span class="eqno">(47)<a class="headerlink" href="#equation-da9a2d5f-8a5d-493f-b3a8-a70fdaf2b943" title="Permalink to this equation">#</a></span>\[\begin{align}
- \frac{\d\basis{T}}{\d t} = \basis{N}\frac{\d\phi}{\d t}\, .
-\end{align}\]</div>
-<p>We can now relate the time derivative of <span class="math notranslate nohighlight">\(\phi\)</span> to the <em>radius of curvature</em> <span class="math notranslate nohighlight">\(\rho\)</span> in Fig. 4 as follows:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-30df0479-d8d9-4e89-a38e-14c8e5343a3d">
-<span class="eqno">(48)<a class="headerlink" href="#equation-30df0479-d8d9-4e89-a38e-14c8e5343a3d" title="Permalink to this equation">#</a></span>\[\begin{align}
- \frac{\d\phi}{\d t} =  \frac{\d\phi}{\d s}  \frac{\d s}{\d t} = v  \frac{\d\phi}{\d s}\, ,
-\end{align}\]</div>
-<p>where <span class="math notranslate nohighlight">\(s\)</span> is again the segment of the curve from <span class="math notranslate nohighlight">\(A\)</span> to <span class="math notranslate nohighlight">\(A'\)</span>. From the triangle <span class="math notranslate nohighlight">\(MAA'\)</span> in the figure, you can see that <span class="math notranslate nohighlight">\(\d s = \rho \d\phi\)</span>, and therefore <span class="math notranslate nohighlight">\(\d\phi/\d s = 1/\rho\)</span>. Hence</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e1162391-9938-4b35-9220-5f2a2eb523fe">
-<span class="eqno">(49)<a class="headerlink" href="#equation-e1162391-9938-4b35-9220-5f2a2eb523fe" title="Permalink to this equation">#</a></span>\[\begin{align}
- \frac{\d\phi}{\d t} = \frac{v}{\rho} \qquad\text{and}\qquad \frac{\d\basis{T}}{\d t} = \frac{v}{\rho} \basis{N}\, .
-\end{align}\]</div>
-<p>Substituting this into the expression for the acceleration in equation <a class="reference internal" href="#equation-gbnhiue9">(44)</a>, we obtain</p>
-<div class="amsmath math notranslate nohighlight" id="equation-bc0f9523-9544-417c-b20e-44d2559d54ab">
-<span class="eqno">(50)<a class="headerlink" href="#equation-bc0f9523-9544-417c-b20e-44d2559d54ab" title="Permalink to this equation">#</a></span>\[\begin{align}
- \a = \frac{\d v}{\d t} \basis{T} + \frac{v^2}{\rho} \basis{N}\, .
-\end{align}\]</div>
-<p>The first term is the component of acceleration or deceleration in the direction of the motion (i.e., tangential), while the second term is the normal acceleration that changes the direction of travel of the particle. You can see that in the case of uniform circular motion, where the speed is constant but the direction is always changing, the acceleration reduces to the familiar <span class="math notranslate nohighlight">\(v^2/R\)</span>, where the radius of curvature <span class="math notranslate nohighlight">\(\rho\)</span> is equal to the radius of the circle <span class="math notranslate nohighlight">\(R\)</span>.</p>
-<p>For arbitrary curved paths, the radius of curvature is constantly changing, which results in quite dramatic movements of the point <span class="math notranslate nohighlight">\(M\)</span>. How does <span class="math notranslate nohighlight">\(M\)</span> move as the path changes from an upwardly bent trajectory to a downward trajectory? The radius of curvature <span class="math notranslate nohighlight">\(\rho\)</span> is more a conceptual tool for understanding the tangential and normal components of <span class="math notranslate nohighlight">\(\a\)</span> than a computational tool for solving problems.</p>
-</section>
+<hr class="docutils" />
+<hr class="footnotes docutils" />
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id2" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>Remember that the <span class="math notranslate nohighlight">\(\mathbf{F}\)</span> in <span class="math notranslate nohighlight">\(\mathbf{F}=m\mathbf{a}\)</span> denotes the sum of all the forces acting on <span class="math notranslate nohighlight">\(m\)</span>, and <span class="math notranslate nohighlight">\(\mathbf{a}\)</span> is the resulting acceleration.</p>
+</aside>
+</aside>
 </section>
 
     <script type="text/x-thebe-config">
@@ -605,7 +676,7 @@ However, we can also see from Fig. 3 that in this limit the velocity <span class
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Lecture 2: Newton’s second law</p>
+        <p class="prev-next-title">Lecture 2: Newton’s Second Law</p>
       </div>
     </a>
     <a class="right-next"
@@ -613,7 +684,7 @@ However, we can also see from Fig. 3 that in this limit the velocity <span class
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Lecture 4: Motion and forces in 2 and 3 dimensions</p>
+        <p class="prev-next-title">Lecture 4: Compound Systems</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -633,9 +704,10 @@ However, we can also see from Fig. 3 that in this limit the velocity <span class
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vectors-in-three-dimensions">Vectors in three dimensions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tangent-vectors-and-normal-vectors-to-a-curve">Tangent vectors and normal vectors to a curve</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Lecture 3: Vectors</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#coordinate-systems">Coordinate systems</a></li>
 </ul>
+
   </nav></div>
 
 </div></div>
