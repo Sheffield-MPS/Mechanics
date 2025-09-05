@@ -179,17 +179,10 @@
 <li class="toctree-l1"><a class="reference internal" href="Lecture1.html">1 Where do forces come from?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lecture2.html">2 Newtons second law</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lecture3.html">3 Vectors</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lecture4.html">Compound Systems</a></li>
-
-
-
-<li class="toctree-l1"><a class="reference internal" href="Lecture5.html">Conservation of energy and momentum</a></li>
-
-
-
+<li class="toctree-l1"><a class="reference internal" href="Lecture4.html">4 Motion in 2D and 3D</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture5.html">5 Energy and momentum</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lecture6.html">6 Applications I</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lecture7.html">Polar coordinates and circular motion</a></li>
-
+<li class="toctree-l1"><a class="reference internal" href="Lecture7.html">7 Circular motion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lecture8.html">8 Angular momentum</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lecture9.html">9 Rotating rigid bodies</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lecture10.html">10 Applications II</a></li>
@@ -456,13 +449,13 @@ document.write(`
 </figcaption>
 </figure>
 <p>We will prove these laws in turn, but first we need to explore the mathematics of ellipses in more detail. An elliptical orbit in cartesian coordinates is given by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5d351312-576c-4306-9d16-0d1b131d65d3">
-<span class="eqno">(96)<a class="headerlink" href="#equation-5d351312-576c-4306-9d16-0d1b131d65d3" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-13153c0b-d604-4562-be49-0ae7a8056a80">
+<span class="eqno">(96)<a class="headerlink" href="#equation-13153c0b-d604-4562-be49-0ae7a8056a80" title="Permalink to this equation">#</a></span>\[\begin{align}
  \frac{x^2}{a^2} + \frac{y^2}{b^2} = 1\, ,
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(a\)</span> and <span class="math notranslate nohighlight">\(b\leq a\)</span> are the semi-major and semi-minor axes, respectively. It is convenient to define the eccentricity of the ellipse <span class="math notranslate nohighlight">\(e\)</span> as a measure of how the shape of the ellipse deviates from a circle:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c70e4bdb-9a32-47b0-b3a3-1c4214afaac1">
-<span class="eqno">(97)<a class="headerlink" href="#equation-c70e4bdb-9a32-47b0-b3a3-1c4214afaac1" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-6389fb83-1aa2-4e75-bd2f-77b54fb7b8c4">
+<span class="eqno">(97)<a class="headerlink" href="#equation-6389fb83-1aa2-4e75-bd2f-77b54fb7b8c4" title="Permalink to this equation">#</a></span>\[\begin{align}
  e = \sqrt{1-\frac{b^2}{a^2}} \qquad\text{with}\qquad 0\leq e \leq 1\, .
 \end{align}\]</div>
 <p>When <span class="math notranslate nohighlight">\(e=0\)</span> the ellipse is a circle (i.e., the deviation from a circle is zero), and when <span class="math notranslate nohighlight">\(e=1\)</span> the ellipse is a line segment.</p>
@@ -473,54 +466,54 @@ document.write(`
 </figcaption>
 </figure>
 <p>Since we are solving the problem of planetary motion in polar coordinates, we need to express the ellipse in terms of <span class="math notranslate nohighlight">\(r\)</span> and <span class="math notranslate nohighlight">\(\theta\)</span>. Using <span class="math notranslate nohighlight">\(x=r\cos\theta\)</span> and <span class="math notranslate nohighlight">\(y=r\sin\theta\)</span>, we find that</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e9562d52-fce7-4550-ac46-7f62f0d4f64d">
-<span class="eqno">(98)<a class="headerlink" href="#equation-e9562d52-fce7-4550-ac46-7f62f0d4f64d" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-9598f088-6aaa-40a0-b413-cba0f9ca0297">
+<span class="eqno">(98)<a class="headerlink" href="#equation-9598f088-6aaa-40a0-b413-cba0f9ca0297" title="Permalink to this equation">#</a></span>\[\begin{align}
  r(\theta) = \frac{b^2/a}{1+e \cos\theta}\, .
 \end{align}\]</div>
 <p>The origin coincides with one of the foci (<span class="math notranslate nohighlight">\(F_1\)</span> or <span class="math notranslate nohighlight">\(F_2\)</span> in figure 18) of the ellipse.</p>
 <section id="kepler-s-first-law">
 <h2>Kepler’s First Law<a class="headerlink" href="#kepler-s-first-law" title="Link to this heading">#</a></h2>
 <p>For Kepler’s first law, we want to show that the orbit of a planet is an ellipse, namely</p>
-<div class="amsmath math notranslate nohighlight" id="equation-db742f6e-4369-4c2d-8568-12800d206b29">
-<span class="eqno">(99)<a class="headerlink" href="#equation-db742f6e-4369-4c2d-8568-12800d206b29" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-f58daccf-2cc6-4140-8a03-ce3dc956f034">
+<span class="eqno">(99)<a class="headerlink" href="#equation-f58daccf-2cc6-4140-8a03-ce3dc956f034" title="Permalink to this equation">#</a></span>\[\begin{align}
  r(\theta) = \frac{b^2/a}{1+e \cos\theta}\, ,
 \end{align}\]</div>
 <p>for some values of <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(b\)</span>, and <span class="math notranslate nohighlight">\(e\)</span> that we need to determine. We start with the energy in equation <a class="reference internal" href="Lecture10.html#equation-kwproeiguthieojrd">(95)</a> and determine the force in the radial direction from the potential <span class="math notranslate nohighlight">\(V_{\rm eff}\)</span>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5eb26505-f6e0-489e-9a47-3fe8c6c18acb">
-<span class="eqno">(100)<a class="headerlink" href="#equation-5eb26505-f6e0-489e-9a47-3fe8c6c18acb" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-bd397c81-6d50-4f2b-8596-ad3d651447c9">
+<span class="eqno">(100)<a class="headerlink" href="#equation-bd397c81-6d50-4f2b-8596-ad3d651447c9" title="Permalink to this equation">#</a></span>\[\begin{align}
  F = m \ddot{r} = - \frac{\d V_{\rm eff}}{\d r} = \frac{L^2}{mr^3} - \frac{GmM}{r^2}\, .
 \end{align}\]</div>
 <p>We can divide by <span class="math notranslate nohighlight">\(m\)</span> and reintroduce <span class="math notranslate nohighlight">\(\dot{\theta} = L/mr^2\)</span> to obtain</p>
 <div class="math notranslate nohighlight" id="equation-jro4iwjoersfd">
 <span class="eqno">(101)<a class="headerlink" href="#equation-jro4iwjoersfd" title="Link to this equation">#</a></span>\[ \ddot{r} = r \dot{\theta}^2 - \frac{GM}{r^2}\, .\]</div>
 <p>This is not a differential equation we can easily solve, but fortunately we can cast it in a much more amenable form. If we make the substitution <span class="math notranslate nohighlight">\(\rho = 1/r\)</span>, we can write</p>
-<div class="amsmath math notranslate nohighlight" id="equation-56bd1857-4d08-4e4f-b88f-1291df058b6c">
-<span class="eqno">(102)<a class="headerlink" href="#equation-56bd1857-4d08-4e4f-b88f-1291df058b6c" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-bc733237-5be2-4e05-9e3c-0b8c5dadf331">
+<span class="eqno">(102)<a class="headerlink" href="#equation-bc733237-5be2-4e05-9e3c-0b8c5dadf331" title="Permalink to this equation">#</a></span>\[\begin{align}
  \frac{\d\rho}{\d\theta} = \frac{\d}{\d\theta}\frac{1}{r} = -\frac{1}{r^2} \frac{\d r}{\d\theta} = -\frac{1}{r^2} \dot{r} \frac{\d t}{\d\theta} = -\frac{m\dot{r}}{L}\, .
 \end{align}\]</div>
 <p>However, equation <a class="reference internal" href="#equation-jro4iwjoersfd">(101)</a> requires the second time derivative <span class="math notranslate nohighlight">\(\ddot{r}\)</span>. We can get this via a circuitous way, namely from the second derivative of <span class="math notranslate nohighlight">\(\rho\)</span> with respect to <span class="math notranslate nohighlight">\(\theta\)</span>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-75a1fe58-1c77-489d-8025-2afb30dd9ebd">
-<span class="eqno">(103)<a class="headerlink" href="#equation-75a1fe58-1c77-489d-8025-2afb30dd9ebd" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-757b6833-3b68-49ed-b720-747a85538097">
+<span class="eqno">(103)<a class="headerlink" href="#equation-757b6833-3b68-49ed-b720-747a85538097" title="Permalink to this equation">#</a></span>\[\begin{align}
  \frac{\d^2\rho}{\d\theta^2} = -\frac{\d}{\d\theta}\frac{m\dot{r}}{L} = -\frac{m}{L} \frac{\d \dot{r}}{\d\theta} = -\frac{m}{L} \ddot{r} \frac{\d t}{\d\theta} = -\frac{m^2 r^2}{L^2} \ddot{r}\, .
 \end{align}\]</div>
 <p>We can solve for <span class="math notranslate nohighlight">\(\ddot{r}\)</span> and substitute this into equation <a class="reference internal" href="#equation-jro4iwjoersfd">(101)</a>. This leads to</p>
-<div class="amsmath math notranslate nohighlight" id="equation-6cc7efc6-f892-4222-a2bb-974859555b60">
-<span class="eqno">(104)<a class="headerlink" href="#equation-6cc7efc6-f892-4222-a2bb-974859555b60" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-c60e4c6a-f625-4649-b1f1-3636467a75be">
+<span class="eqno">(104)<a class="headerlink" href="#equation-c60e4c6a-f625-4649-b1f1-3636467a75be" title="Permalink to this equation">#</a></span>\[\begin{align}
  -\frac{L^2 \rho^2}{m^2} \frac{\d^2\rho}{\d\theta^2} = \frac{L^2 \rho^3}{m^2} - GM\rho^2\, .
 \end{align}\]</div>
 <p>Dividing this equation by <span class="math notranslate nohighlight">\(\rho^2 L^2/m^2\)</span>, we obtain the differential equation:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-0b353161-306d-4861-9cbe-f5d421edeb8e">
-<span class="eqno">(105)<a class="headerlink" href="#equation-0b353161-306d-4861-9cbe-f5d421edeb8e" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-0a001306-64d4-42db-9fb9-d2315ccbc74a">
+<span class="eqno">(105)<a class="headerlink" href="#equation-0a001306-64d4-42db-9fb9-d2315ccbc74a" title="Permalink to this equation">#</a></span>\[\begin{align}
  \frac{\d^2\rho}{\d\theta^2} + \rho - \frac{GMm^2}{L^2} = 0\, ,
 \end{align}\]</div>
 <p>This is mathematically identical to the differential equation for a harmonic oscillator, whose solutions can be written as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-7b615cdf-0508-4921-8239-081e555c4d7c">
-<span class="eqno">(106)<a class="headerlink" href="#equation-7b615cdf-0508-4921-8239-081e555c4d7c" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-71301797-9cc4-46ce-88eb-bef62a355adf">
+<span class="eqno">(106)<a class="headerlink" href="#equation-71301797-9cc4-46ce-88eb-bef62a355adf" title="Permalink to this equation">#</a></span>\[\begin{align}
  \rho(\theta) = \frac{GMm^2}{L^2} + B \cos(\theta+\phi_0)\, ,
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(B\)</span> is the `amplitude’ of the solution, and we can set <span class="math notranslate nohighlight">\(\phi_0 = 0\)</span> as our initial condition. Solving for <span class="math notranslate nohighlight">\(r(\theta) = 1/\rho(\theta)\)</span>, we find</p>
-<div class="amsmath math notranslate nohighlight" id="equation-940a93c4-4202-451d-be03-de858fbd7e78">
-<span class="eqno">(107)<a class="headerlink" href="#equation-940a93c4-4202-451d-be03-de858fbd7e78" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-339b6be0-e1cb-493a-942f-0861009776f4">
+<span class="eqno">(107)<a class="headerlink" href="#equation-339b6be0-e1cb-493a-942f-0861009776f4" title="Permalink to this equation">#</a></span>\[\begin{align}
  r(\theta) = \frac{L^2/Gm^2M}{1+L^2 B/Gm^2M \cos\theta}\, .
 \end{align}\]</div>
 <p>This is an elliptical orbit with</p>
@@ -533,18 +526,18 @@ document.write(`
 <section id="kepler-s-second-law">
 <h2>Kepler’s Second Law<a class="headerlink" href="#kepler-s-second-law" title="Link to this heading">#</a></h2>
 <p>From the conservation of angular momentum and equation <a class="reference internal" href="Lecture8.html#equation-bgt3498yei">(64)</a> we know that</p>
-<div class="amsmath math notranslate nohighlight" id="equation-bd287ff6-5ab4-4aa4-8020-850841bc236b">
-<span class="eqno">(109)<a class="headerlink" href="#equation-bd287ff6-5ab4-4aa4-8020-850841bc236b" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-d493c71d-332d-4da2-8152-f916438ac807">
+<span class="eqno">(109)<a class="headerlink" href="#equation-d493c71d-332d-4da2-8152-f916438ac807" title="Permalink to this equation">#</a></span>\[\begin{align}
  r^2 \dot{\theta} = \frac{L}{m} = \text{constant.}
 \end{align}\]</div>
 <p>However, <span class="math notranslate nohighlight">\(r^2 \dot{\theta}\)</span> has a clear geometric meaning, as shown in Fig. 19. The shaded area is a triangle when <span class="math notranslate nohighlight">\(r\d\theta\)</span> is infinitesimally small, and the area of this triangle is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-8cdb153c-57f4-4e23-a859-c975776cf756">
-<span class="eqno">(110)<a class="headerlink" href="#equation-8cdb153c-57f4-4e23-a859-c975776cf756" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-ce9e088c-d746-4944-81c1-28570e541f1b">
+<span class="eqno">(110)<a class="headerlink" href="#equation-ce9e088c-d746-4944-81c1-28570e541f1b" title="Permalink to this equation">#</a></span>\[\begin{align}
  \d A = \frac12 r\, r \d\theta = \frac12 r^2\d\theta\, .
 \end{align}\]</div>
 <p>Therefore,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-1df89119-0816-4e37-b018-e3f8ace9ff07">
-<span class="eqno">(111)<a class="headerlink" href="#equation-1df89119-0816-4e37-b018-e3f8ace9ff07" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-ec85dfb4-7ddf-48be-8071-107c018ab15a">
+<span class="eqno">(111)<a class="headerlink" href="#equation-ec85dfb4-7ddf-48be-8071-107c018ab15a" title="Permalink to this equation">#</a></span>\[\begin{align}
  \frac{\d A}{\d t} = \frac12 r^2 \dot{\theta} = \text{constant.}
 \end{align}\]</div>
 <p>In other words, the rate of the area <span class="math notranslate nohighlight">\(A\)</span> swept out by the line connecting the planet and the origin is constant over time, and this is precisely Kepler’s second law. You see that it is an expression of the conservation of angular momentum.</p>
@@ -562,13 +555,13 @@ document.write(`
 <span class="eqno">(112)<a class="headerlink" href="#equation-blkgjnhtu4rertiudr" title="Link to this equation">#</a></span>\[ T = \dfrac{\pi ab}{{L/2m}}= \dfrac{2m\pi ab}{L}\, .\]</div>
 <p>We now need to relate <span class="math notranslate nohighlight">\(T\)</span> to the semi-major axis <span class="math notranslate nohighlight">\(a\)</span>. This is quite straightforward if we extract <span class="math notranslate nohighlight">\(b\)</span> from equation <a class="reference internal" href="#equation-geh340ueoirjffs">(108)</a> and use it to eliminate <span class="math notranslate nohighlight">\(b\)</span> from  equation <a class="reference internal" href="#equation-blkgjnhtu4rertiudr">(112)</a>.</p>
 <p>From equations <a class="reference internal" href="#equation-geh340ueoirjffs">(108)</a> and <a class="reference internal" href="#equation-blkgjnhtu4rertiudr">(112)</a> we see that <span class="math notranslate nohighlight">\(b^2\)</span> is equal to</p>
-<div class="amsmath math notranslate nohighlight" id="equation-62287327-87c8-487f-bcc9-8dc63d014be8">
-<span class="eqno">(113)<a class="headerlink" href="#equation-62287327-87c8-487f-bcc9-8dc63d014be8" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-ccd39aae-843c-4bc3-8074-c24eb65c636a">
+<span class="eqno">(113)<a class="headerlink" href="#equation-ccd39aae-843c-4bc3-8074-c24eb65c636a" title="Permalink to this equation">#</a></span>\[\begin{align}
  b^2 = \frac{a L^2}{Gm^2M} = \frac{T^2 L^2}{4m^2\pi^2a^2}\, .
 \end{align}\]</div>
 <p>Hence</p>
-<div class="amsmath math notranslate nohighlight" id="equation-4c095039-0fdd-461d-985b-51ce69b292e9">
-<span class="eqno">(114)<a class="headerlink" href="#equation-4c095039-0fdd-461d-985b-51ce69b292e9" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-c946bf21-2bb2-46da-820c-902491bcc5e4">
+<span class="eqno">(114)<a class="headerlink" href="#equation-c946bf21-2bb2-46da-820c-902491bcc5e4" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{a L^2}{Gm^2M} = \frac{T^2 L^2}{4m^2\pi^2a^2}
 \qquad\text{or}\qquad
 \frac{T^2}{a^3} = \frac{4\pi^2}{GM} = \text{constant}\, .
